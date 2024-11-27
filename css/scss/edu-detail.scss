@@ -1,0 +1,1596 @@
+/* =======================================================================================================================
+ * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
+ * date : 2024.11.16
+ * 교육 상세 페이지 CSS
+ * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
+ * ======================================================================================================================= */
+ 
+ /* ---------------------------------------------------------------------------------------
+    00. Fonts
+--------------------------------------------------------------------------------------- */
+/* gmarket Sans */
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/* cafe24 */
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Ohsquareair';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/Cafe24Ohsquareair.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 엘리스 디지털배움 */
+@font-face {
+    font-family: 'EliceDigitalBaeum';
+    src: url('https://cdn.jsdelivr.net/gh/fontbee/font@main/Elice/EliceDigitalBaeum.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'EliceDigitalBaeum';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* 에스코어 드림 */
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-4Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-6Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'S-CoreDream';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-7ExtraBold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+/* ---------------------------------------------------------------------------------------
+    01. varables
+--------------------------------------------------------------------------------------- */
+$color-free-primary:#0065ee;
+$color-free-secondary:#0040b6;
+$color-free-third:#e1efff;
+$color-free-pale:#e6edff;
+$color-edu-black: #000;
+
+/* ---------------------------------------------------------------------------------------
+    02. mixin 
+--------------------------------------------------------------------------------------- */
+@mixin ed-mobile{
+    @media (max-width: 767px){ 
+      @content;
+    }
+  }
+  
+  @mixin ed-tablet{
+    @media (min-width: 768px) and (max-width: 1023px){
+      @content;
+    }
+  }
+
+  /* ---------------------------------------------------------------------------------------
+    03. common 
+--------------------------------------------------------------------------------------- */
+.edu-detail .col-free-primary{
+    color:$color-free-primary !important;
+}
+
+.edu-detail .ta-l{
+    text-align:left !important;
+}
+.edu-detail .ta-c{
+    text-align:center !important;
+}
+.edu-detail .ta-r{
+    text-align:right !important;
+}
+
+.edu-detail .fw-5{
+    font-weight:500 !important;
+}
+.edu-detail .fw-6{
+    font-weight:600 !important;
+}
+
+/* ---------------------------------------------------------------------------------------
+    04. Pages
+--------------------------------------------------------------------------------------- */
+body{
+	margin:0;
+	padding:0;
+}
+.test{
+    font-size:14px;
+}
+.edu-detail{
+    position:relative;
+	font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
+	font-weight:400;
+	font-size:16px;
+	margin:0;
+	border:0;
+	text-align:left;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	color:#222;
+	max-width:900px;
+	width:100%;
+	border:solid 1px #ddd;
+    *{
+        margin:0;
+        -webkit-box-sizing:border-box;
+	    box-sizing:border-box;
+        &::before, &::after{
+            -webkit-box-sizing:border-box;
+	        box-sizing:border-box;
+        }
+    }
+    div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{
+        margin:0;
+        padding:0;
+    }
+    article, aside, footer, header, nav, section{
+        display:block;
+    }
+    ul, li, ol, li, dl, dd, dt{
+        list-style:none
+    }
+    table{
+        width:100%;
+        table-layout:fixed;
+        padding:0;
+        border-spacing:0;
+        border:0;
+        border-collapse:collapse;
+    }
+    caption{
+        margin:0;
+        padding:0;
+        width:0;
+        height:0;
+        z-index:-1;
+        font-size:0;
+        line-height:0;
+        visibility:hidden;
+    }
+    legend, hr{
+        display:none;
+        position:absolute;
+        left:-99.9rem;
+        width:0;
+        height:0;
+        font-size:0;
+        visibility:hidden;
+        z-index:-1;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-weight:900;
+    }
+    p{
+        word-break:keep-all;
+    }
+    fieldset, img{
+        border:none;
+    }
+
+    /* 무료 교육 */
+    &.free{
+        font-family:'S-CoreDream';
+        font-weight:400;
+        .edu-visual{
+            display:flex;
+            align-items:center;
+            position:relative;
+            height:25em;
+            padding:0 2.19em;
+            text-align:center;
+            background:url('../images/free/bg_edu_free.png') no-repeat center;
+            background-size:cover;
+            &__label{
+                position:absolute;
+                left:1.17em;
+                top:1em;
+                width:2.67em;
+                height:2.67em;
+                padding:0.83em 0.33em;
+                font-size:1.88em;
+                font-weight:600;
+                border:solid 1px #ddd;
+                color:#fff;
+            }
+            &__tit{
+                width:100%;
+                font-family: 'Cafe24Ohsquare';
+                font-size:3.44em;
+                line-height:1.3;
+                font-style: italic;
+                background: rgb(255,255,255);
+                background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(195,195,195,1) 100%); 
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                .small{
+                    font-family: 'Cafe24Ohsquareair';
+                    font-size:0.91em;
+
+                }
+            }
+            @include ed-tablet{
+                &__tit{
+                    br{
+                        display:none;
+                    }
+                }
+            }
+            @include ed-mobile{
+                &__tit{
+                    br{
+                        display:none;
+                    }
+                }
+            }
+        }
+        .edu-item{
+            margin:0 2.19em;
+            padding:4.38em 0;
+            border-bottom:solid 1px #ddd;
+
+            &.bg-blue{
+                margin:0;
+                border-bottom:0;
+                padding:4.38em 2.19em;
+                background-color:$color-free-pale;
+            }
+
+            &:last-child{
+                border-bottom:0;
+            }
+            &__tit{
+                margin-bottom:0.5em;
+                font-family: 'Cafe24Ohsquare';
+                font-size:2.5em;
+            }
+            .session-list{
+                li{
+                    p{
+                        font-size:1.56em;
+                        line-height:1.5;
+                        letter-spacing:-1px;
+                        &.session-list__tit{
+                            font-weight:600;
+                            color:$color-free-primary;
+
+                            &.medical{
+                                padding-left:1.32em;
+                                color:$color-edu-black;
+                                background:url('../images/free/ico_eduDetail024_1.png') no-repeat left center;
+                                background-size:0.92em;
+
+                                &.type2{
+                                    background-image:url('../images/free/ico_eduDetail024_2.png');
+                                    background-size:0.80em;
+                                }
+                            }
+                        }
+                    }
+                    & + li{
+                        margin-top:3.75em;
+                    }
+                }
+                &__img{
+                    margin-top:2.5em;
+                    text-align:center;
+                    @include ed-tablet{
+                        img{
+                            width:100%;
+                        }
+                    }
+                    @include ed-mobile{
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+                .module-list{
+                    display:flex;
+                    justify-content:center;
+                    flex-flow:wrap;
+                    margin-top:2.5em;
+                    li{
+                        width:calc(33.333% - 2.5em);
+                        margin:0 1.25em;
+                        padding:6.88em 1.56em 1.56em;
+                        text-align:center;
+                        border:solid 1px #ddd;
+                        border-radius:0.63em;
+                        background:url('../images/free/img_eduDetail016_1.png') no-repeat center 1.56em;
+                        background-size:4.38em;
+
+                        &:nth-child(2){
+                            background-image:url('../images/free/img_eduDetail016_2.png');
+                        }
+                        &:nth-child(3){
+                            background-image:url('../images/free/img_eduDetail016_3.png');
+                            background-size:4.88em;
+                        }
+                        @include ed-mobile{
+                            width:100%;
+                            margin:0;
+                            padding:0.63em 0 0.63em 8em;
+                            background-position:1.56em center;
+                            text-align:left;
+
+                            & + li{
+                                margin-top:10px;
+                            }
+                        }
+                    }
+                    &__tit{
+                        font-size:1.56em;
+                        font-weight:600;
+                    }
+                    &__cont{
+                        font-size:1.25em;
+                    }
+                }
+            }
+            .agenda-list{
+                &__item{
+                    position:relative;
+                    border:solid 1px #ddd;
+                    border-radius:4px;
+                    /* overflow:hidden; */
+                    & + .agenda-list__item{
+                        margin-top:10px;
+                    }
+                }
+                &__tit{
+                    display:flex;
+                    font-weight:500;
+                    padding:1.25em 2.19em;
+                    letter-spacing:-1px;
+                    span{
+                        display:inline-block;
+                        width:90%;
+                        font-size:1.63em;
+                        &.num{
+                            width:10%;
+                            font-size:1.88em;
+                            font-weight:700;
+                            font-style:italic;
+                            color:$color-free-primary;
+                        }
+                    }
+                }
+                &__cont{
+                    padding:1.88em 2.19em;
+                    background:#ededed;
+                    li{
+                        position:relative;
+                        padding-left:0.94em;
+                        font-size:1.13em;
+                        line-height:1.3;
+                        &::before{
+                            position:absolute;
+                            left:0;
+                            top:0.63em;
+                            width:0.44em;
+                            height:0.06em;
+                            background:#222;
+                            content:'';
+                        }
+                        & + li{
+                            margin-top:0.56em;
+                        }
+                    }
+                }
+                &__label{
+                    position:absolute;
+                    right:-1.5em;
+                    top:-1.5em;
+                    width:8.63em;
+                    height:8.63em;
+                    padding:1.88em 0;
+                    text-align:center;
+                    background:url('../images/free/img_agenda_label.png') no-repeat center center;
+                    background-size:100%;
+                    transform-origin: top left;
+                    transform: rotate(-20deg);
+
+                    span{
+                        font-size:1.19em;
+                        font-weight:500;
+                        &.num{
+                            font-size:2.63em;
+                            font-weight:600;
+                        }
+                    }
+                }
+            }
+            .tutor-list{
+                display:flex;
+                align-items:center;
+                padding-left:16.25em;
+                min-height:15em;
+                background:url('../images/free/img_tutor1.png') no-repeat left center;
+                background-size:15em;
+
+                & + .tutor-list{
+                    margin-top:1.88em;
+                }
+                p{
+                    width:100%;
+                    font-size:1.88em;
+                    line-height:1.5;
+                    .tit{
+                        font-weight:600;
+                    }
+                }
+                &.type2{
+                    background-image:url('../images/free/img_tutor3.png');
+                }
+                &.pbh{
+                    background-image:url('../images/free/img_tutor2.png');
+                }
+                &.pjh{
+                    background-image:url('../images/free/img_tutor4.png');
+                }
+                &.lwh{
+                    background-image:url('../images/free/img_tutor5.png');
+                }
+                &.mkh{
+                    background-image:url('../images/free/img_tutor10.png');
+                }
+                &.cyh{
+                    background-image:url('../images/free/img_tutor11.png');
+                }
+                &.gsy{
+                    background-image:url('../images/free/img_tutor12.png');
+                }
+                &.jhj{
+                    background-image:url('../images/free/img_tutor13.png');
+                }
+                &__type2{
+                    ul{
+                        display:flex;
+                        justify-content:center;
+                        flex-flow:wrap;
+                        li{
+                            width:33.333%;
+                            min-height:14.88em;
+                            padding-top:14.88em;
+                            margin-bottom:1.88em;
+                            text-align:center;
+                            background:url('../images/free/img_tutor1.png') no-repeat center top;
+                            background-size:14.38em;
+
+                            p{
+                                font-size:1.25em;
+                                line-height:1.5;
+
+                                &.tit{
+                                    font-size:1.4em;
+                                    font-weight:600;
+                                }
+                            }
+                            &.type2{
+                                background-image:url('../images/free/img_tutor3.png');
+                            }
+                            &.pbh{
+                                background-image:url('../images/free/img_tutor2.png');
+                            }
+                            &.pjh{
+                                background-image:url('../images/free/img_tutor4.png');
+                            }
+                            &.lwh{
+                                background-image:url('../images/free/img_tutor5.png');
+                            }
+                            &.kje{
+                                background-image:url('../images/free/img_tutor6.png');
+                            }
+                            &.sjw{
+                                background-image:url('../images/free/img_tutor7.png');
+                            }
+                            &.kgh{
+                                background-image:url('../images/free/img_tutor8.png');
+                            }
+                            &.ssm{
+                                background-image:url('../images/free/img_tutor9.png');
+                            }
+
+                            @include ed-tablet{
+                                width:100%;
+                                text-align:left;
+                                padding:3.13em 0 0 15.38em;
+                                background-position:left center;
+                            }
+                            @include ed-mobile{
+                                width:100%;
+                                text-align:left;
+                                padding:3.13em 0 0 15.38em;
+                                background-position:left center;
+                            }
+                        }
+                    }
+                }
+            }
+            .tag-wrap{
+                margin-top:2.5em;
+                &__item{
+                    font-family: 'EliceDigitalBaeum';
+                    font-size:1.25em;
+                    font-weight:700;
+                    color:$color-free-secondary;
+                    span{
+                        display:inline-block;
+                        position: relative;
+                        padding:0 0.5em;
+                        z-index:0;
+
+                        &::before{
+                            display: block;
+                            width: 100%;
+                            height: 1em;
+                            position: absolute;
+                            left: 0;
+                            bottom: -0.5em;
+                            content: '';
+                            background:$color-free-pale;
+                            z-index: -1;
+                        }
+                    }
+                    & + .tag-wrap__item{
+                        margin-top:1.15em;
+                    }
+                }
+            }
+            .blue-box{
+                margin-bottom:3.13em;
+                padding:1.88em;
+                text-align:center;
+                background-color: $color-free-third;
+                border:solid 1px #ddd;
+                border-radius:0.25em;
+                p{
+                    font-size:1.44em;
+                    font-weight:400;
+                    line-height:1.3;
+
+                    & + p{
+                        margin-top:2.17em;
+                    }
+
+                    &.tit{
+                        font-size:2em;
+                        font-weight:600;
+                    }
+                }
+            }
+            .chk-list{
+                margin-top:3.13em;
+                padding:2.19em 1.25em;
+                border:solid 1px #ddd;
+                border-radius:4px;
+
+                li{
+                    padding-left:1.88em;
+                    font-size:1.31em;
+                    font-weight:500;
+                    line-height:1.3;
+                    word-break:keep-all;
+                    background:url('../images/free/ico_chk1.png') no-repeat left 0.13em;
+                    background-size:1.44em;
+
+                    & + li{
+                        margin-top:0.63em;
+                    }
+                }
+            }
+        }
+    }
+    /* 유료 교육 */
+    &.paid{
+        //유료 교육 공통
+        .edu-item{
+            padding:5em 2.19em;
+
+            .curri-list{
+                display:flex;
+                flex-flow:wrap;
+                border-right:solid 1px #ddd;
+                border-bottom:solid 1px #ddd;
+                &__item{
+                    width:33.333%;
+                    flex:auto;
+                    padding:1.56em;
+                    text-align:left;
+                    border-left:solid 1px #ddd;
+                    border-top:solid 1px #ddd;
+
+                    .num{
+                        display:inline-block;
+                        margin-bottom:0.5em;
+                        padding:0.25em 0.75em;
+                        border-radius:3em;
+                        font-size:1.25em;
+                        font-weight:700;
+                        color:#fff;
+                        background:#222;
+                    }
+                    .tit{
+                        margin-bottom:0.87em;
+                        font-size:1.44em;
+                        font-weight:700;
+                    }
+                    .cont{
+                        li{
+                            position:relative;
+                            padding-left:0.75em;
+                            font-size:1.25em;
+                            word-break:keep-all;
+                            line-height:1.3;
+
+                            &::before{
+                                position:absolute;
+                                left:0;
+                                top:0.5em;
+                                width:0.4em;
+                                height:1px;
+                                background:#222;
+                                content:'';
+                            }
+
+                            & + li{
+                                margin-top:0.75em;
+                            }
+                        }
+                    }
+                    @include ed-tablet{
+                        width:50%;
+                    }
+                    @include ed-mobile{
+                        width:100%;
+                    }
+                }
+            }
+
+            .tutor-list{
+                display:flex;
+                flex-flow:wrap;
+                .tutor{
+                    width:40%;
+                    padding-top:13.13em; //210px;
+                    background:url('../images/paid/001/img_tutor.png') no-repeat center top;
+                    background-size:12.5em; //200px;
+
+                    span{
+                        font-size:1.63em; //26px;
+                        font-weight:700;
+                        letter-spacing:-1px;
+                    }
+                }
+                .cont{
+                    width:60%;
+                    ul{
+                        li{
+                            position:relative;
+                            padding-left:0.75em;
+                            font-size:1.38em; //22px;
+                            text-align:left;
+                            line-height:1.3;
+                            letter-spacing:-1px;
+                            word-break:keep-all;
+                            &::before{
+                                position:absolute;
+                                left:0;
+                                top:0.5em;
+                                width:0.4em;
+                                height:1px;
+                                background:#222;
+                                content:'';
+                            }
+
+                            &.tit{
+                                padding-left:0;
+                                font-weight:700;
+                                &::before{
+                                    display:none; 
+                                }
+                            }
+                            & + li{
+                                margin-top:0.45em; //10px;
+                            }
+                        }
+                        & + ul{
+                            margin-top:3.13em; //50px;
+                        }
+                    }
+                }
+                @include ed-tablet{
+                    .tutor{
+                        width:100%;
+                        margin-bottom:3.13em; //50px;
+                    }
+                    .cont{
+                        width:100%;
+                    }
+                }
+                @include ed-mobile{
+                    .tutor{
+                        width:100%;
+                        margin-bottom:50px;
+                    }
+                    .cont{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        //edu001 : Minitab 기초통계
+        &.edu001{
+            font-family:'GmarketSans';
+            font-weight:500;
+            text-align:center;
+
+            .col-primary{
+                color:#00beba;
+            }
+            .bg-primary{
+                background-color:#00beba !important;
+            }
+
+            .edu-visual{
+                height:37.5em; //600px
+                padding:4em 2.19em; //64px 35px 0;
+                background:url('../images/paid/001/bg_visual.jpg') no-repeat center top;
+                background-size:cover;
+
+                &__subTit{
+                    display:inline-block;
+                    margin-bottom:0.67em;
+                    padding:0.33em 0.67em;
+                    font-size:2.81em;
+                    font-weight:300;
+                    border-radius:1.33em;
+                    color:#fff;
+                    background:#222;
+
+                    strong{
+                        color:#00beba;
+                    }
+                }
+                &__tit{
+                    font-size:6.25em;
+                    font-weight:700;
+                    font-style:italic;
+                    text-shadow:5px 5px 5px #00acaf;
+                    color:#fff;
+                }
+            }
+            .edu-item{
+                padding-top:0;
+                &__tit{
+                    margin-bottom:1.33em;
+                    padding-top:1.78em;
+                    font-size:2.81em;
+                    font-weight:700;
+                    letter-spacing:-1;
+                    background:url('../images/paid/001/img_tit.png') no-repeat center top;
+                    background-size:1.78em;
+                }
+
+                &.info{
+                    background:#222;
+                    color:#fff;
+
+                    .edu-item__tit{
+                        margin-bottom:0.63em;
+                        font-family:'Cafe24Ohsquareair';
+                        font-size:3em;
+                        background:none;
+                    }
+
+                    p{
+                        font-size:1.56em;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+
+                        &.bottom{
+                            font-weight:700;
+                            font-size:1.75em;
+                        }
+                    }
+
+                    .img-box{
+                        margin:3.13em 0;
+
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+
+                &.feature{
+                    .feature-list{
+                        &__item{
+                            text-align:left;
+
+                            .tit{
+                                padding-bottom:0.63em;
+                                margin-bottom:1.25em;
+                                border-bottom:solid 2px #00beba;
+                                span{
+                                    font-size:1.88em;
+                                    font-weight:700;
+                                    letter-spacing:-1px;
+                                    line-height:1.3;
+                                    &.num{
+                                        margin-right:0.4em;
+                                        font-size:3.13em;
+                                        color:#d4d4d4;
+                                    }
+                                }
+                            }
+
+                            p{
+                                position:relative;
+                                padding-left:0.7em;
+                                font-size:1.44em;
+                                line-height:1.3;
+                                letter-spacing:-1px;
+
+                                &::before{
+                                    position:absolute;
+                                    left:0;
+                                    top:0.43em;
+                                    width:0.35em;
+                                    height:1px;
+                                    background:#222;
+                                    content:'';
+                                }
+
+                                & + p{
+                                    margin-top:1.09em;
+                                }
+                            }
+
+                            .img-box{
+                                text-align:center;
+                                margin-top:1.88em;
+
+                                @include ed-tablet{
+                                    img{
+                                        width:100%;
+                                    }
+                                }
+                                @include ed-mobile{
+                                    img{
+                                        width:100%;
+                                    }
+                                }
+                            }
+
+                            & + .feature-list__item{
+                                margin-top:4.38em;
+                            }
+                        }
+                    }
+                }
+
+                &.recomme{
+                    background:url('../images/paid/001/bg_recomme.jpg') no-repeat center top;
+                    background-size:cover;
+
+                    .edu-item__tit{
+                        margin-bottom:1em;
+                        font-family:'Cafe24Ohsquare';
+                        background:none;
+                        color:#fff;
+                    }
+
+                    .recomme-list{
+                        li{
+                            width:100%;
+                            padding:1.56em 1.25em 1.56em 9.88em;
+                            text-align:left;
+                            border-radius:3.75em;
+                            background:#fff url('../images/paid/001/img_recomme1.png') no-repeat 2.19em center;
+                            background-size:6.25em;
+                            span{
+                                font-size:1.63em;
+                                font-weight:700;
+                                word-break:keep-all;
+                            }
+                            &:nth-child(2){
+                                background-image:url('../images/paid/001/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/001/img_recomme3.png');
+                            }
+                            &:nth-child(4){
+                                background-image:url('../images/paid/001/img_recomme4.png');
+                            }
+
+                            & + li{
+                                margin-top:1.25em;
+                            }
+                        }
+                    }
+                }
+                &.purpose{
+                    padding-top:5em;
+                    background:url('../images/paid/001/bg_purpose.jpg') no-repeat center top;
+                    background-size:cover;
+                    color:#fff;
+                    p{
+                        font-size:1.38em; //22px
+                        line-height:1.5;
+                    }
+                    .edu-item__tit{
+                        padding-top:0.56em; //25px
+                        font-size:2.81em; //45px
+                        font-family:'Cafe24Ohsquare';
+                        line-height:1;
+                        background:none;
+                    }
+                    .purpose-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        li{
+                            flex:auto;
+                            width:33.333%;
+                            padding-top:8em; //128px;
+                            background:url('../images/paid/001/img_purpose1.png') no-repeat center top;
+                            background-size:11.25em; //180px;
+                            span{
+                                position:relative;
+                                display:inline-block;
+                                font-size:1.38em; //22px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                z-index:0;
+
+                                &.underline::before{
+                                    display: block;
+                                    width: 100%;
+                                    height:0.68em; //15px;
+                                    position:absolute;
+                                    left: 0;
+                                    bottom:0;
+                                    content: '';
+                                    background:rgba(0, 190, 186, .3);
+                                    z-index: -1;
+                                }
+                            }
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //edu002 : Minitab 통계적 품질관리 SQC
+        &.edu002{
+            font-family:'GmarketSans';
+            font-weight:500;
+            text-align:center;
+
+            .col-primary{
+                color:#1885ff;
+            }
+            .bg-primary{
+                background-color:#1885ff !important;
+            }
+
+            .edu-visual{
+                height:37.5em; //600px
+                padding:3.75em 2.19em; //60px 35px;
+                text-align:left;
+                background:url('../images/paid/002/bg_visual.png') no-repeat center top;
+                background-size:cover;
+
+                &__subTit{
+                    display:inline-block;
+                    margin-bottom:0.63em; //25px;
+                    padding:0.25em 0.75em; //10px 30px;
+                    font-family:'EliceDigitalBaeum';
+                    font-weight:400;
+                    font-size:2.5em; //40px;
+                    border-radius:1.5em; //60px;
+                    color:#fff;
+                    background:#082951;
+                }
+                &__tit{
+                    font-family:'EliceDigitalBaeum';
+                    font-size:5em; //80px;
+                    font-weight:700;
+                    font-style: italic;
+                    color:#fff;
+                    text-shadow:0.05em 0.05em 0.03em #537efd; //4px 4px 2px #537efd;
+                }
+            }
+            .edu-item{
+                padding-top:0;
+
+                &__tit{
+                    margin-bottom:0.89em; //40px;
+                    padding-top:2em; //90px;
+                    font-size:2.81em; //45px;
+                    font-weight:700;
+                    background:url('../images/paid/002/img_tit.png') no-repeat center top;
+                    background-size:1.33em; //60px;
+                }
+
+                &.info1{
+                    padding:3.75em 2.19em; //60px 35px;
+                    background:#103c73;
+
+                    @include ed-tablet{
+                        img{
+                            width:100%;
+                        }
+                    }
+                    @include ed-mobile{
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+                &.info2{
+                    padding:5em 2.19em 0; //80px 35px 0;
+                    background:#082951;
+                    
+                    p{
+                        font-size:1.75em; //28px;
+                        font-weight:500;
+                        color:#fff;
+                    }
+
+                    .edu-item__subTit{
+                        display:inline-block;
+                        padding:0.23em 1.23em; //7px 37px;
+                        font-size:1.88em; //30px;
+                        font-weight:700;
+                        border-radius:2em; //60px;
+                        color:#082951;
+                        background:#fff;
+                    }
+                    .edu-item__tit{
+                        margin:0.44em 0; //20px 0;
+                        padding:0;
+                        font-size:2.81em; //45px;
+                        font-weight:300;
+                        background:none;
+                    }
+                    .bubble-list{
+                        margin-top:3.13em; //50px;
+                        padding-bottom:17.50em; //280px;
+                        background:url('../images/paid/002/img_intro2.png') no-repeat left bottom;
+                        background-size:20.44em; //327px;
+
+                        &__item{
+                            position:relative;
+                            padding:1.56em; //25px;
+                            text-align:left;
+                            line-height:1.5;
+                            word-break: keep-all;
+                            border-radius:1.25em; //20px;
+                            background: rgb(224,227,234);
+                            background: linear-gradient(0deg, rgba(224,227,234,1) 0%, rgba(255,255,255,1) 100%);
+                            color:#222;
+
+                            &::after{
+                                border-top:1.25em solid rgb(224,227,234); //20px solid rgb(224,227,234);
+                                border-left:0.63em solid transparent; // 10px solid transparent;
+                                border-right:1.25em solid transparent; //20px solid transparent;
+                                border-bottom: 0px solid transparent;
+                                content: "";
+                                position: absolute;
+                                bottom:-1.25em; //-20px;
+                                right: 10%;
+                            }
+
+                            span, strong{
+                                font-size:1.31em; //21px;
+                                word-break: keep-all;
+                                line-height:1.3;
+                                letter-spacing:-1px;
+                            }
+
+                            & + .bubble-list__item{
+                                margin-top:2.81em; //45px;
+                            }
+                        }
+                    }
+                }
+                &.effect{
+                    .effect-list{
+                        display:flex;
+                        justify-content:center;
+                        flex-flow:wrap;
+
+                        li{
+                            width:33.333%;
+                            padding-top:13.13em; //210px;                          
+                            background:url('../images/paid/002/img_effect2.png') no-repeat center top;
+                            background-size:15.13em; //242px;
+                            &:nth-child(2){
+                                   background-image:url('../images/paid/002/img_effect3.png'); 
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/002/img_effect4.png'); 
+                         }
+                            span{
+                                font-size:1.44em; //23px;
+                                font-weight:700;
+                                line-height:1.3;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                            }
+                            
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+
+                    @include ed-mobile{
+                        img{
+                            width:100%;
+                        }
+                    }
+                }
+
+                &.purpose{
+                    background:#f4f4f4;
+
+                    .purpose-list{
+                        &__item{
+                            display:flex;
+                            justify-content:left;
+                            flex-flow: wrap;
+                            padding:1.88em 1.25em; //30px 20px;
+                            border-radius:0.63em; //10px;
+                            box-shadow:0.13em 0.13em 0.63em #bbbbbb;//2px 2px 10px #bbbbbb;
+                            background:#fff;
+
+                            & + .purpose-list__item{
+                                margin-top:0.94em; //15px;
+                            }
+
+                            .tit{
+                                width:30%;
+                                padding-right:0.8em; //20px;
+                                font-size:1.56em; //25px;
+                                font-weight:700;
+                                text-align:left;
+                            }
+
+                            .cont{
+                                width:70%;
+                                li{
+                                    padding-left:1.13em; //18px;
+                                    text-align:left;
+                                    background:url('../images/paid/002/ico_arrow.png') no-repeat left 0.25em;//url('../images/paid/002/ico_arrow.png') no-repeat left 4px;
+                                    background-size:0.88em; //14px;
+                                    span{
+                                        font-size:1.13em;//18px;
+                                        line-height: 1.3;
+                                        word-break: keep-all;
+                                        letter-spacing: -1px;
+                                    }
+                                    & + li{
+                                        margin-top:0.94em; //15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.recomme{
+                    background:#1885ff;
+                    color:#fff;
+
+                    .edu-item__tit{
+                        background:none;
+                        font-style: italic;
+                    }
+                    .recomme-list{
+                        display: flex;
+                        justify-content: center;
+                        flex-flow:wrap;
+                        li{
+                            width:12.5em; //200px;
+                            margin:0 1.88em; //0 30px;
+                            padding-top:10.94em;//175px;
+                            text-align:center;
+                            background:url('../images/paid/002/img_recomme1.png') no-repeat center top;
+                            background-size:10em; //160px;
+
+                            &:nth-child(2){
+                                background-image:url('../images/paid/002/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/002/img_recomme3.png');
+                            }
+
+                            span{
+                                font-size:1.5em; //24px;
+                                font-weight:500;
+                                word-break: keep-all;
+                                line-height:1.3;
+                            }
+                            @include ed-mobile{
+                                width:100%;
+                                margin:0;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.marketing{
+                    min-height:37.31em; //597px;
+                    padding:5em 2.19em;//80px 35px;
+                    text-align:center;
+                    background:url('../images/paid/002/bg_marketing.png') no-repeat center top;
+                    background-size:cover;
+
+                    p{
+                        padding-bottom:2em; //50px;
+                        font-size:1.56em; //25px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                        color:#fff
+                    }
+
+                    .marketing-list{
+                        display:flex;
+                        justify-content:center;
+
+                        li{
+                            position:relative;
+                            margin:0 1.88em; //0 30px;
+
+                            &::after{
+                                content:'';
+                                position: absolute;
+                                right:-3.38em;//-54px;
+                                top:50%;
+                                margin-top:-1.5em;//-24px;
+                                width:3em;//48px;
+                                height:3em;//48px;
+                                background:url('../images/paid/002/ico_arrow2.png') no-repeat left top;
+                                background-size:3em;//48px;
+                            }
+
+                            &:last-child::after{
+                                display: none;
+                            }
+
+                            @include ed-tablet{
+                                img{
+                                    width:100%;
+                                }
+                            }
+                            @include ed-mobile{
+                                img{
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    .tutor-list{
+                        .tutor{
+                            background-image:url('../images/paid/002/img_tutor.png');
+                        }
+                    }
+                }
+            }
+        }
+
+        //edu003 : Minitab 실험계획법 DOE
+        &.edu003{
+            font-family:'GmarketSans';
+            font-weight:500;
+            text-align:center;
+
+            .col-primary{
+                color:#4c51c4;
+            }
+            .bg-primary{
+                background-color:#4c51c4 !important;
+            }
+            .edu-visual{
+                height:37.50em; //600px;
+                padding:0;
+                text-align:left;
+                background:url('../images/paid/003/bg_visual.jpg') no-repeat center top;
+                background-size:cover;
+                .tit-wrap{
+                    position:relative;
+                    width:37.50em; //630px;
+                    padding:4.38em 2.19em;//70px 35px;
+                    font-family:'EliceDigitalBaeum';
+                    text-align:right;
+                    border-bottom-right-radius:1.25em; //20px;
+                    background: rgb(168,39,236);
+                    background: linear-gradient(90deg, rgba(168,39,236,1) 0%, rgba(76,81,196,1) 100%);
+                    box-shadow:0.13em 0.13em 0.5em #131770;//2px 2px 8px #131770;
+                    color:#fff;
+                    font-style:italic;
+
+                    &::before{
+                        position:absolute;
+                        left:0;
+                        top:0;
+                        width:100%;
+                        height:100%;
+                        content: '';
+                        background: url('../images/paid/003/bg_visual_tit.png') no-repeat left top;
+                        opacity:.3;
+                    }
+
+                    .sub-tit{
+                        font-size:3.13em; //50px;
+                    }
+                    .tit{
+                        padding-top:0.29em;//20px;
+                        font-size:4.38em; //70px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .edu-item{
+                &__tit{
+                    padding-bottom:0.89em; //40px;
+                    text-align:left;
+                    font-size:2.81em; //45px;
+                    font-weight:700;
+                    line-height:1.3;
+                    letter-spacing:-1px;
+                }
+
+                &.info1{
+                    .edu-item__tit{
+                        padding-bottom:1.05em; //45px;
+                        text-align: center;
+                        font-family:'EliceDigitalBaeum';
+                        font-weight: 700;
+                        font-size:2.69em; //43px;
+                    }
+                    .info-list{
+                        display:flex;
+                        justify-content:center;
+
+                        &__item{
+                            margin:0 0.31em;//0 5px;
+
+                            .tit{
+                                display:inline-block;
+                                width:4.60em;//115px;
+                                padding:0.4em 0.2em;//10px 5px;
+                                font-size:1.56em; //25px;
+                                font-weight: 700;
+                                border-radius:0.4em;//10px;
+                                color:#fff;
+                                background:#4c51c4;
+                            }
+                            ul{
+                                margin-top:-1.25em; //-20px;
+                                padding:3.13em 1.88em;//50px 30px;
+                                border:solid 1px #ddd;
+                                border-radius:0.63em;//10px;
+                                background:#eaebf7;
+
+                                li{
+                                    position:relative;
+                                    padding-left:0.64em;//14px;
+                                    font-size:1.38em; //22px;
+                                    line-height:1.3;
+                                    text-align: left;
+                                    word-break: keep-all;
+
+                                    &::before{
+                                        position:absolute;
+                                        left:0;
+                                        top:0.57em;//12.54 px;
+                                        width:0.36em; //8px;
+                                        height:1px;
+                                        background:#222;
+                                        content:'';
+                                    }
+                                    & + li{
+                                        margin-top:0.91em; //20px;
+                                    }
+                                }
+                            }
+
+                            &:nth-child(2){
+                                .tit{
+                                    background-color:#494a4f;
+                                }
+                                ul{
+                                    background-color:#f1f1f1;
+                                }
+                            }
+                        }
+                    }
+                    .txt-result{
+                        padding-top:10.63em;//170px;
+                        background:url('../images/paid/003/img_arrow.png') no-repeat center top;
+                        background-size:16em; //256px;
+
+                        span{
+                            display:inline-block;
+                            position:relative;
+                            padding:0 0.2em; //0 10px;
+                            font-size:3.13em;//50px;
+                            font-weight:700;
+                            color:#4c51c4;
+                            z-index:0;
+
+                            &::after{
+                                display: block;
+                                width: 100%;
+                                height:0.54em; //27px;
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                content: '';
+                                background: #f1e0f7;
+                                 z-index: -1;
+                            }
+                        }
+                    }
+                }
+                &.info2{
+                    text-align: center;
+                    color:#fff;
+                    background: url('../images/paid/003/bg_info2.jpg') no-repeat center top;
+                    background-size:cover;
+
+                    p{
+                        font-size: 1.56em;//25px;
+                        line-height: 1.3;
+                        letter-spacing: -1px;
+                        word-break: keep-all;
+
+                        .txt-point{
+                            color:#9ba0ff;
+                        }
+                    }
+
+                    .edu-item__tit{
+                        font-family:'EliceDigitalBaeum';
+                        font-size:3.44em;//55px;
+                        text-align: center;
+                        line-height:1;
+                    }
+                }
+                &.recomme{
+                    img{
+                        width:100%;
+                    }
+                }
+                &.effect{
+                    background:#eaebf7;
+
+                    .effect-list{
+                        &__item{
+                            text-align:left;
+
+                            & + .effect-list__item{
+                                margin-top:4.38em; //70px;
+                            }
+                            
+                            .sub-tit{
+                                display:inline-block;
+                                padding:0.42em 0.83em;//10px 20px;
+                                font-size:1.50em; //24px;
+                                letter-spacing:-1px;
+                                border-radius:2.5em; //60px;
+                                color:#fff;
+                                background:#4c51c4;
+                            }
+                            .tit{
+                                padding:0.5em 0 1.33em 0; //15px 0 40px 0;
+                                font-size:1.88em; //30px;
+                                font-weight:700;
+                                letter-spacing: -1px;
+                                word-break: keep-all;
+                            }
+                            .cont{
+                                padding-top:1.3em; //30px;
+                                font-size:1.44em; //23px;
+                                line-height: 1.3;
+                                letter-spacing: -1px;
+                                word-break: keep-all;
+                            }
+                            @include ed-tablet{
+                                img{
+                                    width:100%;
+                                }
+                            }
+
+                            @include ed-mobile{
+                                img{
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    background-color:#ececec;
+                    .tutor-list{
+                        .tutor{
+                            background-image:url('../images/paid/003/img_tutor.png');
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include ed-tablet{
+        font-size:12px;
+      }
+    @include ed-mobile{
+        font-size:10px;
+    }
+}
