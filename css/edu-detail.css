@@ -1568,12 +1568,16 @@ body {
   opacity: 0.3;
 }
 .edu-detail.paid.edu003 .edu-visual .tit-wrap .sub-tit {
+  font-family: "EliceDigitalBaeum";
   font-size: 3.13em;
+  line-height: 1;
 }
 .edu-detail.paid.edu003 .edu-visual .tit-wrap .tit {
+  font-family: "EliceDigitalBaeum";
   padding-top: 0.29em;
   font-size: 4.38em;
   font-weight: 700;
+  line-height: 1;
 }
 .edu-detail.paid.edu003 .edu-item__tit {
   font-family: "GmarketSans";
