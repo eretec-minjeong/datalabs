@@ -720,6 +720,7 @@ body {
   border-top: solid 1px #ddd;
 }
 .edu-detail.paid .edu-item .curri-list__item .num {
+  font-family: "GmarketSans";
   display: inline-block;
   margin-bottom: 0.5em;
   padding: 0.25em 0.75em;
@@ -730,11 +731,14 @@ body {
   background: #222;
 }
 .edu-detail.paid .edu-item .curri-list__item .tit {
+  font-family: "GmarketSans";
   margin-bottom: 0.87em;
   font-size: 1.44em;
   font-weight: 700;
+  font-family: "GmarketSans";
 }
 .edu-detail.paid .edu-item .curri-list__item .cont li {
+  font-family: "GmarketSans";
   position: relative;
   padding-left: 0.75em;
   font-size: 1.25em;
@@ -828,6 +832,7 @@ body {
   background-size: 12.5em;
 }
 .edu-detail.paid .edu-item .tutor-list .tutor span {
+  font-family: "GmarketSans";
   font-size: 1.63em;
   font-weight: 700;
   letter-spacing: -1px;
@@ -836,6 +841,7 @@ body {
   width: 60%;
 }
 .edu-detail.paid .edu-item .tutor-list .cont ul li {
+  font-family: "GmarketSans";
   position: relative;
   padding-left: 0.75em;
   font-size: 1.38em;
@@ -1237,6 +1243,7 @@ body {
   padding-top: 0;
 }
 .edu-detail.paid.edu002 .edu-item__tit {
+  font-family: "GmarketSans";
   margin-bottom: 0.89em;
   padding-top: 2em;
   font-size: 2.81em;
@@ -1263,11 +1270,13 @@ body {
   background: #082951;
 }
 .edu-detail.paid.edu002 .edu-item.info2 p {
+  font-family: "GmarketSans";
   font-size: 1.75em;
   font-weight: 500;
   color: #fff;
 }
 .edu-detail.paid.edu002 .edu-item.info2 .edu-item__subTit {
+  font-family: "GmarketSans";
   display: inline-block;
   padding: 0.23em 1.23em;
   font-size: 1.88em;
@@ -1277,6 +1286,7 @@ body {
   background: #fff;
 }
 .edu-detail.paid.edu002 .edu-item.info2 .edu-item__tit {
+  font-family: "GmarketSans";
   margin: 0.44em 0;
   padding: 0;
   font-size: 2.81em;
@@ -1290,6 +1300,7 @@ body {
   background-size: 20.44em;
 }
 .edu-detail.paid.edu002 .edu-item.info2 .bubble-list__item {
+  font-family: "GmarketSans";
   position: relative;
   padding: 1.56em;
   text-align: left;
@@ -1337,6 +1348,7 @@ body {
   background-image: url("../images/paid/002/img_effect4.png");
 }
 .edu-detail.paid.edu002 .edu-item.effect .effect-list li span {
+  font-family: "GmarketSans";
   font-size: 1.44em;
   font-weight: 700;
   line-height: 1.3;
@@ -1372,16 +1384,19 @@ body {
   margin-top: 0.94em;
 }
 .edu-detail.paid.edu002 .edu-item.purpose .purpose-list__item .tit {
+  font-family: "GmarketSans";
   width: 30%;
   padding-right: 0.8em;
   font-size: 1.56em;
   font-weight: 700;
   text-align: left;
+  line-height: 1.3;
 }
 .edu-detail.paid.edu002 .edu-item.purpose .purpose-list__item .cont {
   width: 70%;
 }
 .edu-detail.paid.edu002 .edu-item.purpose .purpose-list__item .cont li {
+  font-family: "GmarketSans";
   padding-left: 1.13em;
   text-align: left;
   background: url("../images/paid/002/ico_arrow.png") no-repeat left 0.25em;
@@ -1424,6 +1439,7 @@ body {
   background-image: url("../images/paid/002/img_recomme3.png");
 }
 .edu-detail.paid.edu002 .edu-item.recomme .recomme-list li span {
+  font-family: "GmarketSans";
   font-size: 1.5em;
   font-weight: 500;
   word-break: keep-all;
@@ -1446,6 +1462,7 @@ body {
   background-size: cover;
 }
 .edu-detail.paid.edu002 .edu-item.marketing p {
+  font-family: "GmarketSans";
   padding-bottom: 2em;
   font-size: 1.56em;
   line-height: 1.3;
