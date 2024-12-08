@@ -306,6 +306,9 @@ body {
 .edu-detail fieldset, .edu-detail img {
   border: none;
 }
+.edu-detail img {
+  max-width: 100%;
+}
 .edu-detail.free {
   font-family: "S-CoreDream";
   font-weight: 400;
@@ -510,6 +513,7 @@ body {
   margin-top: 0.56em;
 }
 .edu-detail.free .edu-item .agenda-list__label {
+  font-family: "S-CoreDream";
   position: absolute;
   right: -1.5em;
   top: -1.5em;
@@ -1006,6 +1010,7 @@ body {
   background-size: cover;
 }
 .edu-detail.paid.edu001 .edu-visual__subTit {
+  line-height: 1;
   font-family: "GmarketSans";
   display: inline-block;
   margin-bottom: 0.67em;
@@ -1238,6 +1243,7 @@ body {
 }
 .edu-detail.paid.edu002 .edu-visual__subTit {
   display: inline-block;
+  line-height: 1;
   margin-bottom: 0.63em;
   padding: 0.25em 0.75em;
   font-family: "EliceDigitalBaeum";
@@ -1346,6 +1352,9 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: wrap;
+}
+.edu-detail.paid.edu002 .edu-item.effect .effect-list img {
+  width: 50%;
 }
 .edu-detail.paid.edu002 .edu-item.effect .effect-list li {
   width: 33.333%;
@@ -1473,6 +1482,9 @@ body {
   background: url("../images/paid/002/bg_marketing.png") no-repeat center top;
   background-size: cover;
 }
+.edu-detail.paid.edu002 .edu-item.marketing img {
+  width: 100%;
+}
 .edu-detail.paid.edu002 .edu-item.marketing p {
   font-family: "GmarketSans";
   padding-bottom: 2em;
@@ -1504,16 +1516,6 @@ body {
 .edu-detail.paid.edu002 .edu-item.marketing .marketing-list li:last-child::after {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .edu-detail.paid.edu002 .edu-item.marketing .marketing-list li img {
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .edu-detail.paid.edu002 .edu-item.marketing .marketing-list li img {
-    width: 100%;
-  }
-}
 .edu-detail.paid.edu002 .edu-item.tutor .tutor-list .tutor {
   background-image: url("../images/paid/002/img_tutor.png");
 }
@@ -1537,7 +1539,7 @@ body {
 }
 .edu-detail.paid.edu003 .edu-visual .tit-wrap {
   position: relative;
-  width: 37.5em;
+  max-width: 37.5em;
   padding: 4.38em 2.19em;
   font-family: "EliceDigitalBaeum";
   text-align: right;
