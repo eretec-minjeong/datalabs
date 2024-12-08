@@ -378,6 +378,7 @@ body {
   font-size: 2.5em;
 }
 .edu-detail.free .edu-item .session-list li p {
+  font-family: "S-CoreDream";
   font-size: 1.56em;
   line-height: 1.5;
   letter-spacing: -1px;
@@ -449,10 +450,12 @@ body {
   }
 }
 .edu-detail.free .edu-item .session-list .module-list__tit {
+  font-family: "S-CoreDream";
   font-size: 1.56em;
   font-weight: 600;
 }
 .edu-detail.free .edu-item .session-list .module-list__cont {
+  font-family: "S-CoreDream";
   font-size: 1.25em;
 }
 .edu-detail.free .edu-item .agenda-list__item {
@@ -465,6 +468,7 @@ body {
   margin-top: 10px;
 }
 .edu-detail.free .edu-item .agenda-list__tit {
+  font-family: "S-CoreDream";
   display: flex;
   font-weight: 500;
   padding: 1.25em 2.19em;
@@ -537,6 +541,7 @@ body {
   margin-top: 1.88em;
 }
 .edu-detail.free .edu-item .tutor-list p {
+  font-family: "S-CoreDream";
   width: 100%;
   font-size: 1.88em;
   line-height: 1.5;
