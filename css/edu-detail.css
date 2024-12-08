@@ -171,21 +171,28 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local("sbAgro"), url("../fonts/sbAgro/SB_L.eot?#iefix") format("embedded-opentype"), url("../fonts/sbAgro/SB_L.woff") format("woff"), url("../fonts/sbAgro/SB_L.ttf") format("truetype");
+  src: local("sbAgro"), url("../fonts/sbAgro/SB_L.eot?#iefix") format("embedded-opentype"), url("../fonts/sbAgro/SB_L.woff2") format("woff2"), url("../fonts/sbAgro/SB_L.woff") format("woff"), url("../fonts/sbAgro/SB_L.ttf") format("truetype");
 }
 @font-face {
   font-family: "sbAgro";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local("sbAgro"), url("../fonts/sbAgro/SB_M.eot?#iefix") format("embedded-opentype"), url("../fonts/sbAgro/SB_M.woff") format("woff"), url("../fonts/sbAgro/SB_M.ttf") format("truetype");
+  src: local("sbAgro"), url("../fonts/sbAgro/SB_M.eot?#iefix") format("embedded-opentype"), url("../fonts/sbAgro/SB_M.woff2") format("woff2"), url("../fonts/sbAgro/SB_M.woff") format("woff"), url("../fonts/sbAgro/SB_M.ttf") format("truetype");
 }
 @font-face {
   font-family: "sbAgro";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("sbAgro"), url("../fonts/sbAgro/SB_B.eot?#iefix") format("embedded-opentype"), url("../fonts/sbAgro/SB_B.woff") format("woff"), url("../fonts/sbAgro/SB_B.ttf") format("truetype");
+  src: local("sbAgro"), url("../fonts/sbAgro/SB_B.eot?#iefix") format("embedded-opentype"), url("../fonts/sbAgro/SB_B.woff2") format("woff2"), url("../fonts/sbAgro/SB_B.woff") format("woff"), url("../fonts/sbAgro/SB_B.ttf") format("truetype");
+}
+/* 창원 단감 아삭 */
+@font-face {
+  font-family: "changwon";
+  font-style: normal;
+  font-display: swap;
+  src: local("changwon"), url("../fonts/changwon/ChangwonDangamAsac-Bold_0712.eot?#iefix") format("embedded-opentype"), url("../fonts/changwon/ChangwonDangamAsac-Bold_0712.woff2") format("woff2"), url("../fonts/changwon/ChangwonDangamAsac-Bold_0712.woff") format("woff"), url("../fonts/changwon/ChangwonDangamAsac-Bold_0712.ttf") format("truetype");
 }
 /* ---------------------------------------------------------------------------------------
     01. varables
@@ -314,6 +321,7 @@ body {
   background-size: cover;
 }
 .edu-detail.free .edu-visual__label {
+  font-family: "S-CoreDream";
   position: absolute;
   left: 1.17em;
   top: 1em;
@@ -3577,6 +3585,317 @@ body {
 .edu-detail.paid.qbd.edu009 .edu-item.keyword {
   background: #362eed;
 }
+.edu-detail.paid.edu010 {
+  font-family: "pretendard";
+  font-weight: 400;
+  text-align: left;
+}
+.edu-detail.paid.edu010 .col-primary {
+  color: #1b4be1;
+}
+.edu-detail.paid.edu010 .col-secondary {
+  color: #ffd800;
+}
+.edu-detail.paid.edu010 .col-third {
+  color: #13349b !important;
+}
+.edu-detail.paid.edu010 .edu-visual {
+  position: relative;
+  height: 37.5em;
+  background: url("../images/paid/010/bg_visual.png") no-repeat center bottom;
+}
+.edu-detail.paid.edu010 .edu-visual .tit-box {
+  height: 37.5em;
+  padding: 7.5em 2.5em 0;
+  background: url("../images/paid/010/bg_visualTxt.png") no-repeat center top;
+  background-size: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: "changwon";
+}
+.edu-detail.paid.edu010 .edu-visual .tit-box p {
+  line-height: 1.3;
+}
+.edu-detail.paid.edu010 .edu-visual .tit-box p:nth-child(1) {
+  font-size: 7.5em;
+}
+.edu-detail.paid.edu010 .edu-visual .tit-box p:nth-child(2) {
+  font-size: 7.19em;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu010 .edu-visual .tit-box p:nth-child(1) {
+    font-size: 5.5em;
+  }
+  .edu-detail.paid.edu010 .edu-visual .tit-box p:nth-child(2) {
+    font-size: 5.19em;
+  }
+}
+.edu-detail.paid.edu010 .edu-visual .logo-wrap {
+  position: absolute;
+  right: 2.5em;
+  bottom: 2.5em;
+}
+.edu-detail.paid.edu010 .edu-visual .logo-wrap img:nth-child(2) {
+  margin-left: 1.88em;
+}
+.edu-detail.paid.edu010 .edu-item {
+  padding: 3.75em 2.5em;
+}
+.edu-detail.paid.edu010 .edu-item__tit {
+  display: inline-block;
+  width: 6.29em;
+  margin: 0 0 1.14em -1.14em;
+  padding: 0.49em 0;
+  font-family: "sbAgro";
+  font-weight: 700;
+  font-size: 2.19em;
+  letter-spacing: -2px;
+  text-align: center;
+  color: #fff;
+  background: #1b1d28;
+  border-top-right-radius: 1.71em;
+  border-bottom-right-radius: 1.71em;
+}
+.edu-detail.paid.edu010 .edu-item.info {
+  padding: 6.25em 2.5em 8.75em;
+  text-align: center;
+  background: #1b4be1 url("../images/paid/010/bg_info.png") no-repeat center bottom;
+  color: #fff;
+}
+.edu-detail.paid.edu010 .edu-item.info .tit-box {
+  padding: 0 0 1em 0;
+  font-family: "sbAgro";
+  font-size: 2.81em;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  word-break: keep-all;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu010 .edu-item.info .tit-box br {
+    display: none;
+  }
+}
+.edu-detail.paid.edu010 .edu-item.info .txt {
+  font-size: 1.63em;
+  line-height: 1.3;
+  letter-spacing: -2px;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box {
+  position: relative;
+  margin-top: 5em;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__tit {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0 0 20em 4.69em;
+  text-align: left;
+  background: url("../images/paid/010/img_info1.png") no-repeat left bottom;
+  background-size: 9.13em;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__tit p {
+  position: relative;
+  display: inline-block;
+  padding: 1.88em 3.75em;
+  background: #ffd800;
+  border-radius: 3.75em;
+  transform: rotate(-10deg);
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__tit p::before {
+  border-top: 1.56em solid #ffd800;
+  border-left: 0px solid transparent;
+  border-right: 1.56em solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -1.56em;
+  left: 3.13em;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__tit p::after {
+  content: "";
+  position: absolute;
+  left: -1.88em;
+  top: -3.75em;
+  width: 3.94em;
+  height: 3.81em;
+  background: url("../images/paid/010/ico_blink1.png") no-repeat left top;
+  background-size: 100%;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__tit p > span {
+  display: inline-block;
+  font-family: "sbAgro";
+  font-size: 2.19em;
+  font-weight: 700;
+  color: #222;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu010 .edu-item.info .info-box__tit {
+    position: relative;
+    padding-left: 0;
+  }
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list {
+  padding: 11.25em 0 5.63em 0;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li {
+  text-align: right;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li + li {
+  margin-top: 2.5em;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li p {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border-radius: 3.75em;
+  padding: 1.25em 3.75em;
+  transform: rotate(-10deg);
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li p::before {
+  border-top: 1.56em solid #fff;
+  border-left: 0px solid transparent;
+  border-right: 1.56em solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -1.56em;
+  right: 3.13em;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li p::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -5.63em;
+  width: 4.88em;
+  height: 4.38em;
+  background: url("../images/paid/010/ico_blink2.png") no-repeat left top;
+  background-size: 100%;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li p span {
+  display: inline-block;
+  text-align: center;
+  font-size: 1.56em;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  color: #222;
+}
+.edu-detail.paid.edu010 .edu-item.info .info-box__list li:nth-child(2) p::after {
+  background-image: url("../images/paid/010/ico_blink3.png");
+  right: auto;
+  top: -1.88em;
+  left: -3.13em;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu010 .edu-item.info .info-box__list {
+    padding-top: 0;
+  }
+}
+.edu-detail.paid.edu010 .edu-item.feature {
+  padding: 5.63em 2.5em;
+  text-align: center;
+  background: #e9eef2;
+}
+.edu-detail.paid.edu010 .edu-item.feature .tit-box {
+  padding: 0 0 1em 0;
+  font-family: "sbAgro";
+  font-size: 2.81em;
+  font-weight: 300;
+  line-height: 1.3;
+  letter-spacing: -2px;
+  word-break: keep-all;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu010 .edu-item.feature .tit-box br {
+    display: none;
+  }
+}
+.edu-detail.paid.edu010 .edu-item.feature .txt {
+  font-size: 1.63em;
+  line-height: 1.3;
+  letter-spacing: -2px;
+}
+.edu-detail.paid.edu010 .edu-item.feature .txt-big {
+  padding: 2.67em 0 1.67em 0;
+  font-size: 1.88em;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -2px;
+}
+.edu-detail.paid.edu010 .edu-item.feature .feature-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.edu-detail.paid.edu010 .edu-item.feature .feature-list__item {
+  position: relative;
+  width: calc(50% - 50px);
+  min-height: 130px;
+  margin: 0 0 20px 0;
+  padding: 35px;
+  border: solid 6px #ddd;
+  border-radius: 30px;
+  background: #fff;
+}
+.edu-detail.paid.edu010 .edu-item.feature .feature-list__item:nth-child(odd) {
+  margin-right: 50px;
+}
+.edu-detail.paid.edu010 .edu-item.feature .feature-list__item:nth-child(odd)::after {
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  width: 31px;
+  height: 28px;
+  margin-top: -14px;
+  background: url("../images/paid/010/ico_arrow.png") no-repeat left top;
+  background-size: 100%;
+  content: "";
+}
+.edu-detail.paid.edu010 .edu-item.feature .feature-list__item:nth-child(even) {
+  margin-left: 50px;
+  border-color: #1b4be1;
+}
+.edu-detail.paid.edu010 .edu-item.feature .feature-list__item p {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -2px;
+}
+.edu-detail.paid.edu010 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.edu-detail.paid.edu010 .edu-item.recomme .recomme-list li {
+  width: 33.333%;
+  padding: 12.81em 1.25em 0;
+  text-align: center;
+  background: url("../images/paid/010/img_recomme1.png") no-repeat center top;
+  background-size: 11.25em;
+}
+.edu-detail.paid.edu010 .edu-item.recomme .recomme-list li span {
+  font-size: 1.63em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu010 .edu-item.recomme .recomme-list li:nth-child(2) {
+  background-image: url("../images/paid/010/img_recomme2.png");
+}
+.edu-detail.paid.edu010 .edu-item.recomme .recomme-list li:nth-child(3) {
+  background-image: url("../images/paid/010/img_recomme3.png");
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu010 .edu-item.recomme .recomme-list li {
+    width: 100%;
+  }
+  .edu-detail.paid.edu010 .edu-item.recomme .recomme-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu010 .edu-item.tutor .tutor-list__type3 .tutor {
+  background-image: url("../images/paid/010/img_tutor.png");
+}
 .edu-detail.paid.edu014 {
   font-family: "pretendard";
   font-weight: 400;
@@ -3630,7 +3949,7 @@ body {
   display: inline-block;
   width: 6.29em;
   margin: 0 0 1.14em -1.14em;
-  padding: 17px 0;
+  padding: 0.49em 0;
   font-family: "sbAgro";
   font-weight: 700;
   font-size: 2.19em;
