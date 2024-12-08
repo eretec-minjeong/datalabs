@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------------------------------------
+    00. Fonts
+--------------------------------------------------------------------------------------- */
+
+/* gmarket Sans */
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight:300;
+    font-display: swap;
+    src:local('GmarketSans'),
+       url('../fonts/g-sans/GmarketSansTTFLight.woff2') format('woff2'),
+       url('../fonts/g-sans/GmarketSansTTFLight.woff') format('woff'),
+       url('../fonts/g-sans/GmarketSansTTFLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight:500;
+    font-display: swap;
+    src:local('GmarketSans'),
+       url('../fonts/g-sans/GmarketSansTTFMedium.woff2') format('woff2'),
+       url('../fonts/g-sans/GmarketSansTTFMedium.woff') format('woff'),
+       url('../fonts/g-sans/GmarketSansTTFMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'GmarketSans';
+    font-style: normal;
+    font-weight:700;
+    font-display: swap;
+    src:local('GmarketSans'),
+       url('../fonts/g-sans/GmarketSansTTFBold.woff2') format('woff2'),
+       url('../fonts/g-sans/GmarketSansTTFBold.woff') format('woff'),
+       url('../fonts/g-sans/GmarketSansTTFBold.ttf') format('truetype');
+}
+/* cafe24 */
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    font-style: normal;
+    font-display: swap;
+    src:local('Cafe24Ohsquare'),
+       url('../fonts/cafe24/Cafe24Ohsquare.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/cafe24/Cafe24Ohsquare.woff2') format('woff2'),
+       url('../fonts/cafe24/Cafe24Ohsquare.woff') format('woff'),
+       url('../fonts/cafe24/Cafe24Ohsquare.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'Cafe24Ohsquareair';
+    font-style: normal;
+    font-display: swap;
+    src:local('Cafe24Ohsquareair'),
+       url('../fonts/cafe24/Cafe24Ohsquareair.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/cafe24/Cafe24Ohsquareair.woff2') format('woff2'),
+       url('../fonts/cafe24/Cafe24Ohsquareair.woff') format('woff'),
+       url('../fonts/cafe24/Cafe24Ohsquareair.ttf') format('truetype');
+ }
+
+/* 엘리스 디지털배움 */
+@font-face {
+    font-family: 'EliceDigitalBaeum';
+    font-style: normal;
+    font-weight:400;
+    font-display: swap;
+    src:local('EliceDigitalBaeum'),
+       url('../fonts/elice/EliceDigitalBaeum_Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/elice/EliceDigitalBaeum_Regular.woff2') format('woff2'),
+       url('../fonts/elice/EliceDigitalBaeum_Regular.woff') format('woff'),
+       url('../fonts/elice/EliceDigitalBaeum_Regular.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'EliceDigitalBaeum';
+    font-style: normal;
+    font-weight:700;
+    font-display: swap;
+    src:local('EliceDigitalBaeum'),
+       url('../fonts/elice/EliceDigitalBaeum_Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/elice/EliceDigitalBaeum_Bold.woff2') format('woff2'),
+       url('../fonts/elice/EliceDigitalBaeum_Bold.woff') format('woff'),
+       url('../fonts/elice/EliceDigitalBaeum_Bold.ttf') format('truetype');
+ }
+/* 에스코어 드림 */
+@font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:100;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream1-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream1-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream1-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream1-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:200;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream2-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream2-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream2-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream2-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:300;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream3-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream3-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream3-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream3-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:400;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream4-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream4-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream4-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream4-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:500;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream5-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream5-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream5-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream5-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:600;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream6-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream6-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream6-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream6-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:700;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream7-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream7-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream7-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream7-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:800;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream8-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream8-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream8-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream8-webfont.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'S-CoreDream';
+    font-style: normal;
+    font-weight:900;
+    font-display: swap;
+    src:local('S-CoreDream'),
+       url('../fonts/s-core/scdream9-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/s-core/scdream9-webfont.woff2') format('woff2'),
+       url('../fonts/s-core/scdream9-webfont.woff') format('woff'),
+       url('../fonts/s-core/scdream9-webfont.ttf') format('truetype');
+ }
+
+/* blackHanSans */
+@font-face {
+    font-family: 'blackHanSans';
+    font-style: normal;
+    font-display: swap;
+    src:local('blackHanSans'),
+       url('../fonts/blackHanSans/BlackHanSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/blackHanSans/BlackHanSans-Regular.woff2') format('woff2'),
+       url('../fonts/blackHanSans/BlackHanSans-Regular.woff') format('woff'),
+       url('../fonts/blackHanSans/BlackHanSans-Regular.ttf') format('truetype');
+ }
+
+ /* Pretendard */
+ @font-face {
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight:300;
+    font-display: swap;
+    src:local('pretendard'),
+       url('../fonts/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pretendard/Pretendard-Light.woff') format('woff'),
+       url('../fonts/pretendard/Pretendard-Light.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight:400;
+    font-display: swap;
+    src:local('pretendard'),
+       url('../fonts/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pretendard/Pretendard-Regular.woff') format('woff'),
+       url('../fonts/pretendard/Pretendard-Regular.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight:500;
+    font-display: swap;
+    src:local('pretendard'),
+       url('../fonts/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pretendard/Pretendard-Medium.woff') format('woff'),
+       url('../fonts/pretendard/Pretendard-Medium.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight:600;
+    font-display: swap;
+    src:local('pretendard'),
+       url('../fonts/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pretendard/Pretendard-SemiBold.woff') format('woff'),
+       url('../fonts/pretendard/Pretendard-SemiBold.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'pretendard';
+    font-style: normal;
+    font-weight:700;
+    font-display: swap;
+    src:local('pretendard'),
+       url('../fonts/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/pretendard/Pretendard-Bold.woff') format('woff'),
+       url('../fonts/pretendard/Pretendard-Bold.ttf') format('truetype');
+ }
+
+/* SB Agro */
+@font-face {
+    font-family: 'sbAgro';
+    font-style: normal;
+    font-weight:300;
+    font-display: swap;
+    src:local('sbAgro'),
+       url('../fonts/sbAgro/SB_L.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sbAgro/SB_L.woff2') format('woff2'),
+       url('../fonts/sbAgro/SB_L.woff') format('woff'),
+       url('../fonts/sbAgro/SB_L.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'sbAgro';
+    font-style: normal;
+    font-weight:500;
+    font-display: swap;
+    src:local('sbAgro'),
+       url('../fonts/sbAgro/SB_M.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/sbAgro/SB_M.woff2') format('woff2'),
+       url('../fonts/sbAgro/SB_M.woff') format('woff'),
+       url('../fonts/sbAgro/SB_M.ttf') format('truetype');
+ }
+ @font-face {
+    font-family: 'sbAgro';
+    font-style: normal;
+    font-weight:700;
+    font-display: swap;
+    src:local('sbAgro'),
+       url('../fonts/sbAgro/SB_B.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/sbAgro/SB_B.woff2') format('woff2'),
+       url('../fonts/sbAgro/SB_B.woff') format('woff'),
+       url('../fonts/sbAgro/SB_B.ttf') format('truetype');
+ }
+
+/* ---------------------------------------------------------------------------------------
+    01. varables
+--------------------------------------------------------------------------------------- */
+$color-free-primary:#0065ee;
+$color-free-secondary:#0040b6;
+$color-free-third:#e1efff;
+$color-free-pale:#e6edff;
+$color-edu-black: #000;
+
+/* ---------------------------------------------------------------------------------------
+    02. mixin 
+--------------------------------------------------------------------------------------- */
+@mixin ed-mobile{
+    @media (max-width: 767px){ 
+      @content;
+    }
+  }
+  
+  @mixin ed-tablet{
+    @media (min-width: 768px) and (max-width: 1023px){
+      @content;
+    }
+  }
