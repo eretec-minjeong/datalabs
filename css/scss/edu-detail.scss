@@ -122,6 +122,7 @@ body{
             background:url('../images/free/bg_edu_free.png') no-repeat center;
             background-size:cover;
             &__label{
+                font-family:'S-CoreDream';
                 position:absolute;
                 left:1.17em;
                 top:1em;
@@ -3822,6 +3823,359 @@ body{
                 }
             }
         }
+        //edu010 : Python 기초통계
+        &.edu010{
+            font-family:'pretendard';
+            font-weight:400;
+            text-align:left;
+
+            .col-primary{
+                color:#1b4be1;
+            }
+            .col-secondary{
+                color:#ffd800;
+            }
+            .col-third{
+                color:#13349b !important;
+            }
+
+            .edu-visual{
+                position:relative;
+                height:37.5em; //600px;
+                background:url('../images/paid/010/bg_visual.png') no-repeat center bottom;
+
+                .tit-box{
+                    height:37.5em; //600px;
+                    padding:7.5em 2.5em 0; //120px 40px 0;
+                    background:url('../images/paid/010/bg_visualTxt.png') no-repeat center top;
+                    background-size:100%;
+                    text-align:center;
+                    color:#fff;
+                    font-family:'changwon';
+
+                    p{
+                        line-height:1.3;
+
+                        &:nth-child(1){
+                            font-size:7.5em; //120px;
+                        }
+                        &:nth-child(2){
+                            font-size:7.19em; //115px;
+                        }
+
+                        @include ed-mobile{
+                            &:nth-child(1){
+                                font-size:5.5em; 
+                            }
+                            &:nth-child(2){
+                                font-size:5.19em;
+                            }
+                        }
+                    }
+                }
+
+                .logo-wrap{
+                    position:absolute;
+                    right:2.5em; //40px;
+                    bottom:2.5em; //40px;
+
+                    img:nth-child(2){
+                        margin-left:1.88em; //30px;
+                    }
+                }
+            }
+            
+            .edu-item{
+                padding:3.75em 2.50em;//60px 40px;
+
+                &__tit{
+                    display:inline-block;
+                    width:6.29em; //220px;
+                    margin:0 0 1.14em -1.14em; //0 0 40px -40px;
+                    padding:0.49em 0; //17px 0;
+                    font-family:'sbAgro';
+                    font-weight:700;
+                    font-size:2.19em; //35px;
+                    letter-spacing:-2px;
+                    text-align:center;
+                    color:#fff;
+                    background:#1b1d28;
+                    border-top-right-radius:1.71em; //60px;
+                    border-bottom-right-radius:1.71em; //60px;
+                }
+
+                &.info{
+                    padding:6.25em 2.5em 8.75em; //100px 40px 140px;
+                    text-align:center;
+                    background:#1b4be1 url('../images/paid/010/bg_info.png') no-repeat center bottom;
+                    color:#fff;
+
+                    .tit-box{
+                        padding:0 0 1em 0; //0 0 45px 0;
+                        font-family:'sbAgro';
+                        font-size:2.81em; //45px;
+                        font-weight:300;
+                        line-height:1.3;
+                        letter-spacing:-2px;
+                        word-break:keep-all;
+
+                        @include ed-mobile{
+                            br{
+                                display:none;
+                            }
+                        }
+                    }
+                    .txt{
+                        font-size:1.63em; //26px;
+                        line-height:1.3;
+                        letter-spacing:-2px;
+                    }
+                    .info-box{
+                        position:relative;
+                        margin-top:5em; //80px;
+
+                        &__tit{
+                            position:absolute;
+                            left:0; 
+                            top:0;
+                            padding:0 0 20em 4.69em; //0 0 320px 75px;
+                            text-align:left;
+                            background:url('../images/paid/010/img_info1.png') no-repeat left bottom;
+                            background-size:9.13em; //146px;
+
+                            p{
+                                position:relative;
+                                display:inline-block;
+                                padding:1.88em 3.75em; //30px 60px;
+                                background:#ffd800;
+                                border-radius:3.75em; //60px;
+                                transform:rotate(-10deg);
+
+                                &::before{
+                                    border-top: 1.56em solid #ffd800; //25px solid #ffd800;
+                                    border-left: 0px solid transparent;
+                                    border-right: 1.56em solid transparent;//25px solid transparent;
+                                    border-bottom: 0px solid transparent;
+                                    content: "";
+                                    position: absolute;
+                                    bottom: -1.56em; //-25px;
+                                    left: 3.13em; //50px;
+                                }
+                                &::after{
+                                    content:'';
+                                    position:absolute;
+                                    left:-1.88em; //-30px;
+                                    top:-3.75em; //-60px;
+                                    width:3.94em; //63px;
+                                    height:3.81em; //61px;
+                                    background:url('../images/paid/010/ico_blink1.png') no-repeat left top;
+                                    background-size:100%;
+                                }
+
+                                & > span{
+                                    display:inline-block;
+                                    font-family:'sbAgro';
+                                    font-size:2.19em; //35px;
+                                    font-weight:700;
+                                    color:#222;
+                                }
+                            }
+
+                            @include ed-mobile{
+                                position:relative;
+                                padding-left:0;
+                            }
+                        }
+                        &__list{
+                            padding:11.25em 0 5.63em 0; //180px 0 90px 0;
+
+                            li{
+                                text-align:right;
+
+                                & + li{
+                                    margin-top:2.5em; //40px;
+                                }
+
+                                p{
+                                    position: relative;
+                                    display:inline-block;
+                                    background:#fff;
+                                    border-radius:3.75em; //60px;
+                                    padding:1.25em 3.75em; //20px 60px;
+                                    transform:rotate(-10deg);
+
+                                    &::before{
+                                        border-top: 1.56em solid #fff; //25px solid #fff;
+                                        border-left: 0px solid transparent;
+                                        border-right: 1.56em solid transparent;//25px solid transparent;
+                                        border-bottom: 0px solid transparent;
+                                        content: "";
+                                        position: absolute;
+                                        bottom: -1.56em; //-25px;
+                                        right: 3.13em; //50px;
+                                    }
+
+                                    &::after{
+                                        content:'';
+                                        position:absolute;
+                                        right:0;
+                                        top:-5.63em; //-90px;
+                                        width:4.88em; //78px;
+                                        height:4.38em; //70px;
+                                        background:url('../images/paid/010/ico_blink2.png') no-repeat left top;
+                                        background-size:100%;
+                                    }
+
+                                    span{
+                                        display:inline-block;
+                                        text-align:center;
+                                        font-size:1.56em; //25px;
+                                        line-height:1.3;
+                                        letter-spacing:-2px;
+                                        color:#222;
+                                    }
+                                } 
+                                
+                                &:nth-child(2){
+                                    p{
+                                        &::after{
+                                            background-image:url('../images/paid/010/ico_blink3.png');
+                                            right:auto;
+                                            top:-1.88em; //-30px;
+                                            left:-3.13em; //-50px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            @include ed-mobile{
+                                padding-top:0;
+                            }
+                        }
+                    }
+                }
+                &.feature{
+                    padding:5.63em 2.5em; //90px 40px;
+                    text-align:center;
+                    background:#e9eef2;
+
+                    .tit-box{
+                        padding:0 0 1em 0; //0 0 45px 0;
+                        font-family:'sbAgro';
+                        font-size:2.81em; //45px;
+                        font-weight:300;
+                        line-height:1.3;
+                        letter-spacing:-2px;
+                        word-break:keep-all;
+
+                        @include ed-mobile{
+                            br{
+                                display:none;
+                            }
+                        }
+                    }
+                    .txt{
+                        font-size:1.63em; //26px;
+                        line-height:1.3;
+                        letter-spacing:-2px;
+                    }
+                    .txt-big{
+                        padding:2.67em 0 1.67em 0;//80px 0 50px 0;
+                        font-size:1.88em; //30px;
+                        font-weight:600;
+                        line-height:1.5;
+                        letter-spacing:-2px;
+                    }
+                    .feature-list{
+                        display:flex;
+                        justify-content:center;
+                        flex-flow:wrap;
+
+                        &__item{
+                            position: relative;
+                            width:calc(50% - 50px);
+                            min-height:130px;
+                            margin:0 0 20px 0;
+                            padding:35px;
+                            border:solid 6px #ddd;
+                            border-radius:30px;
+                            background:#fff;
+
+                            &:nth-child(odd){
+                                margin-right:50px;
+
+                                &::after{
+                                    position:absolute;
+                                    right:-70px;
+                                    top:50%;
+                                    width:31px;
+                                    height:28px;
+                                    margin-top:-14px;
+                                    background:url('../images/paid/010/ico_arrow.png') no-repeat left top;
+                                    background-size:100%;
+                                    content:'';
+                                }
+                            }
+                            &:nth-child(even){
+                                margin-left:50px;
+
+                                border-color:#1b4be1;
+                            }
+
+                            p{
+                                font-size:30px;
+                                font-weight:600;
+                                line-height:1.3;
+                                letter-spacing:-2px;
+                            }
+                        }
+                    }
+                }
+                &.recomme{
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        justify-content:center;
+                        
+                        li{
+                            width:33.333%;
+                            padding:12.81em 1.25em 0; //205px 20px 0;
+                            text-align:center;
+                            background:url('../images/paid/010/img_recomme1.png') no-repeat center top;
+                            background-size:11.25em; //180px;
+
+                            span{
+                                font-size:1.63em; //26px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+                            &:nth-child(2){
+                                background-image:url('../images/paid/010/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/010/img_recomme3.png');
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    .tutor-list__type3{
+                        .tutor{
+                            background-image:url('../images/paid/010/img_tutor.png');
+                        }
+                    }
+                }
+            }
+        }
 
         //edu014 : R 기초통계
         &.edu014{
@@ -3881,7 +4235,7 @@ body{
                     display:inline-block;
                     width:6.29em; //220px;
                     margin:0 0 1.14em -1.14em; //0 0 40px -40px;
-                    padding:17px 0;
+                    padding:0.49em 0; //17px 0;
                     font-family:'sbAgro';
                     font-weight:700;
                     font-size:2.19em; //35px;
