@@ -1001,6 +1001,7 @@ body {
   background-size: cover;
 }
 .edu-detail.paid.edu001 .edu-visual__subTit {
+  font-family: "GmarketSans";
   display: inline-block;
   margin-bottom: 0.67em;
   padding: 0.33em 0.67em;
@@ -1014,8 +1015,10 @@ body {
   color: #00beba;
 }
 .edu-detail.paid.edu001 .edu-visual__tit {
+  font-family: "GmarketSans";
   font-size: 6.25em;
   font-weight: 700;
+  line-height: 1;
   font-style: italic;
   text-shadow: 5px 5px 5px #00acaf;
   color: #fff;
@@ -1024,10 +1027,12 @@ body {
   padding-top: 0;
 }
 .edu-detail.paid.edu001 .edu-item__tit {
+  font-family: "GmarketSans";
   margin-bottom: 1.33em;
   padding-top: 1.78em;
   font-size: 2.81em;
   font-weight: 700;
+  line-height: 1;
   letter-spacing: -1;
   background: url("../images/paid/001/img_tit.png") no-repeat center top;
   background-size: 1.78em;
@@ -1043,6 +1048,7 @@ body {
   background: none;
 }
 .edu-detail.paid.edu001 .edu-item.info p {
+  font-family: "GmarketSans";
   font-size: 1.56em;
   line-height: 1.3;
   letter-spacing: -1px;
@@ -1061,6 +1067,7 @@ body {
   text-align: left;
 }
 .edu-detail.paid.edu001 .edu-item.feature .feature-list__item .tit {
+  font-family: "GmarketSans";
   padding-bottom: 0.63em;
   margin-bottom: 1.25em;
   border-bottom: solid 2px #00beba;
@@ -1077,6 +1084,7 @@ body {
   color: #d4d4d4;
 }
 .edu-detail.paid.edu001 .edu-item.feature .feature-list__item p {
+  font-family: "GmarketSans";
   position: relative;
   padding-left: 0.7em;
   font-size: 1.44em;
@@ -1131,6 +1139,7 @@ body {
   background-size: 6.25em;
 }
 .edu-detail.paid.edu001 .edu-item.recomme .recomme-list li span {
+  font-family: "GmarketSans";
   font-size: 1.63em;
   font-weight: 700;
   word-break: keep-all;
@@ -1154,6 +1163,7 @@ body {
   color: #fff;
 }
 .edu-detail.paid.edu001 .edu-item.purpose p {
+  font-family: "GmarketSans";
   font-size: 1.38em;
   line-height: 1.5;
 }
@@ -1174,6 +1184,7 @@ body {
   padding-top: 8em;
   background: url("../images/paid/001/img_purpose1.png") no-repeat center top;
   background-size: 11.25em;
+  font-family: "GmarketSans";
 }
 .edu-detail.paid.edu001 .edu-item.purpose .purpose-list li span {
   position: relative;
