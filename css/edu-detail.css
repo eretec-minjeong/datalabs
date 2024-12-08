@@ -1246,6 +1246,7 @@ body {
   font-family: "EliceDigitalBaeum";
   font-size: 5em;
   font-weight: 700;
+  line-height: 1;
   font-style: italic;
   color: #fff;
   text-shadow: 0.05em 0.05em 0.03em #537efd;
@@ -1259,6 +1260,7 @@ body {
   padding-top: 2em;
   font-size: 2.81em;
   font-weight: 700;
+  line-height: 1.3;
   background: url("../images/paid/002/img_tit.png") no-repeat center top;
   background-size: 1.33em;
 }
@@ -1266,15 +1268,8 @@ body {
   padding: 3.75em 2.19em;
   background: #103c73;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .edu-detail.paid.edu002 .edu-item.info1 img {
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .edu-detail.paid.edu002 .edu-item.info1 img {
-    width: 100%;
-  }
+.edu-detail.paid.edu002 .edu-item.info1 img {
+  width: 100%;
 }
 .edu-detail.paid.edu002 .edu-item.info2 {
   padding: 5em 2.19em 0;
@@ -1301,6 +1296,7 @@ body {
   margin: 0.44em 0;
   padding: 0;
   font-size: 2.81em;
+  line-height: 1;
   font-weight: 300;
   background: none;
 }
@@ -1566,6 +1562,8 @@ body {
   font-weight: 700;
 }
 .edu-detail.paid.edu003 .edu-item__tit {
+  font-family: "GmarketSans";
+  line-height: 1.3;
   padding-bottom: 0.89em;
   text-align: left;
   font-size: 2.81em;
@@ -1588,6 +1586,7 @@ body {
   margin: 0 0.31em;
 }
 .edu-detail.paid.edu003 .edu-item.info1 .info-list__item .tit {
+  font-family: "GmarketSans";
   display: inline-block;
   width: 4.6em;
   padding: 0.4em 0.2em;
@@ -1608,6 +1607,7 @@ body {
   position: relative;
   padding-left: 0.64em;
   font-size: 1.38em;
+  font-family: "GmarketSans";
   line-height: 1.3;
   text-align: left;
   word-break: keep-all;
@@ -1636,6 +1636,7 @@ body {
   background-size: 16em;
 }
 .edu-detail.paid.edu003 .edu-item.info1 .txt-result span {
+  font-family: "GmarketSans";
   display: inline-block;
   position: relative;
   padding: 0 0.2em;
@@ -1662,6 +1663,7 @@ body {
   background-size: cover;
 }
 .edu-detail.paid.edu003 .edu-item.info2 p {
+  font-family: "GmarketSans";
   font-size: 1.56em;
   line-height: 1.3;
   letter-spacing: -1px;
@@ -1689,6 +1691,7 @@ body {
   margin-top: 4.38em;
 }
 .edu-detail.paid.edu003 .edu-item.effect .effect-list__item .sub-tit {
+  font-family: "GmarketSans";
   display: inline-block;
   padding: 0.42em 0.83em;
   font-size: 1.5em;
@@ -1698,6 +1701,7 @@ body {
   background: #4c51c4;
 }
 .edu-detail.paid.edu003 .edu-item.effect .effect-list__item .tit {
+  font-family: "GmarketSans";
   padding: 0.5em 0 1.33em 0;
   font-size: 1.88em;
   font-weight: 700;
@@ -1705,21 +1709,15 @@ body {
   word-break: keep-all;
 }
 .edu-detail.paid.edu003 .edu-item.effect .effect-list__item .cont {
+  font-family: "GmarketSans";
   padding-top: 1.3em;
   font-size: 1.44em;
   line-height: 1.3;
   letter-spacing: -1px;
   word-break: keep-all;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
-  .edu-detail.paid.edu003 .edu-item.effect .effect-list__item img {
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .edu-detail.paid.edu003 .edu-item.effect .effect-list__item img {
-    width: 100%;
-  }
+.edu-detail.paid.edu003 .edu-item.effect .effect-list__item img {
+  width: 100%;
 }
 .edu-detail.paid.edu003 .edu-item.tutor {
   background-color: #ececec;
