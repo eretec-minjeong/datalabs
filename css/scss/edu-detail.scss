@@ -107,6 +107,9 @@ body{
     fieldset, img{
         border:none;
     }
+    img{
+        max-width:100%;
+    }
 
     /* 무료 교육 */
     &.free{
@@ -121,6 +124,7 @@ body{
             text-align:center;
             background:url('../images/free/bg_edu_free.png') no-repeat center;
             background-size:cover;
+
             &__label{
                 font-family:'S-CoreDream';
                 position:absolute;
@@ -188,6 +192,7 @@ body{
             .session-list{
                 li{
                     p{
+                        font-family:"S-CoreDream";
                         font-size:1.56em;
                         line-height:1.5;
                         letter-spacing:-1px;
@@ -261,10 +266,12 @@ body{
                         }
                     }
                     &__tit{
+                        font-family:"S-CoreDream";
                         font-size:1.56em;
                         font-weight:600;
                     }
                     &__cont{
+                        font-family:"S-CoreDream";
                         font-size:1.25em;
                     }
                 }
@@ -280,6 +287,7 @@ body{
                     }
                 }
                 &__tit{
+                    font-family:"S-CoreDream";
                     display:flex;
                     font-weight:500;
                     padding:1.25em 2.19em;
@@ -301,6 +309,7 @@ body{
                     padding:1.88em 2.19em;
                     background:#ededed;
                     li{
+                        font-family: 'S-CoreDream';
                         position:relative;
                         padding-left:0.94em;
                         font-size:1.13em;
@@ -320,6 +329,7 @@ body{
                     }
                 }
                 &__label{
+                    font-family:"S-CoreDream";
                     position:absolute;
                     right:-1.5em;
                     top:-1.5em;
@@ -354,6 +364,7 @@ body{
                     margin-top:1.88em;
                 }
                 p{
+                    font-family:"S-CoreDream";
                     width:100%;
                     font-size:1.88em;
                     line-height:1.5;
@@ -400,6 +411,7 @@ body{
                             background-size:14.38em;
 
                             p{
+                                font-family: 'S-CoreDream';
                                 font-size:1.25em;
                                 line-height:1.5;
 
@@ -461,6 +473,7 @@ body{
                         position: relative;
                         padding:0 0.5em;
                         z-index:0;
+                        line-height:1;
 
                         &::before{
                             display: block;
@@ -487,6 +500,7 @@ body{
                 border:solid 1px #ddd;
                 border-radius:0.25em;
                 p{
+                    font-family: 'S-CoreDream';
                     font-size:1.44em;
                     font-weight:400;
                     line-height:1.3;
@@ -508,6 +522,7 @@ body{
                 border-radius:4px;
 
                 li{
+                    font-family: 'S-CoreDream';
                     padding-left:1.88em;
                     font-size:1.31em;
                     font-weight:500;
@@ -544,6 +559,7 @@ body{
                     border-top:solid 1px #ddd;
 
                     .num{
+                        font-family:'GmarketSans';
                         display:inline-block;
                         margin-bottom:0.5em;
                         padding:0.25em 0.75em;
@@ -554,12 +570,15 @@ body{
                         background:#222;
                     }
                     .tit{
+                        font-family:'GmarketSans';
                         margin-bottom:0.87em;
                         font-size:1.44em;
                         font-weight:700;
+                        font-family:'GmarketSans';
                     }
                     .cont{
                         li{
+                            font-family:'GmarketSans';
                             position:relative;
                             padding-left:0.75em;
                             font-size:1.25em;
@@ -615,6 +634,8 @@ body{
                             padding:1.44em 2.5em; //23px 40px;
 
                             p{
+                                font-family:'pretendard';
+                                line-height:1;
                                 font-size:1.88em; //30px;
                                 font-weight:700;
                                 letter-spacing:-1px;
@@ -632,6 +653,7 @@ body{
                             background-color:#e9eef2;
 
                             li{
+                                font-family:'pretendard';
                                 position:relative;
                                 padding-left:0.42em; //10px;
                                 font-size:1.5em; //24px;
@@ -668,6 +690,7 @@ body{
                     background-size:12.5em; //200px;
 
                     span{
+                        font-family:'GmarketSans';
                         font-size:1.63em; //26px;
                         font-weight:700;
                         letter-spacing:-1px;
@@ -677,6 +700,7 @@ body{
                     width:60%;
                     ul{
                         li{
+                            font-family:'GmarketSans';
                             position:relative;
                             padding-left:0.75em;
                             font-size:1.38em; //22px;
@@ -740,6 +764,7 @@ body{
                     background-size:14.50em; //232px;
 
                     span{
+                        font-family:'GmarketSans';
                         font-size:1.88em; //30px;
                         word-break: keep-all;
                         line-height:1.3;
@@ -773,6 +798,8 @@ body{
                         background-size:11.25em; //180px;
 
                         span{
+                            font-family:'pretendard';
+                            line-height:1;
                             font-size:1.63em; //26px;
                             font-weight:600;
                             letter-spacing:-1px;
@@ -784,6 +811,7 @@ body{
 
                         ul{
                             li{
+                                font-family:'pretendard';
                                 position:relative;
                                 padding-left:0.42em; //10px;
                                 font-size:1.5em; //24px;
@@ -851,6 +879,8 @@ body{
                 background-size:cover;
 
                 &__subTit{
+                    line-height:1;
+                    font-family:'GmarketSans';
                     display:inline-block;
                     margin-bottom:0.67em;
                     padding:0.33em 0.67em;
@@ -865,8 +895,10 @@ body{
                     }
                 }
                 &__tit{
+                    font-family:'GmarketSans';
                     font-size:6.25em;
                     font-weight:700;
+                    line-height:1;
                     font-style:italic;
                     text-shadow:5px 5px 5px #00acaf;
                     color:#fff;
@@ -875,10 +907,12 @@ body{
             .edu-item{
                 padding-top:0;
                 &__tit{
+                    font-family:'GmarketSans';
                     margin-bottom:1.33em;
                     padding-top:1.78em;
                     font-size:2.81em;
                     font-weight:700;
+                    line-height:1;
                     letter-spacing:-1;
                     background:url('../images/paid/001/img_tit.png') no-repeat center top;
                     background-size:1.78em;
@@ -896,6 +930,7 @@ body{
                     }
 
                     p{
+                        font-family:'GmarketSans';
                         font-size:1.56em;
                         line-height:1.3;
                         letter-spacing:-1px;
@@ -921,6 +956,7 @@ body{
                             text-align:left;
 
                             .tit{
+                                font-family:'GmarketSans';
                                 padding-bottom:0.63em;
                                 margin-bottom:1.25em;
                                 border-bottom:solid 2px #00beba;
@@ -938,6 +974,7 @@ body{
                             }
 
                             p{
+                                font-family:'GmarketSans';
                                 position:relative;
                                 padding-left:0.7em;
                                 font-size:1.44em;
@@ -1002,6 +1039,7 @@ body{
                             background:#fff url('../images/paid/001/img_recomme1.png') no-repeat 2.19em center;
                             background-size:6.25em;
                             span{
+                                font-family:'GmarketSans';
                                 font-size:1.63em;
                                 font-weight:700;
                                 word-break:keep-all;
@@ -1028,6 +1066,7 @@ body{
                     background-size:cover;
                     color:#fff;
                     p{
+                        font-family:'GmarketSans';
                         font-size:1.38em; //22px
                         line-height:1.5;
                     }
@@ -1047,6 +1086,7 @@ body{
                             padding-top:8em; //128px;
                             background:url('../images/paid/001/img_purpose1.png') no-repeat center top;
                             background-size:11.25em; //180px;
+                            font-family:'GmarketSans';
                             span{
                                 position:relative;
                                 display:inline-block;
@@ -1101,6 +1141,7 @@ body{
 
                 &__subTit{
                     display:inline-block;
+                    line-height:1;
                     margin-bottom:0.63em; //25px;
                     padding:0.25em 0.75em; //10px 30px;
                     font-family:'EliceDigitalBaeum';
@@ -1114,6 +1155,7 @@ body{
                     font-family:'EliceDigitalBaeum';
                     font-size:5em; //80px;
                     font-weight:700;
+                    line-height:1;
                     font-style: italic;
                     color:#fff;
                     text-shadow:0.05em 0.05em 0.03em #537efd; //4px 4px 2px #537efd;
@@ -1123,10 +1165,12 @@ body{
                 padding-top:0;
 
                 &__tit{
+                    font-family:'GmarketSans';
                     margin-bottom:0.89em; //40px;
                     padding-top:2em; //90px;
                     font-size:2.81em; //45px;
                     font-weight:700;
+                    line-height:1.3;
                     background:url('../images/paid/002/img_tit.png') no-repeat center top;
                     background-size:1.33em; //60px;
                 }
@@ -1135,15 +1179,8 @@ body{
                     padding:3.75em 2.19em; //60px 35px;
                     background:#103c73;
 
-                    @include ed-tablet{
-                        img{
-                            width:100%;
-                        }
-                    }
-                    @include ed-mobile{
-                        img{
-                            width:100%;
-                        }
+                    img{
+                        width:100%;
                     }
                 }
                 &.info2{
@@ -1151,12 +1188,14 @@ body{
                     background:#082951;
                     
                     p{
+                        font-family:'GmarketSans';
                         font-size:1.75em; //28px;
                         font-weight:500;
                         color:#fff;
                     }
 
                     .edu-item__subTit{
+                        font-family:'GmarketSans';
                         display:inline-block;
                         padding:0.23em 1.23em; //7px 37px;
                         font-size:1.88em; //30px;
@@ -1166,9 +1205,11 @@ body{
                         background:#fff;
                     }
                     .edu-item__tit{
+                        font-family:'GmarketSans';
                         margin:0.44em 0; //20px 0;
                         padding:0;
                         font-size:2.81em; //45px;
+                        line-height:1;
                         font-weight:300;
                         background:none;
                     }
@@ -1179,6 +1220,7 @@ body{
                         background-size:20.44em; //327px;
 
                         &__item{
+                            font-family:'GmarketSans';
                             position:relative;
                             padding:1.56em; //25px;
                             text-align:left;
@@ -1219,6 +1261,10 @@ body{
                         justify-content:center;
                         flex-flow:wrap;
 
+                        img{
+                            width:50%;
+                        }
+
                         li{
                             width:33.333%;
                             padding-top:13.13em; //210px;                          
@@ -1231,6 +1277,7 @@ body{
                                 background-image:url('../images/paid/002/img_effect4.png'); 
                          }
                             span{
+                                font-family:'GmarketSans';
                                 font-size:1.44em; //23px;
                                 font-weight:700;
                                 line-height:1.3;
@@ -1273,16 +1320,19 @@ body{
                             }
 
                             .tit{
+                                font-family:'GmarketSans';
                                 width:30%;
                                 padding-right:0.8em; //20px;
                                 font-size:1.56em; //25px;
                                 font-weight:700;
                                 text-align:left;
+                                line-height:1.3;
                             }
 
                             .cont{
                                 width:70%;
                                 li{
+                                    font-family:'GmarketSans';
                                     padding-left:1.13em; //18px;
                                     text-align:left;
                                     background:url('../images/paid/002/ico_arrow.png') no-repeat left 0.25em;//url('../images/paid/002/ico_arrow.png') no-repeat left 4px;
@@ -1329,6 +1379,7 @@ body{
                             }
 
                             span{
+                                font-family:'GmarketSans';
                                 font-size:1.5em; //24px;
                                 font-weight:500;
                                 word-break: keep-all;
@@ -1352,7 +1403,12 @@ body{
                     background:url('../images/paid/002/bg_marketing.png') no-repeat center top;
                     background-size:cover;
 
+                    img{
+                        width:100%;
+                    }
+
                     p{
+                        font-family:'GmarketSans';
                         padding-bottom:2em; //50px;
                         font-size:1.56em; //25px;
                         line-height:1.3;
@@ -1383,17 +1439,6 @@ body{
 
                             &:last-child::after{
                                 display: none;
-                            }
-
-                            @include ed-tablet{
-                                img{
-                                    width:100%;
-                                }
-                            }
-                            @include ed-mobile{
-                                img{
-                                    width:100%;
-                                }
                             }
                         }
                     }
@@ -1428,7 +1473,7 @@ body{
                 background-size:cover;
                 .tit-wrap{
                     position:relative;
-                    width:37.50em; //630px;
+                    max-width:37.50em; //630px;
                     padding:4.38em 2.19em;//70px 35px;
                     font-family:'EliceDigitalBaeum';
                     text-align:right;
@@ -1463,6 +1508,8 @@ body{
 
             .edu-item{
                 &__tit{
+                    font-family:'GmarketSans';
+                    line-height:1.3;
                     padding-bottom:0.89em; //40px;
                     text-align:left;
                     font-size:2.81em; //45px;
@@ -1487,6 +1534,7 @@ body{
                             margin:0 0.31em;//0 5px;
 
                             .tit{
+                                font-family:'GmarketSans';
                                 display:inline-block;
                                 width:4.60em;//115px;
                                 padding:0.4em 0.2em;//10px 5px;
@@ -1507,6 +1555,7 @@ body{
                                     position:relative;
                                     padding-left:0.64em;//14px;
                                     font-size:1.38em; //22px;
+                                    font-family:'GmarketSans';
                                     line-height:1.3;
                                     text-align: left;
                                     word-break: keep-all;
@@ -1542,6 +1591,7 @@ body{
                         background-size:16em; //256px;
 
                         span{
+                            font-family:'GmarketSans';
                             display:inline-block;
                             position:relative;
                             padding:0 0.2em; //0 10px;
@@ -1571,6 +1621,7 @@ body{
                     background-size:cover;
 
                     p{
+                        font-family:'GmarketSans';
                         font-size: 1.56em;//25px;
                         line-height: 1.3;
                         letter-spacing: -1px;
@@ -1605,6 +1656,7 @@ body{
                             }
                             
                             .sub-tit{
+                                font-family:'GmarketSans';
                                 display:inline-block;
                                 padding:0.42em 0.83em;//10px 20px;
                                 font-size:1.50em; //24px;
@@ -1614,6 +1666,7 @@ body{
                                 background:#4c51c4;
                             }
                             .tit{
+                                font-family:'GmarketSans';
                                 padding:0.5em 0 1.33em 0; //15px 0 40px 0;
                                 font-size:1.88em; //30px;
                                 font-weight:700;
@@ -1621,22 +1674,15 @@ body{
                                 word-break: keep-all;
                             }
                             .cont{
+                                font-family:'GmarketSans';
                                 padding-top:1.3em; //30px;
                                 font-size:1.44em; //23px;
                                 line-height: 1.3;
                                 letter-spacing: -1px;
                                 word-break: keep-all;
                             }
-                            @include ed-tablet{
-                                img{
-                                    width:100%;
-                                }
-                            }
-
-                            @include ed-mobile{
-                                img{
-                                    width:100%;
-                                }
+                            img{
+                                width:100%;
                             }
                         }
                     }
@@ -1676,11 +1722,14 @@ body{
                 background-size:cover;
 
                 .tit{
+                    font-family:'GmarketSans';
                     padding-bottom:1.10em; //88px;
                     font-size:5em; //80px;
                     font-weight:700;
+                    line-height:1;
                 }
                 .subTit{
+                    font-family:'GmarketSans';
                     font-size:1.50em;//24px;
                     font-weight:700;
                     line-height:1.3;
@@ -1699,6 +1748,7 @@ body{
                 padding:4.38em 2.19em;//70px 35px; 
 
                 &__tit{
+                    font-family:'GmarketSans';
                     padding-bottom:0.94em; //45px;
                     text-align:left;
                     font-size:3em; //48px;
@@ -1723,12 +1773,14 @@ body{
                                 margin-top:0.60em; //15px;
                             }
                             .tit{
+                                font-family:'GmarketSans';
                                 display:block;
                                 font-size:1.56em; //25px;
                                 font-weight:700;
                                 color:#0059ff;
                             }
                             .cont{
+                                font-family:'GmarketSans';
                                 margin-top:0.60em; //15px;
                                 padding-top:8.76em; //219px;
                                 display:block;
@@ -1737,6 +1789,8 @@ body{
                                 background:url('../images/paid/004/img_info1.png') no-repeat center top;
                             }
                             .circle{
+                                font-family:'GmarketSans';
+                                line-height:1;
                                 position:relative;
                                 display:inline-block;
                                 width:7.08em; //177px;
@@ -1844,6 +1898,7 @@ body{
                         }
                     }
                     .txt-bottom{
+                        font-family:'GmarketSans';
                         margin-top:3.33em; //100px;
                         font-size:1.88em; //30px;
                         font-weight:700;
@@ -1854,6 +1909,7 @@ body{
                     background:#eeeeee;
 
                     .txt{
+                        font-family:'GmarketSans';
                         position:relative;
                         padding-left:0.83em; //20px;
                         font-size:1.50em;//24px;
@@ -1891,6 +1947,8 @@ body{
                             border-right:solid 1px #ddd;
 
                             .tit{
+                                font-family:'GmarketSans';
+                                line-height:1;
                                 padding-bottom:2.64em; //66px;
                                 font-size:1.56em; //25px;
                                 font-weight:700;
@@ -1898,6 +1956,8 @@ body{
                                 background-size:1.88em; //47px;
                             }
                             .txt-up{
+                                font-family:'GmarketSans';
+                                line-height:1;
                                 padding:2.43em 0 0 1.33em;//73px 0 0 40px;
                                 font-size:1.88em; //30px;
                                 font-weight:700;
@@ -1966,6 +2026,7 @@ body{
                                     margin-right:15px;
                                     border-radius:50%;
                                     font-size:1.56em; //25px;
+                                    line-height:1.5;
                                     text-align:center;
                                     color:#fff;
                                     background-color:#0059ff;
@@ -1990,6 +2051,7 @@ body{
                         }
                     }
                     .txt-bottom{
+                        font-family:'GmarketSans';
                         font-size:2.19em; //35px;
                         line-height:1.3;
                         letter-spacing:-2px;
@@ -2014,6 +2076,7 @@ body{
                             align-items:center;
 
                             .txt-box{
+                                font-family:'GmarketSans';
                                 padding-left:1.67em; //50px;
                                 text-align:left;
                                 font-size:1.88em; //30px;
@@ -2052,6 +2115,7 @@ body{
                     }
 
                     .txt-bottom{
+                        font-family:'GmarketSans';
                         margin-top:2.29em; //80px;
                         font-size:2.19em; //35px;
                         line-height:1.5;
@@ -2069,6 +2133,7 @@ body{
                             background-size:12.75em; //204px;
 
                             span{
+                                font-family:'GmarketSans';
                                 word-break:keep-all;
                                 font-size:1.38em; //22px;
                                 font-weight:700;
@@ -2162,6 +2227,7 @@ body{
                     padding:0.42em 0;//17px 0;
                     font-family:'blackHanSans';
                     font-size:2.5em; //40px;
+                    line-height:1;
                     text-align:center;
                     color:#fff;
                     background:#1b1d28;
@@ -2200,6 +2266,7 @@ body{
                         }
                         
                         p{
+                            font-family:'pretendard';
                             font-size:1.63em; //26px;
                             line-height:1.3;
                             letter-spacing:-1px;
@@ -2227,7 +2294,6 @@ body{
                             p{
                                 position:relative;
                                 display:inline-block;
-                                font-family:'blackHanSans';
                                 width:20em; //320px;
                                 padding:0.94em; //15px;
                                 border-radius:1.25em; //20px;
@@ -2236,6 +2302,8 @@ body{
                                 color:#3a5fff;
 
                                 span{
+                                    font-family:'blackHanSans';
+                                    line-height:1;
                                     font-size:2.19em; //35px;
                                 }
 
@@ -2325,6 +2393,7 @@ body{
                         }
 
                         p{
+                            font-family:'pretendard';
                             font-size:2em; //32px;
                             line-height:1.5;
                             letter-spacing:-1px;
@@ -2343,6 +2412,7 @@ body{
 
                     .tit-box{
                         p{
+                            font-family:'pretendard';
                             font-size:2em; //32px;
                             line-height:1.3;
                             letter-spacing:-1px;
@@ -2350,6 +2420,7 @@ body{
                             &.tit{
                                 font-family:'blackHanSans';
                                 font-size:3.75em; //60px;
+                                line-height:1;
                             }
                         }
                     }
@@ -2367,6 +2438,8 @@ body{
                             border-radius:1.88em; //30px;
                             
                             .tit{
+                                font-family:'pretendard';
+                                line-height:1;
                                 display:block;
                                 padding:0.47em 0; //14px 0;
                                 font-size:1.88em; //30px;
@@ -2377,6 +2450,7 @@ body{
                             }
                             ul{
                                 li{
+                                    font-family:'pretendard';
                                     margin-top:2.08em; //50px;
                                     font-size:1.5em; //24px;
                                     font-weight:600;
@@ -2438,6 +2512,7 @@ body{
                         p{
                             width:60%;
                             font-family:'blackHanSans';
+                            line-height:1;
                             font-size:3.13em;//50px;
                             letter-spacing:-2px;
 
@@ -2480,6 +2555,7 @@ body{
                             background-size:1.94em; //31px;
 
                             span{
+                                font-family:'pretendard';
                                 font-size:1.56em; //25px;
                                 line-height:1.3;
                                 word-break: keep-all;
@@ -2490,6 +2566,7 @@ body{
                         }
                     }
                     .txt-bottom{
+                        font-family:'pretendard';
                         font-size:2em; //32px;
                         line-height:1.5;
                         letter-spacing:-1px;
@@ -2506,6 +2583,7 @@ body{
                     }
 
                     .txt-caution{
+                        font-family:'pretendard';
                         padding-top:5.83em; //140px;
                         font-size:1.5em; //24px;
                         line-height:1.3;
@@ -2513,11 +2591,13 @@ body{
                         background-size:4.54em; //109px;
                     }
                     .txt-caution2{
+                        font-family:'pretendard';
                         padding-top:2.32em; //65px;
                         font-size:1.5em; //28px;
                         line-height:1.3;
                     }
                     .txt-bottom{
+                        font-family:'pretendard';
                         font-size:1.5em; //24px;
                         letter-spacing:-1px;
                         line-height:1.3;
@@ -2530,6 +2610,7 @@ body{
                         text-align:left;
 
                         li{
+                            font-family:'pretendard';
                             position:relative;
                             padding-left:0.75em; //12px;
 
@@ -2547,6 +2628,7 @@ body{
                                 margin-top:1.25em; //20px;
                             }
                             span{
+                                font-family:'pretendard';
                                 font-size:1.38em; //22px;
                                 line-height:1.3;
                                 word-break:keep-all;
@@ -2554,6 +2636,7 @@ body{
                         }
                         dl{    
                             dt, dd{
+                                font-family:'pretendard';
                                 position:relative;
                                 font-size:1.38em; //22px;
                                 line-height:1.3;
@@ -2589,6 +2672,7 @@ body{
                                 width:100%;
                             }
                             span{
+                                font-family:'pretendard';
                                 display:inline-block;
                                 padding-top:0.38em; //10px;
                                 font-size:1.63em; //26px;
@@ -2624,6 +2708,7 @@ body{
                             background-size:11.25em; //180px;
 
                             span{
+                                font-family:'pretendard';
                                 font-size:1.63em; //26px;
                                 line-height:1.3;
                                 word-break:keep-all;
@@ -2673,6 +2758,7 @@ body{
                     p{
                         letter-spacing:-2px;
                         font-family:'GmarketSans';
+                        line-height:1;
                         font-size:2.88em; //46px;
                         color:#fff;
                         text-shadow:0.04em 0.04em 0.13em #8c8c8c;//2px 2px 6px #8c8c8c;
@@ -2701,6 +2787,7 @@ body{
                     margin:0 0 1.11em -1.11em; //0 0 40px -40px;
                     padding:17px 0;
                     font-family:'GmarketSans';
+                    line-height:1;
                     font-weight:700;
                     font-size:2.25em; //36px;
                     text-align:center;
@@ -2717,6 +2804,7 @@ body{
                     color:#fff;
 
                     .tit-box{
+                        font-family:"GmarketSans";
                         margin-bottom:0.89em; //40px;
                         font-size:2.81em; //45px;
                         font-family:'GmarketSans';
@@ -2726,6 +2814,7 @@ body{
                         word-break: keep-all;
                     }
                     p{
+                        font-family:"GmarketSans";
                         font-size:1.63em; //26px;
                         line-height:1.5;
                         letter-spacing:-2px;
@@ -2756,6 +2845,7 @@ body{
                         word-break: keep-all;
                     }
                     p{
+                        font-family:"pretendard";
                         font-size:1.63em; //26px;
                         line-height:1.5;
                         letter-spacing:-2px;
@@ -2775,6 +2865,7 @@ body{
                             background:url('../images/paid/006/ico_use1.png') no-repeat center 25px;
 
                             span{
+                                font-family:"pretendard";
                                 word-break:keep-all;
                                 font-size:1.38em; //22px;
                                 line-height:1.3;
@@ -2823,6 +2914,7 @@ body{
                         word-break: keep-all;
                     }
                     .txt{
+                        font-family:"pretendard";
                         font-size:1.63em; //26px;
                         line-height:1.3;
                         letter-spacing:-2px;
@@ -2843,6 +2935,7 @@ body{
                                 margin-top:1.25em; //20px;
                             }
                             span{
+                                font-family:"pretendard";
                                 font-size:1.5em; //24px;
                                 line-height:1.3;
                             }
@@ -2852,6 +2945,7 @@ body{
                         width:calc(100% + 2.67em);//calc(100% + 80px);
                         padding:1.33em 1.33em 1.67em; //40px 40px 50px;
                         margin-left:-1.33em; //-40px;
+                        font-family:"pretendard";
                         font-size:1.88em; //30px;
                         line-height:1.5;
                         letter-spacing:-2px;
@@ -2873,6 +2967,7 @@ body{
                             background:url('../images/paid/006/img_recomme1.png') no-repeat center top;
 
                             span{
+                                font-family:"pretendard";
                                 font-size:1.63em; //26px;
                                 line-height:1.3;
                                 word-break:keep-all;
@@ -2935,6 +3030,7 @@ body{
                     position:relative;
                     padding:0.74em 0.39em 0; //67px 35px 0;
                     font-family:'Cafe24Ohsquare';
+                    line-height:1;
                     font-size:5.63em; //90px;
                     font-style: italic;
                     color:#4c4a4a;
@@ -2962,6 +3058,7 @@ body{
                     color:#fff;
 
                     .sub-tit{
+                        font-family:'GmarketSans';
                         position:relative;
                         margin-bottom:0.81em; //25px;
                         padding-bottom:1em; //31px;
@@ -2980,6 +3077,7 @@ body{
                         }
                     }
                     .txt{
+                        font-family:'GmarketSans';
                         font-size:1.5em; //24px;
                         line-height:1.3;
                         letter-spacing:-1px;
@@ -2994,6 +3092,7 @@ body{
                     position:relative;
                     padding:1.33em 0 1em 0;//60px 0 45px 0;
                     font-family:'Cafe24Ohsquare';
+                    line-height:1;
                     font-size:2.81em; //45px;
                     color:#4c4a4a;
                     letter-spacing:-2px;
@@ -3054,6 +3153,7 @@ body{
                                 width:100%;
                             }
                             span{
+                                font-family:'GmarketSans';
                                 letter-spacing:-1px;
                                 word-break:keep-all;
                                 line-height:1.3;
@@ -3100,6 +3200,7 @@ body{
                             }
                             ul{
                                 li{
+                                    font-family:'GmarketSans';
                                     position:relative;
                                     margin-top:0.94em; //15px;
                                     padding-left:0.94em; //15px;
@@ -3160,12 +3261,12 @@ body{
                         flex-flow: wrap;
 
                         li{
-                            font-family:'EliceDigitalBaeum';
                             width:33.333%;
                             padding:0 0.63em; //0 10px;
 
                             .bubble{
                                 position:relative;
+                                font-family:'EliceDigitalBaeum';
                                 font-weight:700;
                                 font-size:1.25em; //20px;
                                 line-height:1.3;
@@ -3190,6 +3291,7 @@ body{
                             .txt{
                                 margin-top:1.2em; //24px;
                                 padding:8.2em 0 1.75em 0; //164px 0 35px 0;
+                                font-family:'EliceDigitalBaeum';
                                 font-size:1.25em; //20px;
                                 line-height:1.3;
                                 font-weight:400;
@@ -3236,6 +3338,7 @@ body{
                             display:inline-block;
                             padding:0 0.29em; //0 10px;
                             font-family:'EliceDigitalBaeum';
+                            line-height:1;
                             font-size:2.19em; //35px;
                             font-weight:700;
                             z-index:0;
@@ -3262,6 +3365,8 @@ body{
                         margin-bottom:3.13em; //50px;
 
                         .label{
+                            font-family:'GmarketSans';
+                            line-height:1;
                             display:inline-block;
                             margin-bottom:0.67em; //20px;
                             padding:0.43em 1.23em; //13px 37px;
@@ -3273,6 +3378,8 @@ body{
                             background:#01c0ff;
                         }
                         p{
+                            font-family:'GmarketSans';
+                            line-height:1;
                             font-size:2.19em; //35px;
                             letter-spacing:-1px;
                         }
@@ -3286,6 +3393,8 @@ body{
                         border:solid 0.44em #01c0ff; //solid 7px #01c0ff;
 
                         .tit{
+                            font-family:'GmarketSans';
+                            line-height:1;
                             font-size:2.19em; //35px;
                             font-weight:700;
                             background:#fff;
@@ -3294,6 +3403,7 @@ body{
                             margin-top:1.25em; //20px;
 
                             li{
+                                font-family:'GmarketSans';
                                 padding-left:1.32em; //33px;
                                 font-size:1.56em; //25px;
                                 line-height:1.3;
@@ -3324,6 +3434,8 @@ body{
                     color:#fff;
 
                     .tit{
+                        font-family:'GmarketSans';
+                        line-height:1;
                         margin-bottom:0.54em; //15px;
                         font-size:1.75em; //28px;
                         font-style: italic;
@@ -3334,6 +3446,7 @@ body{
                             margin:0 0.5em 0.5em 0; //0 10px 10px 0;
                             padding:0.25em 0.75em; //5px 15px;
                             font-family:'EliceDigitalBaeum';
+                            line-height: 1;
                             font-size:1.25em; //20px;
                             font-weight:700;
                             border:solid 1px rgba(255, 255, 255, .5);
@@ -3376,6 +3489,8 @@ body{
                                 padding:0.94em 0; //15px 0;
 
                                 .label{
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     display:inline-block;
                                     padding:0.56em 0.83em; //10px 15px;
                                     font-size:1.13em; //18px;
@@ -3385,16 +3500,21 @@ body{
                                     background:#222;
                                 }
                                 .tit{
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     padding-left:0.4em; //10px;
                                     font-size:1.56em; //25px;
                                     font-weight:700;
                                 }
                                 .txt{
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.56em; //25px;
                                 }
                             }
                             .cont-box{
                                 padding:1.19em 0; //25px 0;
+                                font-family:'GmarketSans';
                                 font-size:1.31em; //21px;
                                 line-height:1.3;
                                 letter-spacing:-1px;
@@ -3542,6 +3662,8 @@ body{
                                 .label{
                                     display:inline-block;
                                     padding:0.56em 0.83em; //10px 15px;
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.13em; //18px;
                                     font-style:italic;
                                     border-radius:3.33em; //60px;
@@ -3550,15 +3672,20 @@ body{
                                 }
                                 .tit{
                                     padding-left:0.4em; //10px;
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.56em; //25px;
                                     font-weight:700;
                                 }
                                 .txt{
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.56em; //25px;
                                 }
                             }
                             .cont-box{
                                 padding:1.19em 0; //25px 0;
+                                font-family:'GmarketSans';
                                 font-size:1.31em; //21px;
                                 line-height:1.3;
                                 letter-spacing:-1px;
@@ -3736,6 +3863,8 @@ body{
                                 .label{
                                     display:inline-block;
                                     padding:0.56em 0.83em; //10px 15px;
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.13em; //18px;
                                     font-style:italic;
                                     border-radius:3.33em; //60px;
@@ -3744,16 +3873,21 @@ body{
                                 }
                                 .tit{
                                     padding-left:0.4em; //10px;
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.56em; //25px;
                                     font-weight:700;
                                 }
                                 .txt{
+                                    font-family:'GmarketSans';
+                                    line-height:1;
                                     font-size:1.56em; //25px;
                                 }
                             }
                             .cont-box{
                                 padding:1.19em 0; //25px 0;
                                 font-size:1.31em; //21px;
+                                font-family:'GmarketSans';
                                 line-height:1.3;
                                 letter-spacing:-1px;
                                 word-break: keep-all;
@@ -3851,9 +3985,9 @@ body{
                     background-size:100%;
                     text-align:center;
                     color:#fff;
-                    font-family:'changwon';
 
                     p{
+                        font-family:'changwon';
                         line-height:1.3;
 
                         &:nth-child(1){
@@ -3894,6 +4028,7 @@ body{
                     margin:0 0 1.14em -1.14em; //0 0 40px -40px;
                     padding:0.49em 0; //17px 0;
                     font-family:'sbAgro';
+                    line-height:1;
                     font-weight:700;
                     font-size:2.19em; //35px;
                     letter-spacing:-2px;
@@ -3926,6 +4061,7 @@ body{
                         }
                     }
                     .txt{
+                        font-family:'pretendard';
                         font-size:1.63em; //26px;
                         line-height:1.3;
                         letter-spacing:-2px;
@@ -3975,6 +4111,7 @@ body{
                                 & > span{
                                     display:inline-block;
                                     font-family:'sbAgro';
+                                    line-height:1;
                                     font-size:2.19em; //35px;
                                     font-weight:700;
                                     color:#222;
@@ -4029,6 +4166,7 @@ body{
                                     span{
                                         display:inline-block;
                                         text-align:center;
+                                        font-family:'pretendard';
                                         font-size:1.56em; //25px;
                                         line-height:1.3;
                                         letter-spacing:-2px;
@@ -4075,12 +4213,14 @@ body{
                         }
                     }
                     .txt{
+                        font-family:'pretendard';
                         font-size:1.63em; //26px;
                         line-height:1.3;
                         letter-spacing:-2px;
                     }
                     .txt-big{
                         padding:2.67em 0 1.67em 0;//80px 0 50px 0;
+                        font-family:'pretendard';
                         font-size:1.88em; //30px;
                         font-weight:600;
                         line-height:1.5;
@@ -4093,37 +4233,38 @@ body{
 
                         &__item{
                             position: relative;
-                            width:calc(50% - 50px);
-                            min-height:130px;
-                            margin:0 0 20px 0;
-                            padding:35px;
-                            border:solid 6px #ddd;
-                            border-radius:30px;
+                            width:calc(50% - 3.13em); //calc(50% - 50px);
+                            min-height:8.13em; //130px;
+                            margin:0 0 1.25em 0; //0 0 20px 0;
+                            padding:2.19em; //35px;
+                            border:solid 0.38em #ddd; //solid 6px #ddd;
+                            border-radius:1.88em; //30px;
                             background:#fff;
 
                             &:nth-child(odd){
-                                margin-right:50px;
+                                margin-right:3.13em; //50px;
 
                                 &::after{
                                     position:absolute;
-                                    right:-70px;
+                                    right:-4.38em; //-70px;
                                     top:50%;
-                                    width:31px;
-                                    height:28px;
-                                    margin-top:-14px;
+                                    width:1.94em; //31px;
+                                    height:1.75em; //28px;
+                                    margin-top:-0.88em; //-14px;
                                     background:url('../images/paid/010/ico_arrow.png') no-repeat left top;
                                     background-size:100%;
                                     content:'';
                                 }
                             }
                             &:nth-child(even){
-                                margin-left:50px;
+                                margin-left:3.13em; //50px;
 
                                 border-color:#1b4be1;
                             }
 
                             p{
-                                font-size:30px;
+                                font-family:'pretendard';
+                                font-size:1.88em; //30px;
                                 font-weight:600;
                                 line-height:1.3;
                                 letter-spacing:-2px;
@@ -4145,6 +4286,7 @@ body{
                             background-size:11.25em; //180px;
 
                             span{
+                                font-family:'pretendard';
                                 font-size:1.63em; //26px;
                                 line-height:1.3;
                                 word-break:keep-all;
@@ -4216,11 +4358,14 @@ body{
                     .tit{
                         margin-bottom:0.38em; //40px;
                         font-family:'sbAgro';
+                        line-height:1;
                         font-weight:700;
                         font-size:6.63em; //106px;
                         color:#252525;
                     }
                     .sub-tit{
+                        font-family:'pretendard';
+                        line-height:1;
                         font-size:1.88em; //30px;
                         letter-spacing:0.17em; //5px;
                         color:#737a8a;
@@ -4237,6 +4382,7 @@ body{
                     margin:0 0 1.14em -1.14em; //0 0 40px -40px;
                     padding:0.49em 0; //17px 0;
                     font-family:'sbAgro';
+                    line-height:1;
                     font-weight:700;
                     font-size:2.19em; //35px;
                     letter-spacing:-2px;
@@ -4297,6 +4443,7 @@ body{
                         }
                     }
                     .txt{
+                        font-family:'pretendard';
                         margin-bottom:3.46em; //90px;
                         padding:0 1.35em; //0 35px;
                         font-size:1.63em; //26px;
@@ -4331,6 +4478,7 @@ body{
 
                         p{
                             font-family:'sbAgro';
+                            line-height:1;
                             font-size:2.5em; //40px;
                             font-weight:700;
                         }
@@ -4353,11 +4501,14 @@ body{
                             }
 
                             .tit{
+                                font-family:'pretendard';
+                                line-height:1;
                                 margin-bottom:0.5em; //15px;
                                 font-size:1.88em; //30px;
                                 font-weight:700;
                             }
                             .cont{
+                                font-family:'pretendard';
                                 font-size:1.5em; //24px;
                                 line-height:1.3;
                             }
@@ -4412,6 +4563,8 @@ body{
                                 box-shadow:0.13em 0.13em 0.63em rgba(0, 0, 0, .3); // 2px 2px 10px rgba(0, 0, 0, .3);
 
                                 span{
+                                    font-family:'pretendard';
+                                    line-height:1;
                                     font-size:1.63em; //26px;
                                     font-weight:700;
                                     color:#fff;
@@ -4444,6 +4597,7 @@ body{
                                     }
 
                                     span{
+                                        font-family:'pretendard';
                                         font-size:1.5em; //24px;
                                         line-height:1.3;
                                         letter-spacing:-1px;
@@ -4544,15 +4698,18 @@ body{
                                 *{
                                     display:block;
                                     letter-spacing:-2px;
-                                    line-height:1.3;
                                     word-break: keep-all;
                                 }
                                 .tit{
+                                    font-family:'pretendard';
+                                    line-height:1.3;
                                     font-size:1.88em; //30px;
                                     font-weight:700;
                                     color:#67d6ff;
                                 }
                                 .cont{
+                                    font-family:'pretendard';
+                                    line-height:1.3;
                                     font-size:1.5em; //24px;
                                 }
 
@@ -4564,6 +4721,7 @@ body{
                     }
                     .txt-bottom{
                         margin-top:0.56em; //20px;
+                        font-family:'pretendard';
                         font-size:2.25em; //36px;
                         font-style: italic;
                         line-height:1.3;
@@ -4589,6 +4747,7 @@ body{
                             background-size:11.25em; //180px;
 
                             span{
+                                font-family:'pretendard';
                                 font-size:1.63em; //26px;
                                 line-height:1.3;
                                 word-break:keep-all;
