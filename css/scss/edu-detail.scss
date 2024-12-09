@@ -1496,12 +1496,16 @@ body{
                     }
 
                     .sub-tit{
+                        font-family:'EliceDigitalBaeum';
                         font-size:3.13em; //50px;
+                        line-height:1;
                     }
                     .tit{
+                        font-family:'EliceDigitalBaeum';
                         padding-top:0.29em;//20px;
                         font-size:4.38em; //70px;
                         font-weight: 700;
+                        line-height:1;
                     }
                 }
             }
@@ -2202,12 +2206,14 @@ body{
                         width:100%;
                         font-family:'Cafe24Ohsquare';
                         font-size:3.75em; //60px;
+                        line-height:1;
                         transform:rotate(-10deg);
                         color:#fff;
 
                         &.tit{
                             margin-top:0.18em;//30px;
                             font-size:10.63em; //170px;
+                            line-height:1;
                             background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(42,255,236,1) 100%);
                             background-clip: text;
                             -webkit-background-clip: text;
