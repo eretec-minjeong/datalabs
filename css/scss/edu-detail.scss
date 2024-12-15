@@ -37,6 +37,85 @@ body{
 	margin:0;
 	padding:0;
 }
+/* 결제 안내 */
+.edu-paid{
+    max-width:900px;
+	width:100%;
+    background:#f2f2f2;
+    padding:60px 40px;
+    margin:0;
+    border:solid 1px #ddd;
+    border-top:0;
+    box-sizing:border-box;
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    &__tit{
+        font-family:'pretendard';
+        font-size:35px;
+        font-weight:700;
+        margin:0;
+        word-break:keep-all;
+        letter-spacing:-1px;
+        line-height:1;
+    }
+
+    &__item{
+        margin-top:30px;
+        padding-bottom:30px;
+        border-bottom:solid 1px #ddd;
+
+        &:last-child{
+            padding-bottom:0;
+            border-bottom:0;
+        }
+        .tit{
+            margin:0;
+            font-family:'pretendard';
+            font-size:20px;
+            margin-bottom:20px;
+            font-weight:700;
+            line-height:1;
+            word-break:keep-all;
+            letter-spacing:-1px;
+        }
+
+        ul{
+            list-style:none;
+
+            li{
+                position:relative;
+                margin:0;
+                padding-left:14px;
+                font-family:'pretendard';
+                font-size:18px;
+                font-weight:400;
+                line-height:1.3;
+                word-break:keep-all;
+                letter-spacing:-1px;
+
+                & + li{
+                    margin-top:15px;
+                }
+
+                &::before{
+                    position:absolute;
+                    left:0;
+                    top:14px;
+                    width:8px;
+                    height:1px;
+                    background:#222;
+                    content:'';
+                }
+            }
+        }
+    }
+}
+
 .edu-detail{
     position:relative;
 	font-family:'Malgun Gothic', '맑은 고딕', sans-serif;
@@ -51,6 +130,7 @@ body{
 	max-width:900px;
 	width:100%;
 	border:solid 1px #ddd;
+    box-sizing:border-box;
     *{
         margin:0;
         -webkit-box-sizing:border-box;
@@ -110,7 +190,6 @@ body{
     img{
         max-width:100%;
     }
-
     /* 무료 교육 */
     &.free{
         font-family:'S-CoreDream';
@@ -4319,6 +4398,1065 @@ body{
                     .tutor-list__type3{
                         .tutor{
                             background-image:url('../images/paid/010/img_tutor.png');
+                        }
+                    }
+                }
+            }
+        }
+        //edu011 : 4차 산업혁명 시대의 품질특성관리
+        &.edu011{
+            font-family:'GmarketSans';
+            font-weight:500;
+            text-align:center;
+
+            .col-primary{
+                color:#5100e6;
+            }
+            .col-secondary{
+                color:#9053ff;
+            }
+            .col-third{
+                color:#fff447;
+            }
+            .bg-primary{
+                background-color:#5100e6 !important;
+            }
+
+            .edu-visual{
+                position:relative;
+                height:37.5em; //600px;
+                padding:5em 2.19em 0;//80px 35px 0;
+                background:url('../images/paid/011/bg_visual.png') no-repeat center bottom;
+                background-size:cover;
+
+                .label{
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    display:inline-block;
+                    width:17.5em; //280px;
+                    height:14.25em; //228px;
+                    background:url('../images/paid/011/bg_label.png');
+                    background-size:100%;
+
+                    span{
+                        display:inline-block;
+                        margin-left:-0.38em; //-15px;
+                        padding-top:1em; //40px;
+                        font-family:'GmarketSans';
+                        font-size:2.5em; //40px;
+                        line-height:1;
+                        color:#fff;
+                    }
+
+                    @include ed-mobile{
+                        display: none;
+                    }
+                }
+
+                .tit-box{
+                    .sub-tit{
+                        font-family:'EliceDigitalBaeum';
+                        font-size:2.81em; //45px;
+                        line-height:1;
+                        color:#fff;
+                    }
+                    .tit{
+                        padding-top:0.22em; //20px;
+                        font-family:'EliceDigitalBaeum';
+                        font-size:5.63em; //90px;
+                        font-weight:700;
+                        line-height:1;
+                        background: rgb(103,124,178);
+                        background: linear-gradient(0deg, rgba(103,124,178,1) 0%, rgba(255,255,255,1) 100%);
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        color:transparent;
+                    }
+                }
+            }
+
+            .edu-item{
+                padding:0 2.19em 5.63em; //0 35px 90px;
+                
+                &__tit{
+                    padding:1.78em 0 1.11em 0;//80px 0 50px 0;
+                    font-size:2.81em; //45px;
+                    line-height:1;
+                    font-family: 'Cafe24Ohsquare';
+                    background:url('../images/paid/011/bg_tit.png') no-repeat center top;
+                    background-size:1.33em; //60px;
+                }
+
+                &.info1{
+                    padding:5.63em 2.19em; //90px 35px;
+                    background:#151c2c;
+                    color:#fff;
+
+                    .tit{
+                        position:relative;
+                        font-family:'GmarketSans';
+                        font-size:2.19em; //35px;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+
+                        strong{
+                            position:relative;
+                            padding:0 0.14em; //0 5px;
+                            z-index:0;
+
+                            &::after{
+                                position:absolute;
+                                left:0;
+                                bottom:-0.14em; //-5px;
+                                width:100%;
+                                height:0.51em; //18px;
+                                background:#9053ff;
+                                content:'';
+                                z-index:-1;
+                            }
+                        }
+                    }
+                    .txt{
+                        font-family:'GmarketSans';
+                        font-size:1.56em; //25px;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                    }
+                    .tbl-type1{
+                        margin:4.69em 0 3.13em 0;//75px 0 50px 0;
+                        width:100%;
+                        border-collapse: collapse;
+                        table-layout:fixed;
+
+                        th, td{
+                            background:#fff;
+                            color:#222;
+                        }
+                        th{
+                            padding:0.4em; //10px;
+                            font-family:'GmarketSans';
+                            font-weight:700;
+                            font-size:1.56em; //25px;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                            border-bottom:solid 1px #222;
+                        }
+                        td{
+                            padding:0.43em; //10px;
+                            font-family:'GmarketSans';
+                            font-size:1.44em; //23px;
+                            line-height:1.3;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                            border-bottom:solid 1px #ddd;
+                        }
+                    }
+                }
+                &.info2{
+                    padding:5.63em 2.19em; //90px 35px;
+                    background:#5100e6;
+                    color:#fff;
+
+                    .bubble-box{
+                        margin-bottom:3.75em; //60px;
+
+                        .bubble{
+                            text-align:left;
+                            background:url('../images/paid/011/ico_info1.png') no-repeat right center;
+
+                            & + .bubble{
+                                margin-top:0.94em; //15px;
+                            }
+                            &:nth-child(even){
+                                text-align:right;
+                            }
+                            &:nth-child(2){
+                                background:url('../images/paid/011/ico_info2.png') no-repeat left center;
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/011/ico_info3.png');
+                            }
+
+                            span{
+                                display:inline-block;
+                                width:calc(100% - 3.7em);//calc(100% - 100px);
+                                padding:1.11em; //30px;
+                                border-radius:2.22em; //60px;
+                                background:#fff;
+                                color:#222;
+                                font-family:'GmarketSans';
+                                font-size:1.69em; //27px;
+                                font-weight:700;
+                                text-align: center;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+                        }
+                    }
+                    .txt-big{
+                        margin-bottom:1.21em; //40px;
+                        font-family:'GmarketSans';
+                        font-size:2.06em; //33px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                        font-style:italic;
+                    }
+                    .txt{
+                        font-family:'GmarketSans';
+                        font-size:1.63em; //26px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+                }
+                &.recomme{
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+
+                        li{
+                            width:25%;
+                            padding-top:11.88em; //190px;
+                            background:url('../images/paid/011/img_recomme1.png') no-repeat center top;
+                            background-size:10.56em; //169px;
+
+                            &:nth-child(2){
+                                background-image:url('../images/paid/011/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/011/img_recomme3.png');
+                            }
+                            &:nth-child(4){
+                                background-image:url('../images/paid/011/img_recomme4.png');
+                            }
+
+                            p{
+                                font-family:'GmarketSans';
+                                font-size:1.5em; //24px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.curri{
+                    background:#eeeeee;
+
+                    .curri-list{
+                        &__item{
+                            background:#fff;
+                        }
+                    }
+                }
+                &.feature{
+                    .feature-list{
+                        &__item{
+                            text-align:left;
+
+                            & + .feature-list__item{
+                                margin-top:2.5em; //40px;
+                            }
+
+                            .tit{
+                                padding-bottom:0.67em; //20px;
+                                margin-bottom:0.67em; //20px;
+                                font-family:'GmarketSans';
+                                font-size:1.88em; //30px;
+                                font-weight:700;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                                border-bottom:solid 2px #5100e6;
+
+                                .num{
+                                    display:inline-block;
+                                    padding-right:0.18em; //10px;
+                                    font-family:'GmarketSans';
+                                    font-size:1.83em; //55px;
+                                    color:#cfcfcf;
+                                    font-style:italic;
+                                }
+                            }
+                            .cont{
+                                li{
+                                    position:relative;
+                                    padding-left:0.94em; //15px;
+
+                                    & + li{
+                                        margin-top:1.25em; //20px;
+                                    }
+                                    &::before{
+                                        position:absolute;
+                                        left:0;
+                                        top:0.88em; //14px;
+                                        width:0.63em; //10px;
+                                        height:1px;
+                                        background:#222;
+                                        content:'';
+                                    }
+                                    span{
+                                        font-family:'GmarketSans';
+                                        font-size:1.44em; //23px;
+                                        line-height:1.3;
+                                        word-break:keep-all;
+                                        letter-spacing:-1px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.effect{
+                    padding-top:4.38em; //70px;
+                    background:#404040 url('../images/paid/011/bg_effect.png') no-repeat center;
+                    color:#fff;
+
+                    .txt{
+                        font-family:'GmarketSans';
+                        font-size:1.38em; //22px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+                    .tit{
+                        padding:0.56em 0 1.11em 0;//25px 0 50px 0;
+                        font-family:'Cafe24Ohsquare';
+                        font-size:2.81em; //45px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+                    .effect-list{
+                        display:flex;
+                        justify-content:center;
+                        flex-flow:wrap;
+                        li{
+                            width:33.333%;
+                            padding:11.88em 1.56em 0;//190px 25px 0;
+                            background:url('../images/paid/011/img_effect1.png') no-repeat center top;
+                            background-size:12.13em; //194px;
+
+                            &:nth-child(2){
+                                background-image:url('../images/paid/011/img_effect2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/011/img_effect3.png');
+                            }
+
+                            span{
+                                font-family:'GmarketSans';
+                                font-size:1.44em; //23px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    .tutor-list{
+                        .tutor{
+                            background-image:url('../images/paid/011/img_tutor.png');
+                        }
+                    }
+                }
+                &.book{
+                    padding:3.13em 2.19em 5.63em 0;//50px 35px 90px 0;
+                    background:#f1f1f1;
+
+                    .tit{
+                        position:relative;
+                        display:inline-block;
+                        padding:0 0.25em; //0 10px;
+                        margin-bottom:1.25em; //50px;
+                        font-family:'Cafe24Ohsquare';
+                        font-size:2.5em; //40px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                        font-style: italic;
+                        z-index:0;
+
+                        &::before{
+                            position:absolute;
+                            left:0;
+                            bottom:0;
+                            width:100%;
+                            height:0.45em; //18px;
+                            background:#d3cae3;
+                            content:'';
+                            z-index:-1;
+                        }
+                    }
+                    .book-box{
+                        padding-left:50%;
+                        padding-bottom:10.63em; //170px;
+                        text-align:left;
+                        background:url('../images/paid/011/img_book.png') no-repeat left top;
+                        background-size:24.38em; //390px;
+
+                        .book-tit{
+                            margin-bottom:0.71em; //20px;
+                            font-family:'GmarketSans';
+                            font-size:1.75em; //28px;
+                            font-weight:700;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+
+                            .small{
+                                font-family:'GmarketSans';
+                                font-weight:300;
+                                font-size:0.64em; //18px;
+                            }
+                        }
+                        .txt{
+                            margin-bottom:1em; //20px;
+                            font-family:'GmarketSans';
+                            font-size:1.25em; //20px;
+                            line-height:1.3;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                        }
+                        .info{
+                            font-family:'GmarketSans';
+                            font-size:0.94em; //15px;
+                            font-weight:300;
+                            line-height:1.3;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                        }
+
+                        @include ed-mobile{
+                            background-position:center top;
+                            padding-bottom:0;
+                            padding-left:0;
+                            padding-top:24.38em; //390px;
+
+                            text-align:center;
+                        }
+                    }
+
+                    @include ed-mobile{
+                        padding:3.13em 2.19em 5.63em 2.19em;//50px 35px 90px 35px;
+                    }
+                }
+            }
+        }
+        //품질관리(기본)
+        &.edu012{
+            font-family:'GmarketSans';
+            font-weight:500;
+            text-align:center;
+
+            .col-primary{
+                color:#765fe3;
+            }
+            .col-secondary{
+                color:#db629d;
+            }
+            .col-third{
+                color:#6f2b88;
+            }
+            .col-red{
+                color:#f6525e;
+            }
+            .bg-primary{
+                background-color:#765fe3 !important;
+            }
+            .bg-secondary{
+                background-color:#db629d !important;
+            }
+
+            .edu-visual{
+                height:37.5em; //600px;
+                padding:6.88em 2.19em 0;//110px 35px 0;
+                text-align:left;
+                background:url('../images/paid/012/bg_visual.png') no-repeat left bottom;
+
+                .txt-box{
+
+                    .sub-tit{
+                        padding-bottom:0.47em; //15px;
+                        font-family:'GmarketSans';
+                        font-size:2em; //32px;
+                        font-weight:300;
+                        line-height:1;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+                    .tit{
+                        padding-bottom:0.44em; //40px;
+                        font-family:'GmarketSans';
+                        font-size:5.63em; //90px;
+                        font-weight:700;
+                        line-height:1;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+
+                        span{
+                            color:#6f2b88;
+                        }
+                    }
+                    .label{
+                        display:inline-block;
+                        width:9.38em; //150px;
+                        height:9.38em; //150px;
+                        padding-top:2.81em; //45px;
+                        border-radius:50%;
+                        color:#fff;
+                        text-align:center;
+                        background: rgb(227,98,151);
+                        background: linear-gradient(52deg, rgba(227,98,151,1) 0%, rgba(108,95,233,1) 100%);
+                        box-shadow:0.13em 0.13em 0.63em rgba(0, 0, 0, .4);//2px 2px 10px rgba(0, 0, 0, .4);
+
+                        strong{
+                            font-family:'GmarketSans';
+                            font-size:2.19em; //35px;
+                            font-weight:700;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                        }
+                        span{
+                            font-family:'GmarketSans';
+                            font-size:1.69em; //27px;
+                            font-weight:300;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                        }
+                    }
+                }
+            }
+            .edu-item{
+                padding:0 2.19em 5em; //0 35px 80px;
+
+                &__tit{
+                    padding:1.78em 0 0.89em 0; //80px 0 40px 0;
+                    font-family:'GmarketSans';
+                    font-size:2.81em; //45px;
+                    font-weight:700;
+                    line-height:1.3;
+                    word-break:keep-all;
+                    letter-spacing:-1px;
+                    background:url('../images/paid/012/bg_tit.png') no-repeat center top;
+                    background-size:1.78em; //80px;
+                }
+
+                &.info{
+                    padding-top:3.13em; //50px;
+
+                    .txt{
+                        font-family:'GmarketSans';
+                        font-size:1.56em; //25px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+                }
+                &.content{
+                    background:url('../images/paid/012/bg_content.png') no-repeat center;
+                    background-size:cover;
+
+                    .edu-item__tit{
+                        color:#fff;
+                    }
+                    .content-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        margin-bottom:1.88em; //30px;
+
+                        li{
+                            width:calc(33.333% - 20px);
+                            margin:0 10px;
+                            padding:9.38em 1.56em 3.13em 1.56em; //150px 25px 50px 25px;
+                            border-radius:0.63em; //10px;
+                            background:#fff url('../images/paid/012/img_content1.png') no-repeat center 2.5em;//#fff url('../images/paid/012/img_content1.png') no-repeat center 40px;
+                            background-size:6em; //96px;
+
+                            &:nth-child(2){
+                                background-image: url('../images/paid/012/img_content2.png');
+                                background-size:5.56em; //89px;
+                            }
+                            &:nth-child(3){
+                                background-image: url('../images/paid/012/img_content3.png');
+                                background-size:7.13em; //114px;
+                            }
+
+                            span{
+                                font-family:'GmarketSans';
+                                font-size:1.63em; //26px;
+                                font-weight:700;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+                                margin:0;
+
+                                & + li{
+                                    margin-top:1.88em; //60px;
+                                }
+                            }
+                        }
+                    }
+                    .txt{
+                        text-align:left;
+                        font-family:'GmarketSans';
+                        font-size:1.56em; //25px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                        color:#fff;
+
+                        & + .txt{
+                            margin-top:0.6em; //15px;
+                        }
+
+                        .label{
+                            display:inline-block;
+                            margin-right:0.5em; //10px;
+                            padding:0.25em 0.75em; //5px 15px;
+                            font-family:'GmarketSans';
+                            font-size:0.8em; //20px;
+                            font-weight:700;
+                            font-style:italic;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                            border-radius:3em; //60px;
+                            background:#db629d;
+                        }
+                    }
+                }
+                &.effect{
+                    .effect-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        justify-content:center;
+                        padding-bottom:3.75em; //60px;
+
+                        li{
+                            width:calc(33.333% - 20px);
+                            margin:0 10px;
+
+                            img{
+                                width:100%;
+                            }
+
+                            span{
+                                display:inline-block;
+                                padding-top:0.77em; //20px;
+                                font-family:'GmarketSans';
+                                font-size:1.63em; //26px;
+                                font-weight:700;
+                                line-height:1.3;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+                                margin:0;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                    .txt{
+                        span{
+                            display:inline-block;
+                            padding:0.05em 0.25em; //2px 10px;
+                            font-family:'GmarketSans';
+                            font-size:2.5em; //40px;
+                            line-height:1.3;
+                            letter-spacing:-1px;
+                            word-break:keep-all;
+                            color:#fff;
+                        }
+
+                        & + .txt{
+                            margin-top:0.25em; //10px;
+                        }
+                    }
+                }
+                &.recomme{
+                    background:#634ada;
+
+                    .edu-item__tit{
+                        color:#fff;
+                    }
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        li{
+                            width:50%;
+                            margin-bottom:1.25em; //20px;
+                            padding:0 0.63em 0 4.69em; //0 10px 0 75px;
+                            background:url('../images/paid/012/img_recomme1.png') no-repeat left bottom;
+                            background-size:3.38em; //54px;
+
+                            p{
+                                padding:1.2em 0.4em; //30px 10px;
+                                font-family:'GmarketSans';
+                                font-size:1.56em; //25px;
+                                font-weight:700;
+                                line-height:1.3;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                                border-radius:2.4em; //60px;
+                                border-bottom-left-radius:0;
+                                color:#634ada;
+                                background:#fff;
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    background:#e0dff4;
+
+                    .tutor-list{
+                        .tutor{
+                            background-image: url('../images/paid/012/img_tutor.png');
+                        }
+                    }
+                }
+            }
+        }
+
+        //품질관리(실무)
+        &.edu013{
+            font-family:'GmarketSans';
+            font-weight:500;
+            text-align:center;
+
+            .col-primary{
+                color:#296ae1;
+            }
+            .col-secondary{
+                color:#623ccc;
+            }
+            .col-third{
+                color:#00aeff;
+            }
+            .col-four{
+                color:#80ddff;
+            }
+            .bg-primary{
+                background-color:#296ae1 !important;
+            }
+            .bg-secondary{
+                background-color:#623ccc !important;
+            }
+
+            .edu-visual{
+                padding:6.88em 2.19em 0;//110px 35px 0;
+                text-align:left;
+                background:#141c36 url('../images/paid/013/bg_visual.png') no-repeat right top;
+                background-size:cover;
+                .txt-box{
+                    
+                    .sub-tit{
+                        padding-bottom:0.47em; //15px;
+                        font-family:'GmarketSans';
+                        font-size:2em; //32px;
+                        font-weight:300;
+                        line-height:1;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                        color:#fff;
+                    }
+                    .tit{
+                        padding-bottom:0.44em; //40px;
+                        font-family:'GmarketSans';
+                        font-size:5.63em; //90px;
+                        font-weight:700;
+                        line-height:1;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                        color:#fff;
+
+                        span{
+                            color:#00aeff;
+                        }
+                    }
+                    .label{
+                        display:inline-block;
+                        width:9.38em; //150px;
+                        height:9.38em; //150px;
+                        padding-top:2.81em; //45px;
+                        border-radius:50%;
+                        color:#fff;
+                        text-align:center;
+                        background: rgb(100,59,204);
+                        background: linear-gradient(52deg, rgba(100,59,204,1) 0%, rgba(37,110,227,1) 100%);
+                        box-shadow:0.13em 0.13em 0.63em rgba(0, 0, 0, .4);//2px 2px 10px rgba(0, 0, 0, .4);
+
+                        strong{
+                            font-family:'GmarketSans';
+                            font-size:2.19em; //35px;
+                            font-weight:700;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                        }
+                        span{
+                            font-family:'GmarketSans';
+                            font-size:1.69em; //27px;
+                            font-weight:300;
+                            line-height:1;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                        }
+                    }
+                }
+
+                .txt{
+                    padding:9.6em 0 3.2em 0;//240px 0 80px 0;
+                    font-family:'GmarketSans';
+                    font-size:1.56em; //25px;
+                    line-height:1.3;
+                    word-break:keep-all;
+                    letter-spacing:-1px;
+                    text-align:center;
+                    color:#fff;
+                }
+            }
+            .edu-item{
+                padding:0 2.19em 5em; //0 35px 80px;
+
+                &__tit{
+                    padding:1.78em 0 0.89em 0; //80px 0 40px 0;
+                    font-family:'GmarketSans';
+                    font-size:2.81em; //45px;
+                    font-weight:700;
+                    line-height:1.3;
+                    word-break:keep-all;
+                    letter-spacing:-1px;
+                    background:url('../images/paid/013/bg_tit.png') no-repeat center top;
+                    background-size:1.78em; //80px;
+                }
+
+                &.info{
+                    padding-top:3.13em; //50px;
+
+                    .txt{
+                        font-family:'GmarketSans';
+                        font-size:1.56em; //25px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+                }
+                &.content{
+                    .content-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        margin-bottom:1.88em; //30px;
+
+                        li{
+                            width:calc(33.333% - 20px);
+                            margin:0 10px;
+                            padding:0.94em 1.25em 1.25em; //15px 20px 20px;
+                            background:#fff;
+                            box-shadow:0.13em 0.13em 0.63em rgba(0, 0, 0, .4); //2px 2px 10px rgba(0, 0, 0, .4);
+                            border-radius:0.63em; //10px;
+
+                            .label{
+                                display:inline-block;
+                                padding:0.5em 1em; //10px 20px;
+                                margin-bottom:0.5em; //10px;
+                                font-family:'GmarketSans';
+                                font-size:1.25em; //20px;
+                                font-weight:700;
+                                font-style:italic;
+                                color:#fff;
+                                line-height:1;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                                border-radius:3em; //60px;
+                                background:#0c133d;
+                            }
+
+                            .tit{
+                                display:block;
+                                margin-bottom:0.91em; //20px;
+                                padding-top:3.64em; //80px;
+                                font-family:'GmarketSans';
+                                font-size:1.38em; //22px;
+                                font-weight:700;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                                background:url('../images/paid/013/img_content1.png') no-repeat center top;
+                                background-size:2.45em; //54px;
+                            }
+                            .txt{
+                                display:block;
+                                padding:0.56em; //10px;
+                                font-family:'GmarketSans';
+                                font-size:1.13em; //18px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                                text-align:left;
+                                background:#eeeeee;
+                                border-radius:0.22em; //4px;
+
+                                & + .txt{
+                                    margin-top:0.33em; //6px;
+                                }
+
+                                &.gradient{
+                                    background: rgb(185,182,229);
+                                    background: linear-gradient(90deg, rgba(185,182,229,1) 0%, rgba(182,220,255,1) 100%);
+                                }
+                            }
+
+                            &:nth-child(2){
+                                .tit{
+                                    background-image:url('../images/paid/013/img_content2.png');
+                                    background-size:4.55em; //100px;
+                                }
+                            }
+                            &:nth-child(3){
+                                .tit{
+                                    background-image:url('../images/paid/013/img_content3.png');
+                                    background-size:3em; //66px;
+                                }
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+                                margin:0;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+                &.effect{
+                    .info{
+                        font-family:'GmarketSans';
+                        font-size:1.56em; //25px;
+                        line-height:1.3;
+                        word-break:keep-all;
+                        letter-spacing:-1px;
+                    }
+
+                    .effect-list{
+                        margin:1.56em 0; //25px 0;
+                        padding:1.88em 1.25em; //30px 20px;
+                        border:solid 0.13em #296ae1; //solid 2px #296ae1;
+                        border-radius:0.25em; //4px;
+                        text-align:left;
+
+                        li{
+                            padding-left:1.59em; //35px;
+                            font-family:'GmarketSans';
+                            font-size:1.38em; //22px;
+                            line-height:1.3;
+                            word-break:keep-all;
+                            letter-spacing:-1px;
+                            background:url('../images/paid/013/ico_chk.png') no-repeat left top;
+                            background-size:1.18em; //26px;
+
+                            & + li{
+                                margin-top:0.68em; //15px;
+                            }
+                        }
+                    }
+                    .txt{
+                        span{
+                            display:inline-block;
+                            padding:0.05em 0.25em; //2px 10px;
+                            font-family:'GmarketSans';
+                            font-size:2.5em; //40px;
+                            line-height:1.3;
+                            letter-spacing:-1px;
+                            word-break:keep-all;
+                            color:#fff;
+                        }
+
+                        & + .txt{
+                            margin-top:0.25em; //10px;
+                        }
+                    }
+                }
+                &.recomme{
+                    background:#2b3c74;
+
+                    .edu-item__tit{
+                        color:#fff;
+                    }
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        li{
+                            width:50%;
+                            margin-bottom:1.25em; //20px;
+                            padding:0 0.63em 0 4.69em; //0 10px 0 75px;
+                            background:url('../images/paid/013/img_recomme1.png') no-repeat left bottom;
+                            background-size:3.38em; //54px;
+
+                            p{
+                                padding:1.2em 0.4em; //30px 10px;
+                                font-family:'GmarketSans';
+                                font-size:1.56em; //25px;
+                                font-weight:700;
+                                line-height:1.3;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                                border-radius:2.4em; //60px;
+                                border-bottom-left-radius:0;
+                                border:solid 2px #317aff;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+                &.curri{
+                    background:#e4e8f1;
+                    .curri-list{
+                        &__item{
+                            background:#fff;
+                        }
+                    }
+                }
+                &.tutor{
+
+                    .tutor-list{
+                        .tutor{
+                            background-image: url('../images/paid/012/img_tutor.png');
                         }
                     }
                 }
