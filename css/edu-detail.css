@@ -4043,6 +4043,945 @@ body {
 .edu-detail.paid.edu010 .edu-item.tutor .tutor-list__type3 .tutor {
   background-image: url("../images/paid/010/img_tutor.png");
 }
+.edu-detail.paid.edu011 {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  text-align: center;
+}
+.edu-detail.paid.edu011 .col-primary {
+  color: #5100e6;
+}
+.edu-detail.paid.edu011 .col-secondary {
+  color: #9053ff;
+}
+.edu-detail.paid.edu011 .col-third {
+  color: #fff447;
+}
+.edu-detail.paid.edu011 .bg-primary {
+  background-color: #5100e6 !important;
+}
+.edu-detail.paid.edu011 .edu-visual {
+  position: relative;
+  height: 37.5em;
+  padding: 5em 2.19em 0;
+  background: url("../images/paid/011/bg_visual.png") no-repeat center bottom;
+  background-size: cover;
+}
+.edu-detail.paid.edu011 .edu-visual .label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 17.5em;
+  height: 14.25em;
+  background: url("../images/paid/011/bg_label.png");
+  background-size: 100%;
+}
+.edu-detail.paid.edu011 .edu-visual .label span {
+  display: inline-block;
+  margin-left: -0.38em;
+  padding-top: 1em;
+  font-family: "GmarketSans";
+  font-size: 2.5em;
+  line-height: 1;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu011 .edu-visual .label {
+    display: none;
+  }
+}
+.edu-detail.paid.edu011 .edu-visual .tit-box .sub-tit {
+  font-family: "EliceDigitalBaeum";
+  font-size: 2.81em;
+  line-height: 1;
+  color: #fff;
+}
+.edu-detail.paid.edu011 .edu-visual .tit-box .tit {
+  padding-top: 0.22em;
+  font-family: "EliceDigitalBaeum";
+  font-size: 5.63em;
+  font-weight: 700;
+  line-height: 1;
+  background: rgb(103, 124, 178);
+  background: linear-gradient(0deg, rgb(103, 124, 178) 0%, rgb(255, 255, 255) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.edu-detail.paid.edu011 .edu-item {
+  padding: 0 2.19em 5.63em;
+}
+.edu-detail.paid.edu011 .edu-item__tit {
+  padding: 1.78em 0 1.11em 0;
+  font-size: 2.81em;
+  line-height: 1;
+  font-family: "Cafe24Ohsquare";
+  background: url("../images/paid/011/bg_tit.png") no-repeat center top;
+  background-size: 1.33em;
+}
+.edu-detail.paid.edu011 .edu-item.info1 {
+  padding: 5.63em 2.19em;
+  background: #151c2c;
+  color: #fff;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tit {
+  position: relative;
+  font-family: "GmarketSans";
+  font-size: 2.19em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tit strong {
+  position: relative;
+  padding: 0 0.14em;
+  z-index: 0;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tit strong::after {
+  position: absolute;
+  left: 0;
+  bottom: -0.14em;
+  width: 100%;
+  height: 0.51em;
+  background: #9053ff;
+  content: "";
+  z-index: -1;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .txt {
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tbl-type1 {
+  margin: 4.69em 0 3.13em 0;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tbl-type1 th, .edu-detail.paid.edu011 .edu-item.info1 .tbl-type1 td {
+  background: #fff;
+  color: #222;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tbl-type1 th {
+  padding: 0.4em;
+  font-family: "GmarketSans";
+  font-weight: 700;
+  font-size: 1.56em;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  border-bottom: solid 1px #222;
+}
+.edu-detail.paid.edu011 .edu-item.info1 .tbl-type1 td {
+  padding: 0.43em;
+  font-family: "GmarketSans";
+  font-size: 1.44em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  border-bottom: solid 1px #ddd;
+}
+.edu-detail.paid.edu011 .edu-item.info2 {
+  padding: 5.63em 2.19em;
+  background: #5100e6;
+  color: #fff;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box {
+  margin-bottom: 3.75em;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box .bubble {
+  text-align: left;
+  background: url("../images/paid/011/ico_info1.png") no-repeat right center;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box .bubble + .bubble {
+  margin-top: 0.94em;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box .bubble:nth-child(even) {
+  text-align: right;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box .bubble:nth-child(2) {
+  background: url("../images/paid/011/ico_info2.png") no-repeat left center;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box .bubble:nth-child(3) {
+  background-image: url("../images/paid/011/ico_info3.png");
+}
+.edu-detail.paid.edu011 .edu-item.info2 .bubble-box .bubble span {
+  display: inline-block;
+  width: calc(100% - 3.7em);
+  padding: 1.11em;
+  border-radius: 2.22em;
+  background: #fff;
+  color: #222;
+  font-family: "GmarketSans";
+  font-size: 1.69em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .txt-big {
+  margin-bottom: 1.21em;
+  font-family: "GmarketSans";
+  font-size: 2.06em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+.edu-detail.paid.edu011 .edu-item.info2 .txt {
+  font-family: "GmarketSans";
+  font-size: 1.63em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+}
+.edu-detail.paid.edu011 .edu-item.recomme .recomme-list li {
+  width: 25%;
+  padding-top: 11.88em;
+  background: url("../images/paid/011/img_recomme1.png") no-repeat center top;
+  background-size: 10.56em;
+}
+.edu-detail.paid.edu011 .edu-item.recomme .recomme-list li:nth-child(2) {
+  background-image: url("../images/paid/011/img_recomme2.png");
+}
+.edu-detail.paid.edu011 .edu-item.recomme .recomme-list li:nth-child(3) {
+  background-image: url("../images/paid/011/img_recomme3.png");
+}
+.edu-detail.paid.edu011 .edu-item.recomme .recomme-list li:nth-child(4) {
+  background-image: url("../images/paid/011/img_recomme4.png");
+}
+.edu-detail.paid.edu011 .edu-item.recomme .recomme-list li p {
+  font-family: "GmarketSans";
+  font-size: 1.5em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu011 .edu-item.recomme .recomme-list li {
+    width: 100%;
+  }
+  .edu-detail.paid.edu011 .edu-item.recomme .recomme-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu011 .edu-item.curri {
+  background: #eeeeee;
+}
+.edu-detail.paid.edu011 .edu-item.curri .curri-list__item {
+  background: #fff;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item {
+  text-align: left;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item + .feature-list__item {
+  margin-top: 2.5em;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item .tit {
+  padding-bottom: 0.67em;
+  margin-bottom: 0.67em;
+  font-family: "GmarketSans";
+  font-size: 1.88em;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  border-bottom: solid 2px #5100e6;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item .tit .num {
+  display: inline-block;
+  padding-right: 0.18em;
+  font-family: "GmarketSans";
+  font-size: 1.83em;
+  color: #cfcfcf;
+  font-style: italic;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item .cont li {
+  position: relative;
+  padding-left: 0.94em;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item .cont li + li {
+  margin-top: 1.25em;
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item .cont li::before {
+  position: absolute;
+  left: 0;
+  top: 0.88em;
+  width: 0.63em;
+  height: 1px;
+  background: #222;
+  content: "";
+}
+.edu-detail.paid.edu011 .edu-item.feature .feature-list__item .cont li span {
+  font-family: "GmarketSans";
+  font-size: 1.44em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.effect {
+  padding-top: 4.38em;
+  background: #404040 url("../images/paid/011/bg_effect.png") no-repeat center;
+  color: #fff;
+}
+.edu-detail.paid.edu011 .edu-item.effect .txt {
+  font-family: "GmarketSans";
+  font-size: 1.38em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.effect .tit {
+  padding: 0.56em 0 1.11em 0;
+  font-family: "Cafe24Ohsquare";
+  font-size: 2.81em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.effect .effect-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+}
+.edu-detail.paid.edu011 .edu-item.effect .effect-list li {
+  width: 33.333%;
+  padding: 11.88em 1.56em 0;
+  background: url("../images/paid/011/img_effect1.png") no-repeat center top;
+  background-size: 12.13em;
+}
+.edu-detail.paid.edu011 .edu-item.effect .effect-list li:nth-child(2) {
+  background-image: url("../images/paid/011/img_effect2.png");
+}
+.edu-detail.paid.edu011 .edu-item.effect .effect-list li:nth-child(3) {
+  background-image: url("../images/paid/011/img_effect3.png");
+}
+.edu-detail.paid.edu011 .edu-item.effect .effect-list li span {
+  font-family: "GmarketSans";
+  font-size: 1.44em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu011 .edu-item.effect .effect-list li {
+    width: 100%;
+  }
+  .edu-detail.paid.edu011 .edu-item.effect .effect-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu011 .edu-item.tutor .tutor-list .tutor {
+  background-image: url("../images/paid/011/img_tutor.png");
+}
+.edu-detail.paid.edu011 .edu-item.book {
+  padding: 3.13em 2.19em 5.63em 0;
+  background: #f1f1f1;
+}
+.edu-detail.paid.edu011 .edu-item.book .tit {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.25em;
+  margin-bottom: 1.25em;
+  font-family: "Cafe24Ohsquare";
+  font-size: 2.5em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  font-style: italic;
+  z-index: 0;
+}
+.edu-detail.paid.edu011 .edu-item.book .tit::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.45em;
+  background: #d3cae3;
+  content: "";
+  z-index: -1;
+}
+.edu-detail.paid.edu011 .edu-item.book .book-box {
+  padding-left: 50%;
+  padding-bottom: 10.63em;
+  text-align: left;
+  background: url("../images/paid/011/img_book.png") no-repeat left top;
+  background-size: 24.38em;
+}
+.edu-detail.paid.edu011 .edu-item.book .book-box .book-tit {
+  margin-bottom: 0.71em;
+  font-family: "GmarketSans";
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.book .book-box .book-tit .small {
+  font-family: "GmarketSans";
+  font-weight: 300;
+  font-size: 0.64em;
+}
+.edu-detail.paid.edu011 .edu-item.book .book-box .txt {
+  margin-bottom: 1em;
+  font-family: "GmarketSans";
+  font-size: 1.25em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu011 .edu-item.book .book-box .info {
+  font-family: "GmarketSans";
+  font-size: 0.94em;
+  font-weight: 300;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu011 .edu-item.book .book-box {
+    background-position: center top;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 24.38em;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu011 .edu-item.book {
+    padding: 3.13em 2.19em 5.63em 2.19em;
+  }
+}
+.edu-detail.paid.edu012 {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  text-align: center;
+}
+.edu-detail.paid.edu012 .col-primary {
+  color: #765fe3;
+}
+.edu-detail.paid.edu012 .col-secondary {
+  color: #db629d;
+}
+.edu-detail.paid.edu012 .col-third {
+  color: #6f2b88;
+}
+.edu-detail.paid.edu012 .col-red {
+  color: #f6525e;
+}
+.edu-detail.paid.edu012 .bg-primary {
+  background-color: #765fe3 !important;
+}
+.edu-detail.paid.edu012 .bg-secondary {
+  background-color: #db629d !important;
+}
+.edu-detail.paid.edu012 .edu-visual {
+  height: 37.5em;
+  padding: 6.88em 2.19em 0;
+  text-align: left;
+  background: url("../images/paid/012/bg_visual.png") no-repeat left bottom;
+}
+.edu-detail.paid.edu012 .edu-visual .txt-box .sub-tit {
+  padding-bottom: 0.47em;
+  font-family: "GmarketSans";
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu012 .edu-visual .txt-box .tit {
+  padding-bottom: 0.44em;
+  font-family: "GmarketSans";
+  font-size: 5.63em;
+  font-weight: 700;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu012 .edu-visual .txt-box .tit span {
+  color: #6f2b88;
+}
+.edu-detail.paid.edu012 .edu-visual .txt-box .label {
+  display: inline-block;
+  width: 9.38em;
+  height: 9.38em;
+  padding-top: 2.81em;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: rgb(227, 98, 151);
+  background: linear-gradient(52deg, rgb(227, 98, 151) 0%, rgb(108, 95, 233) 100%);
+  box-shadow: 0.13em 0.13em 0.63em rgba(0, 0, 0, 0.4);
+}
+.edu-detail.paid.edu012 .edu-visual .txt-box .label strong {
+  font-family: "GmarketSans";
+  font-size: 2.19em;
+  font-weight: 700;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu012 .edu-visual .txt-box .label span {
+  font-family: "GmarketSans";
+  font-size: 1.69em;
+  font-weight: 300;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu012 .edu-item {
+  padding: 0 2.19em 5em;
+}
+.edu-detail.paid.edu012 .edu-item__tit {
+  padding: 1.78em 0 0.89em 0;
+  font-family: "GmarketSans";
+  font-size: 2.81em;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  background: url("../images/paid/012/bg_tit.png") no-repeat center top;
+  background-size: 1.78em;
+}
+.edu-detail.paid.edu012 .edu-item.info {
+  padding-top: 3.13em;
+}
+.edu-detail.paid.edu012 .edu-item.info .txt {
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu012 .edu-item.content {
+  background: url("../images/paid/012/bg_content.png") no-repeat center;
+  background-size: cover;
+}
+.edu-detail.paid.edu012 .edu-item.content .edu-item__tit {
+  color: #fff;
+}
+.edu-detail.paid.edu012 .edu-item.content .content-list {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 1.88em;
+}
+.edu-detail.paid.edu012 .edu-item.content .content-list li {
+  width: calc(33.333% - 20px);
+  margin: 0 10px;
+  padding: 9.38em 1.56em 3.13em 1.56em;
+  border-radius: 0.63em;
+  background: #fff url("../images/paid/012/img_content1.png") no-repeat center 2.5em;
+  background-size: 6em;
+}
+.edu-detail.paid.edu012 .edu-item.content .content-list li:nth-child(2) {
+  background-image: url("../images/paid/012/img_content2.png");
+  background-size: 5.56em;
+}
+.edu-detail.paid.edu012 .edu-item.content .content-list li:nth-child(3) {
+  background-image: url("../images/paid/012/img_content3.png");
+  background-size: 7.13em;
+}
+.edu-detail.paid.edu012 .edu-item.content .content-list li span {
+  font-family: "GmarketSans";
+  font-size: 1.63em;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu012 .edu-item.content .content-list li {
+    width: 100%;
+    margin: 0;
+  }
+  .edu-detail.paid.edu012 .edu-item.content .content-list li + li {
+    margin-top: 1.88em;
+  }
+}
+.edu-detail.paid.edu012 .edu-item.content .txt {
+  text-align: left;
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.edu-detail.paid.edu012 .edu-item.content .txt + .txt {
+  margin-top: 0.6em;
+}
+.edu-detail.paid.edu012 .edu-item.content .txt .label {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.25em 0.75em;
+  font-family: "GmarketSans";
+  font-size: 0.8em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  border-radius: 3em;
+  background: #db629d;
+}
+.edu-detail.paid.edu012 .edu-item.effect .effect-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding-bottom: 3.75em;
+}
+.edu-detail.paid.edu012 .edu-item.effect .effect-list li {
+  width: calc(33.333% - 20px);
+  margin: 0 10px;
+}
+.edu-detail.paid.edu012 .edu-item.effect .effect-list li img {
+  width: 100%;
+}
+.edu-detail.paid.edu012 .edu-item.effect .effect-list li span {
+  display: inline-block;
+  padding-top: 0.77em;
+  font-family: "GmarketSans";
+  font-size: 1.63em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu012 .edu-item.effect .effect-list li {
+    width: 100%;
+    margin: 0;
+  }
+  .edu-detail.paid.edu012 .edu-item.effect .effect-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu012 .edu-item.effect .txt span {
+  display: inline-block;
+  padding: 0.05em 0.25em;
+  font-family: "GmarketSans";
+  font-size: 2.5em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  color: #fff;
+}
+.edu-detail.paid.edu012 .edu-item.effect .txt + .txt {
+  margin-top: 0.25em;
+}
+.edu-detail.paid.edu012 .edu-item.recomme {
+  background: #634ada;
+}
+.edu-detail.paid.edu012 .edu-item.recomme .edu-item__tit {
+  color: #fff;
+}
+.edu-detail.paid.edu012 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+}
+.edu-detail.paid.edu012 .edu-item.recomme .recomme-list li {
+  width: 50%;
+  margin-bottom: 1.25em;
+  padding: 0 0.63em 0 4.69em;
+  background: url("../images/paid/012/img_recomme1.png") no-repeat left bottom;
+  background-size: 3.38em;
+}
+.edu-detail.paid.edu012 .edu-item.recomme .recomme-list li p {
+  padding: 1.2em 0.4em;
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  border-radius: 2.4em;
+  border-bottom-left-radius: 0;
+  color: #634ada;
+  background: #fff;
+}
+.edu-detail.paid.edu012 .edu-item.tutor {
+  background: #e0dff4;
+}
+.edu-detail.paid.edu012 .edu-item.tutor .tutor-list .tutor {
+  background-image: url("../images/paid/012/img_tutor.png");
+}
+.edu-detail.paid.edu013 {
+  font-family: "GmarketSans";
+  font-weight: 500;
+  text-align: center;
+}
+.edu-detail.paid.edu013 .col-primary {
+  color: #296ae1;
+}
+.edu-detail.paid.edu013 .col-secondary {
+  color: #623ccc;
+}
+.edu-detail.paid.edu013 .col-third {
+  color: #00aeff;
+}
+.edu-detail.paid.edu013 .col-four {
+  color: #80ddff;
+}
+.edu-detail.paid.edu013 .bg-primary {
+  background-color: #296ae1 !important;
+}
+.edu-detail.paid.edu013 .bg-secondary {
+  background-color: #623ccc !important;
+}
+.edu-detail.paid.edu013 .edu-visual {
+  padding: 6.88em 2.19em 0;
+  text-align: left;
+  background: #141c36 url("../images/paid/013/bg_visual.png") no-repeat right top;
+  background-size: cover;
+}
+.edu-detail.paid.edu013 .edu-visual .txt-box .sub-tit {
+  padding-bottom: 0.47em;
+  font-family: "GmarketSans";
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.edu-detail.paid.edu013 .edu-visual .txt-box .tit {
+  padding-bottom: 0.44em;
+  font-family: "GmarketSans";
+  font-size: 5.63em;
+  font-weight: 700;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  color: #fff;
+}
+.edu-detail.paid.edu013 .edu-visual .txt-box .tit span {
+  color: #00aeff;
+}
+.edu-detail.paid.edu013 .edu-visual .txt-box .label {
+  display: inline-block;
+  width: 9.38em;
+  height: 9.38em;
+  padding-top: 2.81em;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  background: rgb(100, 59, 204);
+  background: linear-gradient(52deg, rgb(100, 59, 204) 0%, rgb(37, 110, 227) 100%);
+  box-shadow: 0.13em 0.13em 0.63em rgba(0, 0, 0, 0.4);
+}
+.edu-detail.paid.edu013 .edu-visual .txt-box .label strong {
+  font-family: "GmarketSans";
+  font-size: 2.19em;
+  font-weight: 700;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu013 .edu-visual .txt-box .label span {
+  font-family: "GmarketSans";
+  font-size: 1.69em;
+  font-weight: 300;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu013 .edu-visual .txt {
+  padding: 9.6em 0 3.2em 0;
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #fff;
+}
+.edu-detail.paid.edu013 .edu-item {
+  padding: 0 2.19em 5em;
+}
+.edu-detail.paid.edu013 .edu-item__tit {
+  padding: 1.78em 0 0.89em 0;
+  font-family: "GmarketSans";
+  font-size: 2.81em;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  background: url("../images/paid/013/bg_tit.png") no-repeat center top;
+  background-size: 1.78em;
+}
+.edu-detail.paid.edu013 .edu-item.info {
+  padding-top: 3.13em;
+}
+.edu-detail.paid.edu013 .edu-item.info .txt {
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list {
+  display: flex;
+  flex-flow: wrap;
+  margin-bottom: 1.88em;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li {
+  width: calc(33.333% - 20px);
+  margin: 0 10px;
+  padding: 0.94em 1.25em 1.25em;
+  background: #fff;
+  box-shadow: 0.13em 0.13em 0.63em rgba(0, 0, 0, 0.4);
+  border-radius: 0.63em;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li .label {
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+  font-family: "GmarketSans";
+  font-size: 1.25em;
+  font-weight: 700;
+  font-style: italic;
+  color: #fff;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  border-radius: 3em;
+  background: #0c133d;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li .tit {
+  display: block;
+  margin-bottom: 0.91em;
+  padding-top: 3.64em;
+  font-family: "GmarketSans";
+  font-size: 1.38em;
+  font-weight: 700;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  background: url("../images/paid/013/img_content1.png") no-repeat center top;
+  background-size: 2.45em;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li .txt {
+  display: block;
+  padding: 0.56em;
+  font-family: "GmarketSans";
+  font-size: 1.13em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  text-align: left;
+  background: #eeeeee;
+  border-radius: 0.22em;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li .txt + .txt {
+  margin-top: 0.33em;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li .txt.gradient {
+  background: rgb(185, 182, 229);
+  background: linear-gradient(90deg, rgb(185, 182, 229) 0%, rgb(182, 220, 255) 100%);
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li:nth-child(2) .tit {
+  background-image: url("../images/paid/013/img_content2.png");
+  background-size: 4.55em;
+}
+.edu-detail.paid.edu013 .edu-item.content .content-list li:nth-child(3) .tit {
+  background-image: url("../images/paid/013/img_content3.png");
+  background-size: 3em;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu013 .edu-item.content .content-list li {
+    width: 100%;
+    margin: 0;
+  }
+  .edu-detail.paid.edu013 .edu-item.content .content-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu013 .edu-item.effect .info {
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu013 .edu-item.effect .effect-list {
+  margin: 1.56em 0;
+  padding: 1.88em 1.25em;
+  border: solid 0.13em #296ae1;
+  border-radius: 0.25em;
+  text-align: left;
+}
+.edu-detail.paid.edu013 .edu-item.effect .effect-list li {
+  padding-left: 1.59em;
+  font-family: "GmarketSans";
+  font-size: 1.38em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  background: url("../images/paid/013/ico_chk.png") no-repeat left top;
+  background-size: 1.18em;
+}
+.edu-detail.paid.edu013 .edu-item.effect .effect-list li + li {
+  margin-top: 0.68em;
+}
+.edu-detail.paid.edu013 .edu-item.effect .txt span {
+  display: inline-block;
+  padding: 0.05em 0.25em;
+  font-family: "GmarketSans";
+  font-size: 2.5em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  color: #fff;
+}
+.edu-detail.paid.edu013 .edu-item.effect .txt + .txt {
+  margin-top: 0.25em;
+}
+.edu-detail.paid.edu013 .edu-item.recomme {
+  background: #2b3c74;
+}
+.edu-detail.paid.edu013 .edu-item.recomme .edu-item__tit {
+  color: #fff;
+}
+.edu-detail.paid.edu013 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+}
+.edu-detail.paid.edu013 .edu-item.recomme .recomme-list li {
+  width: 50%;
+  margin-bottom: 1.25em;
+  padding: 0 0.63em 0 4.69em;
+  background: url("../images/paid/013/img_recomme1.png") no-repeat left bottom;
+  background-size: 3.38em;
+}
+.edu-detail.paid.edu013 .edu-item.recomme .recomme-list li p {
+  padding: 1.2em 0.4em;
+  font-family: "GmarketSans";
+  font-size: 1.56em;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  border-radius: 2.4em;
+  border-bottom-left-radius: 0;
+  border: solid 2px #317aff;
+  color: #fff;
+}
+.edu-detail.paid.edu013 .edu-item.curri {
+  background: #e4e8f1;
+}
+.edu-detail.paid.edu013 .edu-item.curri .curri-list__item {
+  background: #fff;
+}
+.edu-detail.paid.edu013 .edu-item.tutor .tutor-list .tutor {
+  background-image: url("../images/paid/012/img_tutor.png");
+}
 .edu-detail.paid.edu014 {
   font-family: "pretendard";
   font-weight: 400;
