@@ -2760,38 +2760,31 @@ body {
   text-align: left;
 }
 .edu-detail.paid.edu006 .col-primary {
-  color: #0090ff;
+  color: #0090ff !important;
 }
 .edu-detail.paid.edu006 .edu-visual {
   height: 37.5em;
   padding: 0 2.5em;
   text-align: center;
-  background: url("../images/paid/006/bg_visual.png") no-repeat center top;
+  background: url("../images/paid/006/bg_visual.jpg") no-repeat center top;
   background-size: cover;
 }
 .edu-detail.paid.edu006 .edu-visual .tit-box {
-  padding-top: 11.25em;
-  text-align: right;
+  padding-top: 4.38em;
+  text-align: left;
 }
 .edu-detail.paid.edu006 .edu-visual .tit-box p {
   letter-spacing: -2px;
   font-family: "GmarketSans";
-  line-height: 1;
-  font-size: 2.88em;
-  color: #fff;
-  text-shadow: 0.04em 0.04em 0.13em #8c8c8c;
-}
-.edu-detail.paid.edu006 .edu-visual .tit-box p.tit {
-  padding: 0.13em 0;
   font-weight: 700;
-  font-size: 9.38em;
-  color: #0090ff;
+  line-height: 1;
+  font-size: 4.69em;
+  color: #222;
 }
 .edu-detail.paid.edu006 .edu-visual .tit-box p.sub-tit {
-  font-weight: 700;
-  font-size: 1.88em;
-  color: #0090ff;
-  text-shadow: none;
+  padding-top: 0.28em;
+  font-weight: 500;
+  font-size: 2.25em;
 }
 .edu-detail.paid.edu006 .edu-item {
   padding: 3.75em 2.5em;
