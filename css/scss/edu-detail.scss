@@ -2826,39 +2826,32 @@ body{
             text-align:left;
 
             .col-primary{
-                color:#0090ff;
+                color:#0090ff !important;
             }
 
             .edu-visual{
                 height:37.5em; //600px;
                 padding:0 2.5em; //0 40px;
                 text-align:center;
-                background:url('../images/paid/006/bg_visual.png') no-repeat center top;
+                background:url('../images/paid/006/bg_visual.jpg') no-repeat center top;
                 background-size:cover;
 
                 .tit-box{
-                    padding-top:11.25em; //180px;
-                    text-align: right;
+                    padding-top:4.38em; //70px;
+                    text-align: left;
 
                     p{
                         letter-spacing:-2px;
                         font-family:'GmarketSans';
+                        font-weight:700;
                         line-height:1;
-                        font-size:2.88em; //46px;
-                        color:#fff;
-                        text-shadow:0.04em 0.04em 0.13em #8c8c8c;//2px 2px 6px #8c8c8c;
+                        font-size:4.69em; //75px;
+                        color:#222;
 
-                        &.tit{
-                            padding:0.13em 0; //20px 0;
-                            font-weight:700;
-                            font-size:9.38em; //150px;
-                            color:#0090ff;
-                        }
                         &.sub-tit{
-                            font-weight:700;
-                            font-size:1.88em; //30px;
-                            color:#0090ff;
-                            text-shadow:none;
+                            padding-top:0.28em; //10px;
+                            font-weight:500;
+                            font-size:2.25em; //36px;
                         }
                     }
                 }
