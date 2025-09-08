@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* =======================================================================================================================
  * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
- * date : 2024.11.16
+ * date : 2025.09.08
  * 교육 상세 페이지 CSS
  * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
  * ======================================================================================================================= */
@@ -235,77 +235,6 @@ body {
   padding: 0;
 }
 
-/* 결제 안내 */
-.edu-paid {
-  max-width: 900px;
-  width: 100%;
-  background: #f2f2f2;
-  padding: 60px 40px;
-  margin: 0;
-  border: solid 1px #ddd;
-  border-top: 0;
-  box-sizing: border-box;
-}
-.edu-paid * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.edu-paid__tit {
-  font-family: "pretendard";
-  font-size: 35px;
-  font-weight: 700;
-  margin: 0;
-  word-break: keep-all;
-  letter-spacing: -1px;
-  line-height: 1;
-}
-.edu-paid__item {
-  margin-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: solid 1px #ddd;
-}
-.edu-paid__item:last-child {
-  padding-bottom: 0;
-  border-bottom: 0;
-}
-.edu-paid__item .tit {
-  margin: 0;
-  font-family: "pretendard";
-  font-size: 20px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  line-height: 1;
-  word-break: keep-all;
-  letter-spacing: -1px;
-}
-.edu-paid__item ul {
-  list-style: none;
-}
-.edu-paid__item ul li {
-  position: relative;
-  margin: 0;
-  padding-left: 14px;
-  font-family: "pretendard";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.3;
-  word-break: keep-all;
-  letter-spacing: -1px;
-}
-.edu-paid__item ul li + li {
-  margin-top: 15px;
-}
-.edu-paid__item ul li::before {
-  position: absolute;
-  left: 0;
-  top: 14px;
-  width: 8px;
-  height: 1px;
-  background: #222;
-  content: "";
-}
-
 .edu-detail {
   position: relative;
   font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
@@ -323,12 +252,15 @@ body {
   box-sizing: border-box;
   /* 무료 교육 */
   /* 유료 교육 */
+  /* 결제 안내 */
 }
 .edu-detail * {
   margin: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .edu-detail *::before, .edu-detail *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .edu-detail div, .edu-detail p, .edu-detail h1, .edu-detail h2, .edu-detail h3, .edu-detail h4, .edu-detail h5, .edu-detail h6, .edu-detail ul, .edu-detail ol, .edu-detail li, .edu-detail dl, .edu-detail dt, .edu-detail dd, .edu-detail table, .edu-detail th, .edu-detail td, .edu-detail form, .edu-detail fieldset, .edu-detail legend, .edu-detail input, .edu-detail textarea, .edu-detail button, .edu-detail select {
@@ -867,6 +799,8 @@ body {
 }
 .edu-detail.paid .edu-item .curri-list__type2__item .tit-box {
   padding: 1.44em 2.5em;
+  margin-bottom: 0 !important;
+  background: #fff;
 }
 .edu-detail.paid .edu-item .curri-list__type2__item .tit-box p {
   font-family: "pretendard";
@@ -875,6 +809,7 @@ body {
   font-weight: 700;
   letter-spacing: -1px;
   font-style: italic;
+  text-align: left;
 }
 .edu-detail.paid .edu-item .curri-list__type2__item .tit-box p .num {
   padding-right: 0.38em;
@@ -886,6 +821,7 @@ body {
   background-color: #e9eef2;
 }
 .edu-detail.paid .edu-item .curri-list__type2__item .cont-list li {
+  text-align: left;
   font-family: "pretendard";
   position: relative;
   padding-left: 0.42em;
@@ -1031,6 +967,7 @@ body {
   padding-left: 5.31em;
 }
 .edu-detail.paid .edu-item .tutor-list__type3 .cont ul li {
+  text-align: left;
   font-family: "pretendard";
   position: relative;
   padding-left: 0.42em;
@@ -5458,6 +5395,951 @@ body {
 .edu-detail.paid.edu014 .edu-item.tutor .tutor-list__type3 .tutor {
   background-image: url("../images/paid/014/img_tutor.png");
 }
+.edu-detail.paid.edu015 {
+  font-family: "pretendard";
+  font-weight: 400;
+  text-align: left;
+}
+.edu-detail.paid.edu015 .col-primary {
+  color: #1dca8e;
+}
+.edu-detail.paid.edu015 .edu-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 37.5em;
+  background: url("../images/paid/015/bg_visual.png") no-repeat center;
+  background-size: cover;
+}
+.edu-detail.paid.edu015 .edu-visual .tit-wrap {
+  text-align: center;
+}
+.edu-detail.paid.edu015 .edu-visual .tit-wrap .sub-tit {
+  font-family: "pretendard";
+  font-size: 0.91em;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  color: #aaaaaa;
+}
+.edu-detail.paid.edu015 .edu-visual .tit-wrap .tit {
+  padding: 0.31em 0;
+  font-family: "sbAgro";
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.edu-detail.paid.edu015 .edu-visual .tit-wrap .label > span {
+  display: inline-block;
+  padding: 0.17em 0.67em 0;
+  font-family: "sbAgro";
+  font-size: 3.75em;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 1em;
+  color: #fff;
+  background: #1dca8e;
+}
+.edu-detail.paid.edu015 .edu-item {
+  padding: 4.38em 2.5em;
+  text-align: center;
+}
+.edu-detail.paid.edu015 .edu-item .tit-box {
+  margin-bottom: 3.13em;
+}
+.edu-detail.paid.edu015 .edu-item .tit-box .label {
+  display: inline-block;
+  height: 1.82em;
+  margin-bottom: 0.91em;
+  padding: 0.45em 0.68em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  border-radius: 0.45em;
+  color: #1dca8e;
+  background: #020e1e;
+}
+.edu-detail.paid.edu015 .edu-item .tit-box p {
+  font-family: "pretendard";
+  font-size: 2.75em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu015 .edu-item.section1 {
+  position: relative;
+  background: #020e1e;
+  color: #fff;
+}
+.edu-detail.paid.edu015 .edu-item.section1 .tit {
+  padding-bottom: 1.33em;
+  font-family: "pretendard";
+  font-weight: bold;
+  font-size: 1.88em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu015 .edu-item.section1 .txt {
+  font-family: "pretendard";
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu015 .edu-item.section1 .learn-img {
+  margin-top: 3.13em;
+}
+.edu-detail.paid.edu015 .edu-item.section1 .learn-img img {
+  width: 100%;
+}
+.edu-detail.paid.edu015 .edu-item.section1::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu015 .edu-item.section2 {
+  position: relative;
+  padding-top: 6.88em;
+  padding-bottom: 20.63em;
+  background: #07244a url("../images/paid/015/bg_graph.png") no-repeat center bottom;
+  color: #fff;
+}
+.edu-detail.paid.edu015 .edu-item.section2 .tit {
+  padding-bottom: 1.33em;
+  font-family: "pretendard";
+  font-weight: bold;
+  font-size: 1.88em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu015 .edu-item.section2 .txt {
+  font-family: "pretendard";
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu015 .edu-item.section2::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section2.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu015 .edu-item.section3 {
+  position: relative;
+  padding-top: 6.88em;
+  background: #020e1e;
+  color: #fff;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .tit-box .label {
+  background-color: #fff;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item {
+  position: relative;
+  text-align: left;
+  padding: 0 1.56em;
+  opacity: 0.2;
+  border-radius: 0.63em;
+  overflow: hidden;
+  color: #222;
+  background: #fff;
+  box-shadow: 0.19em 0.19em 1.25em rgba(10, 61, 127, 0.4);
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item .tit {
+  padding: 0.63em 0;
+  font-family: "pretendard";
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item .tit span {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item .tit .label {
+  margin-right: 0.5em;
+  padding: 0.25em 1em;
+  font-size: 0.83em;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3em;
+  background: #1dca8e;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item .cont {
+  display: none;
+  padding: 1.25em 0;
+  font-family: "pretendard";
+  font-size: 1.25em;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  border-top: solid 1px #ddd;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.active {
+  opacity: 1;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.active .cont {
+  display: block;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.overview {
+  z-index: 3;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.basic {
+  z-index: 2;
+  top: -0.31em;
+  transform: scale(95%);
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.basic .tit .label {
+  background-color: #63cae6;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.basic .tit .col-primary {
+  color: #63cae6;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.advanced {
+  z-index: 1;
+  top: -0.56em;
+  transform: scale(90%);
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.advanced .tit .label {
+  background-color: #2e57e9;
+}
+.edu-detail.paid.edu015 .edu-item.section3 .overview-item .item.advanced .tit .col-primary {
+  color: #2e57e9;
+}
+.edu-detail.paid.edu015 .edu-item.section3::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu015 .edu-item.recomme {
+  padding-top: 6.88em;
+}
+.edu-detail.paid.edu015 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.edu-detail.paid.edu015 .edu-item.recomme .recomme-list li {
+  width: 33.333%;
+  padding: 12.81em 1.25em 0;
+  text-align: center;
+  background: url("../images/paid/015/img_recomme1.png") no-repeat center top;
+  background-size: 11.25em;
+}
+.edu-detail.paid.edu015 .edu-item.recomme .recomme-list li span {
+  font-family: "pretendard";
+  font-size: 1.63em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu015 .edu-item.recomme .recomme-list li:nth-child(2) {
+  background-image: url("../images/paid/015/img_recomme2.png");
+}
+.edu-detail.paid.edu015 .edu-item.recomme .recomme-list li:nth-child(3) {
+  background-image: url("../images/paid/015/img_recomme3.png");
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu015 .edu-item.recomme .recomme-list li {
+    width: 100%;
+  }
+  .edu-detail.paid.edu015 .edu-item.recomme .recomme-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu015 .edu-item.curri {
+  background: #f4f8fc;
+}
+.edu-detail.paid.edu015 .edu-item.tutor .tutor-list__type3 .tutor {
+  background-image: url("../images/paid/015/img_tutor.png");
+}
+.edu-detail.paid.edu016 {
+  font-family: "pretendard";
+  font-weight: 400;
+  text-align: left;
+}
+.edu-detail.paid.edu016 .col-primary {
+  color: #63cae6;
+}
+.edu-detail.paid.edu016 .edu-visual {
+  position: relative;
+  height: 37.5em;
+  background: url("../images/paid/016/bg_visual.png") no-repeat center;
+  background-size: cover;
+}
+.edu-detail.paid.edu016 .edu-visual .tit-wrap {
+  padding: 10em 2.5em 0;
+}
+.edu-detail.paid.edu016 .edu-visual .tit-wrap .sub-tit {
+  font-family: "pretendard";
+  font-size: 1.56em;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #aaaaaa;
+}
+.edu-detail.paid.edu016 .edu-visual .tit-wrap .tit {
+  padding: 0.31em 0 0.25em;
+  font-family: "sbAgro";
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.edu-detail.paid.edu016 .edu-visual .tit-wrap .label > span {
+  display: inline-block;
+  padding: 0.17em 0.67em 0;
+  font-family: "sbAgro";
+  font-size: 3.75em;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 1em;
+  color: #fff;
+  background: #63cae6;
+}
+.edu-detail.paid.edu016 .edu-item {
+  padding: 4.38em 2.5em;
+  text-align: center;
+}
+.edu-detail.paid.edu016 .edu-item .tit-box {
+  margin-bottom: 3.13em;
+}
+.edu-detail.paid.edu016 .edu-item .tit-box .label {
+  display: inline-block;
+  height: 1.82em;
+  margin-bottom: 0.91em;
+  padding: 0.45em 0.68em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  border-radius: 0.45em;
+  color: #63cae6;
+  background: #020e1e;
+}
+.edu-detail.paid.edu016 .edu-item .tit-box p {
+  font-family: "pretendard";
+  font-size: 2.75em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu016 .edu-item.section1 {
+  position: relative;
+  background: #020e1e;
+  color: #fff;
+}
+.edu-detail.paid.edu016 .edu-item.section1 .q-list {
+  padding-bottom: 15.63em;
+  background: url("../images/paid/016/img_question.png") no-repeat center bottom;
+  background-size: 6.88em;
+}
+.edu-detail.paid.edu016 .edu-item.section1 .q-list li {
+  padding-bottom: 1.25em;
+  text-align: left;
+}
+.edu-detail.paid.edu016 .edu-item.section1 .q-list li span {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  font-family: "pretendard";
+  font-size: 1.25em;
+  line-height: 1;
+  letter-spacing: -1px;
+  border: solid 1px #fff;
+  border-radius: 3em;
+}
+.edu-detail.paid.edu016 .edu-item.section1 .q-list li:nth-child(even) {
+  text-align: right;
+}
+.edu-detail.paid.edu016 .edu-item.section1 .q-list li:last-child {
+  padding-bottom: 0;
+}
+.edu-detail.paid.edu016 .edu-item.section1::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu016 .edu-item.section2 {
+  position: relative;
+  padding-top: 6.88em;
+  padding-bottom: 20.63em;
+  background: #07244a url("../images/paid/015/bg_graph.png") no-repeat center bottom;
+  color: #fff;
+}
+.edu-detail.paid.edu016 .edu-item.section2 .tit {
+  padding-bottom: 1.33em;
+  font-family: "pretendard";
+  font-weight: bold;
+  font-size: 1.88em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu016 .edu-item.section2 .txt {
+  font-family: "pretendard";
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu016 .edu-item.section2::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section2.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu016 .edu-item.section3 {
+  position: relative;
+  padding-top: 6.88em;
+  background: #020e1e;
+  color: #fff;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .tit-box .label {
+  color: #020e1e;
+  background-color: #fff;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item {
+  margin-top: 5em;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item {
+  position: relative;
+  text-align: left;
+  padding: 0 1.56em;
+  opacity: 0.2;
+  border-radius: 0.63em;
+  overflow: hidden;
+  color: #222;
+  background: #fff;
+  box-shadow: 0.19em 0.19em 1.25em rgba(10, 61, 127, 0.4);
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item .tit {
+  padding: 0.63em 0;
+  font-family: "pretendard";
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item .tit span {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item .tit .label {
+  margin-right: 0.5em;
+  padding: 0.25em 1em;
+  font-size: 0.83em;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3em;
+  background: #63cae6;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item .cont {
+  display: none;
+  padding: 1.25em 0;
+  font-family: "pretendard";
+  font-size: 1.25em;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  border-top: solid 1px #ddd;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.active {
+  opacity: 1;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.active .cont {
+  display: block;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.basic {
+  z-index: 3;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.overview {
+  z-index: 2;
+  transform: scale(95%);
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.overview .tit .label {
+  background-color: #1dca8e;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.overview .tit .col-primary {
+  color: #1dca8e;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.advanced {
+  z-index: 2;
+  transform: scale(95%);
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.advanced .tit .label {
+  background-color: #2e57e9;
+}
+.edu-detail.paid.edu016 .edu-item.section3 .overview-item .item.advanced .tit .col-primary {
+  color: #2e57e9;
+}
+.edu-detail.paid.edu016 .edu-item.section3::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu016 .edu-item.goal {
+  padding-top: 6.88em;
+}
+.edu-detail.paid.edu016 .edu-item.goal .goal-list {
+  padding: 2.5em 1.25em;
+  border: solid 1px #ddd;
+  border-radius: 0.63em;
+}
+.edu-detail.paid.edu016 .edu-item.goal .goal-list li {
+  position: relative;
+  padding: 0 0 1.56em 1.25em;
+  text-align: left;
+}
+.edu-detail.paid.edu016 .edu-item.goal .goal-list li span {
+  display: inline-block;
+  font-family: "pretendard";
+  font-size: 1.5em;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu016 .edu-item.goal .goal-list li:last-child {
+  padding-bottom: 0;
+}
+.edu-detail.paid.edu016 .edu-item.goal .goal-list li::after {
+  position: absolute;
+  left: 0;
+  top: 0.88em;
+  width: 0.38em;
+  height: 0.38em;
+  background: #5d5d5d;
+  content: "";
+}
+.edu-detail.paid.edu016 .edu-item.recomme {
+  padding-top: 6.88em;
+  background: #ecfafe;
+}
+.edu-detail.paid.edu016 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.edu-detail.paid.edu016 .edu-item.recomme .recomme-list li {
+  width: 33.333%;
+  padding: 12.81em 1.25em 0;
+  text-align: center;
+  background: url("../images/paid/016/img_recomme1.png") no-repeat center top;
+  background-size: 11.25em;
+}
+.edu-detail.paid.edu016 .edu-item.recomme .recomme-list li span {
+  font-family: "pretendard";
+  font-size: 1.63em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu016 .edu-item.recomme .recomme-list li:nth-child(2) {
+  background-image: url("../images/paid/016/img_recomme2.png");
+}
+.edu-detail.paid.edu016 .edu-item.recomme .recomme-list li:nth-child(3) {
+  background-image: url("../images/paid/016/img_recomme3.png");
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu016 .edu-item.recomme .recomme-list li {
+    width: 100%;
+  }
+  .edu-detail.paid.edu016 .edu-item.recomme .recomme-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu016 .edu-item.tutor {
+  background: #e9eef2;
+}
+.edu-detail.paid.edu016 .edu-item.tutor .tutor-list__type3 .tutor {
+  background-image: url("../images/paid/015/img_tutor.png");
+}
+.edu-detail.paid.edu017 {
+  font-family: "pretendard";
+  font-weight: 400;
+  text-align: left;
+}
+.edu-detail.paid.edu017 .col-primary {
+  color: #2e57e9;
+}
+.edu-detail.paid.edu017 .col-secondary {
+  color: #50eaba;
+}
+.edu-detail.paid.edu017 .edu-visual {
+  position: relative;
+  height: 37.5em;
+  background: url("../images/paid/017/bg_visual.png") no-repeat center;
+  background-size: cover;
+}
+.edu-detail.paid.edu017 .edu-visual .tit-wrap {
+  padding: 10em 2.5em 0;
+}
+.edu-detail.paid.edu017 .edu-visual .tit-wrap .sub-tit {
+  font-family: "pretendard";
+  font-size: 1.38em;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  color: #aaaaaa;
+}
+.edu-detail.paid.edu017 .edu-visual .tit-wrap .tit {
+  padding: 0.31em 0 0.25em;
+  font-family: "sbAgro";
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.edu-detail.paid.edu017 .edu-visual .tit-wrap .label > span {
+  display: inline-block;
+  padding: 0.17em 0.67em 0;
+  font-family: "sbAgro";
+  font-size: 3.75em;
+  font-weight: bold;
+  line-height: 1;
+  border-radius: 1em;
+  color: #fff;
+  background: #2e57e9;
+}
+.edu-detail.paid.edu017 .edu-item {
+  padding: 4.38em 2.5em;
+  text-align: center;
+}
+.edu-detail.paid.edu017 .edu-item .tit-box {
+  margin-bottom: 3.13em;
+}
+.edu-detail.paid.edu017 .edu-item .tit-box .label {
+  display: inline-block;
+  height: 1.82em;
+  margin-bottom: 0.91em;
+  padding: 0.45em 0.68em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  border-radius: 0.45em;
+  color: #fff;
+  background: #020e1e;
+}
+.edu-detail.paid.edu017 .edu-item .tit-box p {
+  font-family: "pretendard";
+  font-size: 2.75em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu017 .edu-item.section1 {
+  position: relative;
+  background: #020e1e;
+  color: #fff;
+}
+.edu-detail.paid.edu017 .edu-item.section1 .q-list {
+  padding-bottom: 15.63em;
+  background: url("../images/paid/017/img_question.png") no-repeat center bottom;
+  background-size: 6.88em;
+}
+.edu-detail.paid.edu017 .edu-item.section1 .q-list li {
+  padding-bottom: 1.25em;
+  text-align: left;
+}
+.edu-detail.paid.edu017 .edu-item.section1 .q-list li span {
+  display: inline-block;
+  padding: 0.5em 1.25em;
+  font-family: "pretendard";
+  font-size: 1.25em;
+  line-height: 1;
+  letter-spacing: -1px;
+  border: solid 1px #fff;
+  border-radius: 3em;
+}
+.edu-detail.paid.edu017 .edu-item.section1 .q-list li:nth-child(even) {
+  text-align: right;
+}
+.edu-detail.paid.edu017 .edu-item.section1 .q-list li:last-child {
+  padding-bottom: 0;
+}
+.edu-detail.paid.edu017 .edu-item.section1::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu017 .edu-item.section2 {
+  position: relative;
+  padding-top: 6.88em;
+  padding-bottom: 20.63em;
+  background: #07244a url("../images/paid/015/bg_graph.png") no-repeat center bottom;
+  color: #fff;
+}
+.edu-detail.paid.edu017 .edu-item.section2 .tit {
+  padding-bottom: 1.33em;
+  font-family: "pretendard";
+  font-weight: bold;
+  font-size: 1.88em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu017 .edu-item.section2 .txt {
+  font-family: "pretendard";
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu017 .edu-item.section2::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section2.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu017 .edu-item.section3 {
+  position: relative;
+  padding-top: 6.88em;
+  background: #020e1e;
+  color: #fff;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .tit-box .label {
+  color: #020e1e;
+  background-color: #fff;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item {
+  margin-top: 5em;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item {
+  position: relative;
+  text-align: left;
+  padding: 0 1.56em;
+  opacity: 0.2;
+  border-radius: 0.63em;
+  overflow: hidden;
+  color: #222;
+  background: #fff;
+  box-shadow: 0.19em 0.19em 1.25em rgba(10, 61, 127, 0.4);
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item .tit {
+  padding: 0.63em 0;
+  font-family: "pretendard";
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item .tit span {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item .tit .label {
+  margin-right: 0.5em;
+  padding: 0.25em 1em;
+  font-size: 0.83em;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3em;
+  background: #2e57e9;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item .cont {
+  display: none;
+  padding: 1.25em 0;
+  font-family: "pretendard";
+  font-size: 1.25em;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  border-top: solid 1px #ddd;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.active {
+  opacity: 1;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.active .cont {
+  display: block;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.overview {
+  bottom: -0.56em;
+  z-index: 1;
+  transform: scale(90%);
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.overview .tit .label {
+  background-color: #1dca8e;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.overview .tit .col-primary {
+  color: #1dca8e;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.basic {
+  bottom: -0.31em;
+  z-index: 2;
+  transform: scale(95%);
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.basic .tit .label {
+  background-color: #63cae6;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.basic .tit .col-primary {
+  color: #63cae6;
+}
+.edu-detail.paid.edu017 .edu-item.section3 .overview-item .item.advanced {
+  z-index: 3;
+}
+.edu-detail.paid.edu017 .edu-item.section3::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4.25em;
+  right: 0;
+  width: 100%;
+  height: 4.38em;
+  background: url("../images/paid/015/bg_section1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+  z-index: 1;
+}
+.edu-detail.paid.edu017 .edu-item.effects {
+  padding-top: 6.88em;
+}
+.edu-detail.paid.edu017 .edu-item.effects .effects-list {
+  padding: 2.5em 1.25em;
+  border: solid 1px #ddd;
+  border-radius: 0.63em;
+}
+.edu-detail.paid.edu017 .edu-item.effects .effects-list li {
+  position: relative;
+  padding: 0 0 1.56em 1.25em;
+  text-align: left;
+}
+.edu-detail.paid.edu017 .edu-item.effects .effects-list li span {
+  display: inline-block;
+  font-family: "pretendard";
+  font-size: 1.5em;
+  line-height: 1.5;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu017 .edu-item.effects .effects-list li:last-child {
+  padding-bottom: 0;
+}
+.edu-detail.paid.edu017 .edu-item.effects .effects-list li::after {
+  position: absolute;
+  left: 0;
+  top: 0.88em;
+  width: 0.38em;
+  height: 0.38em;
+  background: #5d5d5d;
+  content: "";
+}
+.edu-detail.paid.edu017 .edu-item.recomme {
+  padding-top: 6.88em;
+  background: #e7ecff;
+}
+.edu-detail.paid.edu017 .edu-item.recomme .recomme-list {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+.edu-detail.paid.edu017 .edu-item.recomme .recomme-list li {
+  width: 33.333%;
+  padding: 12.81em 1.25em 0;
+  text-align: center;
+  background: url("../images/paid/017/img_recomme1.png") no-repeat center top;
+  background-size: 11.25em;
+}
+.edu-detail.paid.edu017 .edu-item.recomme .recomme-list li span {
+  font-family: "pretendard";
+  font-size: 1.63em;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu017 .edu-item.recomme .recomme-list li:nth-child(2) {
+  background-image: url("../images/paid/017/img_recomme2.png");
+}
+.edu-detail.paid.edu017 .edu-item.recomme .recomme-list li:nth-child(3) {
+  background-image: url("../images/paid/017/img_recomme3.png");
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu017 .edu-item.recomme .recomme-list li {
+    width: 100%;
+  }
+  .edu-detail.paid.edu017 .edu-item.recomme .recomme-list li + li {
+    margin-top: 3.75em;
+  }
+}
+.edu-detail.paid.edu017 .edu-item.tutor {
+  background: #e9eef2;
+}
+.edu-detail.paid.edu017 .edu-item.tutor .tutor-list__type3 .tutor {
+  background-image: url("../images/paid/015/img_tutor.png");
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .edu-detail {
     font-size: 14px;
@@ -5468,3 +6350,72 @@ body {
     font-size: 12px;
   }
 }
+.edu-detail .edu-paid {
+  max-width: 900px;
+  width: 100%;
+  background: #f2f2f2;
+  padding: 60px 40px;
+  margin: 0;
+  border: solid 1px #ddd;
+  border-top: 0;
+  box-sizing: border-box;
+}
+.edu-detail .edu-paid * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.edu-detail .edu-paid__tit {
+  font-family: "pretendard";
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0;
+  word-break: keep-all;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.edu-detail .edu-paid__item {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #ddd;
+}
+.edu-detail .edu-paid__item:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.edu-detail .edu-paid__item .tit {
+  margin: 0;
+  font-family: "pretendard";
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail .edu-paid__item ul {
+  list-style: none;
+}
+.edu-detail .edu-paid__item ul li {
+  position: relative;
+  margin: 0;
+  padding-left: 14px;
+  font-family: "pretendard";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  word-break: keep-all;
+  letter-spacing: -1px;
+}
+.edu-detail .edu-paid__item ul li + li {
+  margin-top: 15px;
+}
+.edu-detail .edu-paid__item ul li::before {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  width: 8px;
+  height: 1px;
+  background: #222;
+  content: "";
+}/*# sourceMappingURL=edu-detail.css.map */
