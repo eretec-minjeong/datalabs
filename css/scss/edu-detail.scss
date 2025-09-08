@@ -1,6 +1,6 @@
 /* =======================================================================================================================
  * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
- * date : 2024.11.16
+ * date : 2025.09.08
  * 교육 상세 페이지 CSS
  * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
  * ======================================================================================================================= */
@@ -36,84 +36,6 @@
 body{
 	margin:0;
 	padding:0;
-}
-/* 결제 안내 */
-.edu-paid{
-    max-width:900px;
-	width:100%;
-    background:#f2f2f2;
-    padding:60px 40px;
-    margin:0;
-    border:solid 1px #ddd;
-    border-top:0;
-    box-sizing:border-box;
-
-    *{
-        margin:0;
-        padding:0;
-        box-sizing:border-box;
-    }
-
-    &__tit{
-        font-family:'pretendard';
-        font-size:35px;
-        font-weight:700;
-        margin:0;
-        word-break:keep-all;
-        letter-spacing:-1px;
-        line-height:1;
-    }
-
-    &__item{
-        margin-top:30px;
-        padding-bottom:30px;
-        border-bottom:solid 1px #ddd;
-
-        &:last-child{
-            padding-bottom:0;
-            border-bottom:0;
-        }
-        .tit{
-            margin:0;
-            font-family:'pretendard';
-            font-size:20px;
-            margin-bottom:20px;
-            font-weight:700;
-            line-height:1;
-            word-break:keep-all;
-            letter-spacing:-1px;
-        }
-
-        ul{
-            list-style:none;
-
-            li{
-                position:relative;
-                margin:0;
-                padding-left:14px;
-                font-family:'pretendard';
-                font-size:18px;
-                font-weight:400;
-                line-height:1.3;
-                word-break:keep-all;
-                letter-spacing:-1px;
-
-                & + li{
-                    margin-top:15px;
-                }
-
-                &::before{
-                    position:absolute;
-                    left:0;
-                    top:14px;
-                    width:8px;
-                    height:1px;
-                    background:#222;
-                    content:'';
-                }
-            }
-        }
-    }
 }
 
 .edu-detail{
@@ -711,6 +633,8 @@ body{
 
                         .tit-box{
                             padding:1.44em 2.5em; //23px 40px;
+                            margin-bottom:0 !important;
+                            background:#fff;
 
                             p{
                                 font-family:'pretendard';
@@ -719,6 +643,7 @@ body{
                                 font-weight:700;
                                 letter-spacing:-1px;
                                 font-style:italic;
+                                text-align:left;
 
                                 .num{
                                     padding-right:0.38em; //15px;
@@ -732,6 +657,7 @@ body{
                             background-color:#e9eef2;
 
                             li{
+                                text-align:left;
                                 font-family:'pretendard';
                                 position:relative;
                                 padding-left:0.42em; //10px;
@@ -890,6 +816,7 @@ body{
 
                         ul{
                             li{
+                                text-align:left;
                                 font-family:'pretendard';
                                 position:relative;
                                 padding-left:0.42em; //10px;
@@ -5916,6 +5843,1092 @@ body{
                 }
             }
         }
+
+        //edu015 : 신뢰성 공학과 신뢰성 분석
+        &.edu015{
+            font-family:'pretendard';
+            font-weight:400;
+            text-align:left;
+
+            .col-primary{
+                color:#1dca8e;
+            }
+
+            .edu-visual{
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                position:relative;
+                height:37.5em; //600px;
+                background:url('../images/paid/015/bg_visual.png') no-repeat center;
+                background-size:cover;
+
+                .tit-wrap{
+                    text-align:center;
+                    .sub-tit{
+                        font-family:'pretendard';
+                        font-size:0.91em; //14.5px;
+                        line-height:1;
+                        letter-spacing:1.8px;
+                        color:#aaaaaa;
+                    }
+                    .tit{
+                        padding:0.31em 0; //25px 0;
+                        font-family:'sbAgro';
+                        font-size:5em; //80px;
+                        font-weight:bold;
+                        letter-spacing:-1px;
+                        line-height:1.2;
+                    }
+                    .label > span{
+                        display:inline-block;
+                        padding:0.17em 0.67em 0;//10px 40px 0px;
+                        font-family:'sbAgro';
+                        font-size:3.75em; //60px;
+                        font-weight:bold;
+                        line-height:1;
+                        border-radius:1em; //60px;
+                        color:#fff;
+                        background:#1dca8e;
+                    }
+                }
+            }
+            .edu-item{
+                padding:4.38em 2.5em; //70px 40px;
+                text-align:center;
+
+                .tit-box{
+                    margin-bottom:3.13em; //50px;
+
+                    .label{
+                        display:inline-block;
+                        height:1.82em; //40px;
+                        margin-bottom:0.91em; //20px;
+                        padding:0.45em 0.68em; //10px 15px;
+                        font-family:'pretendard';
+                        font-size:1.38em; //22px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                        border-radius:0.45em; //10px;
+                        color:#1dca8e;
+                        background:#020e1e;
+                    }
+                    p{
+                        font-family:'pretendard';
+                        font-size:2.75em; //44px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                    }
+                }
+
+                &.section1{
+                    position:relative;
+                    background:#020e1e;
+                    color:#fff;
+
+                    .tit{
+                        padding-bottom:1.33em; //40px;
+                        font-family:'pretendard';
+                        font-weight:bold;
+                        font-size:1.88em; //30px;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+                    .txt{
+                        font-family:'pretendard';
+                        font-weight:normal;
+                        font-size:1.5em; //24px; 
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+                    .learn-img{
+                        margin-top:3.13em; //50px;
+                        img{
+                            width:100%;
+                        }
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section1.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+                &.section2{
+                    position:relative;
+                    padding-top:6.88em; //110px;
+                    padding-bottom:20.63em; //330px;
+                    background:#07244a url('../images/paid/015/bg_graph.png') no-repeat center bottom;
+                    color:#fff;
+
+                    .tit{
+                        padding-bottom:1.33em; //40px;
+                        font-family:'pretendard';
+                        font-weight:bold;
+                        font-size:1.88em; //30px;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+                    .txt{
+                        font-family:'pretendard';
+                        font-weight:normal;
+                        font-size:1.5em; //24px; 
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section2.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+                &.section3{
+                    position:relative;
+                    padding-top:6.88em; //110px;
+                    background:#020e1e;
+                    color:#fff;
+
+                    .tit-box{
+                        .label{
+                            background-color:#fff;
+                        }
+                    }
+
+                    .overview-item{
+                        .item{
+                            position:relative;
+                            text-align:left;
+                            padding:0 1.56em; //0 25px;
+                            opacity:.2;
+                            border-radius:0.63em; //10px;
+                            overflow:hidden;
+                            color:#222;
+                            background:#fff;
+                            box-shadow:0.19em 0.19em 1.25em rgba(10, 61, 127, .4);//3px 3px 20px rgba(10, 61, 127, .4);
+
+                            .tit{
+                                padding:0.63em 0; //15px 0;
+                                font-family:'pretendard';
+                                font-size:1.5em; //24px;
+                                font-weight:bold;
+                                line-height:1;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+
+                                span{
+                                    display:inline-block;
+                                    vertical-align:baseline;
+                                }
+
+                                .label{
+                                    margin-right:0.5em; //10px;
+                                    padding:0.25em 1em; //5px 20px;
+                                    font-size:0.83em; //20px;
+                                    font-weight:bold;
+                                    color:#fff;
+                                    border-radius:3em; //60px;
+                                    background:#1dca8e;
+                                }
+                            }
+
+                            .cont{
+                                display:none;
+                                padding:1.25em 0; //25px 0;
+                                font-family:'pretendard';
+                                font-size:1.25em; //20px;
+                                line-height:1.5;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                                border-top:solid 1px #ddd;
+                            }
+
+                            &.active{
+                                opacity:1;
+
+                                .cont{
+                                    display:block;
+                                }
+                            }
+                            &.overview{
+                                z-index:3;
+                            }
+                            &.basic{
+                                z-index:2;
+                                top:-0.31em; //-5px;
+                                transform:scale(95%);
+
+                                .tit{
+                                    .label{
+                                        background-color:#63cae6;
+                                    }
+
+                                    .col-primary{
+                                        color:#63cae6;
+                                    }
+                                }
+                            }
+                            &.advanced{
+                                z-index:1;
+                                top:-0.56em; //-9px;
+                                transform:scale(90%);
+
+                                .tit{
+                                    .label{
+                                        background-color:#2e57e9;
+                                    }
+
+                                    .col-primary{
+                                        color:#2e57e9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section1.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+                &.recomme{
+                    padding-top:6.88em; //110px;
+
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        justify-content:center;
+                        
+                        li{
+                            width:33.333%;
+                            padding:12.81em 1.25em 0; //205px 20px 0;
+                            text-align:center;
+                            background:url('../images/paid/015/img_recomme1.png') no-repeat center top;
+                            background-size:11.25em; //180px;
+
+                            span{
+                                font-family:'pretendard';
+                                font-size:1.63em; //26px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+                            &:nth-child(2){
+                                background-image:url('../images/paid/015/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/015/img_recomme3.png');
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.curri{
+                    background:#f4f8fc;
+                }
+                &.tutor{
+                    .tutor-list{
+                        &__type3{
+                            .tutor{
+                                background-image:url('../images/paid/015/img_tutor.png');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //edu016 : 신뢰성 분석 기본
+        &.edu016{
+            font-family:'pretendard';
+            font-weight:400;
+            text-align:left;
+
+            .col-primary{
+                color:#63cae6;
+            }
+
+            .edu-visual{
+                position:relative;
+                height:37.5em; //600px;
+                background:url('../images/paid/016/bg_visual.png') no-repeat center;
+                background-size:cover;
+
+                .tit-wrap{
+                    padding:10em 2.5em 0;//160px 40px 0;
+
+                    .sub-tit{
+                        font-family:'pretendard';
+                        font-size:1.56em; //25px;
+                        line-height:1;
+                        letter-spacing:0.12em; //3px;
+                        color:#aaaaaa;
+                    }
+                    .tit{
+                        padding:0.31em 0 0.25em; //25px 0 20px;
+                        font-family:'sbAgro';
+                        font-size:5em; //80px;
+                        font-weight:bold;
+                        letter-spacing:-1px;
+                        line-height:1.2;
+                    }
+                    .label > span{
+                        display:inline-block;
+                        padding:0.17em 0.67em 0;//10px 40px 0px;
+                        font-family:'sbAgro';
+                        font-size:3.75em; //60px;
+                        font-weight:bold;
+                        line-height:1;
+                        border-radius:1em; //60px;
+                        color:#fff;
+                        background:#63cae6;
+                    }
+                }
+            }
+
+            .edu-item{
+                padding:4.38em 2.5em; //70px 40px;
+                text-align:center;
+
+                .tit-box{
+                    margin-bottom:3.13em; //50px;
+
+                    .label{
+                        display:inline-block;
+                        height:1.82em; //40px;
+                        margin-bottom:0.91em; //20px;
+                        padding:0.45em 0.68em; //10px 15px;
+                        font-family:'pretendard';
+                        font-size:1.38em; //22px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                        border-radius:0.45em; //10px;
+                        color:#63cae6;
+                        background:#020e1e;
+                    }
+                    p{
+                        font-family:'pretendard';
+                        font-size:2.75em; //44px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                    }
+                }
+
+                &.section1{
+                    position:relative;
+                    background:#020e1e;
+                    color:#fff;
+
+                    .q-list{
+                        padding-bottom:15.63em; //250px;
+                        background:url('../images/paid/016/img_question.png') no-repeat center bottom;
+                        background-size:6.88em; //110px;
+
+                        li{
+                            padding-bottom:1.25em; //20px;
+                            text-align:left;
+
+                            span{
+                                display:inline-block;
+                                padding:0.5em 1.25em; //10px 25px;
+                                font-family:'pretendard';
+                                font-size:1.25em; //20px;
+                                line-height:1;
+                                letter-spacing:-1px;
+                                border:solid 1px #fff;
+                                border-radius:3em; //60px;
+                            }
+                            
+                            &:nth-child(even){
+                                text-align:right;
+                            }
+
+                            &:last-child{
+                                padding-bottom:0;
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section1.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+
+                &.section2{
+                    position:relative;
+                    padding-top:6.88em; //110px;
+                    padding-bottom:20.63em; //330px;
+                    background:#07244a url('../images/paid/015/bg_graph.png') no-repeat center bottom;
+                    color:#fff;
+
+                    .tit{
+                        padding-bottom:1.33em; //40px;
+                        font-family:'pretendard';
+                        font-weight:bold;
+                        font-size:1.88em; //30px;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+                    .txt{
+                        font-family:'pretendard';
+                        font-weight:normal;
+                        font-size:1.5em; //24px; 
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section2.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+
+                &.section3{
+                    position:relative;
+                    padding-top:6.88em; //110px;
+                    background:#020e1e;
+                    color:#fff;
+
+                    .tit-box{
+                        .label{
+                            color:#020e1e;
+                            background-color:#fff;
+                        }
+                    }
+
+                    .overview-item{
+                        margin-top:5em; //80px;
+                        .item{
+                            position:relative;
+                            text-align:left;
+                            padding:0 1.56em; //0 25px;
+                            opacity:.2;
+                            border-radius:0.63em; //10px;
+                            overflow:hidden;
+                            color:#222;
+                            background:#fff;
+                            box-shadow:0.19em 0.19em 1.25em rgba(10, 61, 127, .4);//3px 3px 20px rgba(10, 61, 127, .4);
+
+                            .tit{
+                                padding:0.63em 0; //15px 0;
+                                font-family:'pretendard';
+                                font-size:1.5em; //24px;
+                                font-weight:bold;
+                                line-height:1;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+
+                                span{
+                                    display:inline-block;
+                                    vertical-align:baseline;
+                                }
+
+                                .label{
+                                    margin-right:0.5em; //10px;
+                                    padding:0.25em 1em; //5px 20px;
+                                    font-size:0.83em; //20px;
+                                    font-weight:bold;
+                                    color:#fff;
+                                    border-radius:3em; //60px;
+                                    background:#63cae6;
+                                }
+                            }
+
+                            .cont{
+                                display:none;
+                                padding:1.25em 0; //25px 0;
+                                font-family:'pretendard';
+                                font-size:1.25em; //20px;
+                                line-height:1.5;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                                border-top:solid 1px #ddd;
+                            }
+
+                            &.active{
+                                opacity:1;
+
+                                .cont{
+                                    display:block;
+                                }
+                            }
+                            &.basic{
+                                z-index:3;
+                            }
+                            &.overview{
+                                z-index:2;
+                                transform:scale(95%);
+
+                                .tit{
+                                    .label{
+                                        background-color:#1dca8e;
+                                    }
+
+                                    .col-primary{
+                                        color:#1dca8e;
+                                    }
+                                }
+                            }
+                            &.advanced{
+                                z-index:2;
+                                transform:scale(95%);
+
+                                .tit{
+                                    .label{
+                                        background-color:#2e57e9;
+                                    }
+
+                                    .col-primary{
+                                        color:#2e57e9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section1.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+
+                &.goal{
+                    padding-top:6.88em; //110px;
+
+                    .goal-list{
+                        padding:2.5em 1.25em; //40px 20px;
+                        border:solid 1px #ddd;
+                        border-radius:0.63em; //10px;
+
+                        li{
+                            position:relative;
+                            padding:0 0 1.56em 1.25em;//0 0 25px 20px;
+                            text-align:left;
+                            span{
+                                display:inline-block;
+                                font-family:'pretendard';
+                                font-size:1.5em; //24px;
+                                line-height:1.5;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                            }
+                            &:last-child{
+                                padding-bottom:0;
+                            }
+                            &::after{
+                                position:absolute;
+                                left:0;
+                                top:0.88em; //14px;
+                                width:0.38em; //6px;
+                                height:0.38em; //6px;
+                                background:#5d5d5d;
+                                content:'';
+                            }
+                        }
+                    }
+                }
+
+                &.recomme{
+                    padding-top:6.88em; //110px;
+                    background:#ecfafe;
+
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        justify-content:center;
+                        
+                        li{
+                            width:33.333%;
+                            padding:12.81em 1.25em 0; //205px 20px 0;
+                            text-align:center;
+                            background:url('../images/paid/016/img_recomme1.png') no-repeat center top;
+                            background-size:11.25em; //180px;
+
+                            span{
+                                font-family:'pretendard';
+                                font-size:1.63em; //26px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+                            &:nth-child(2){
+                                background-image:url('../images/paid/016/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/016/img_recomme3.png');
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    background:#e9eef2;
+                    .tutor-list{
+                        &__type3{
+                            .tutor{
+                                background-image:url('../images/paid/015/img_tutor.png');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //edu017 : 신뢰성 분석 심화
+        &.edu017{
+            font-family:'pretendard';
+            font-weight:400;
+            text-align:left;
+
+            .col-primary{
+                color:#2e57e9;
+            }
+            .col-secondary{
+                color:#50eaba;
+            }
+
+            .edu-visual{
+                position:relative;
+                height:37.5em; //600px;
+                background:url('../images/paid/017/bg_visual.png') no-repeat center;
+                background-size:cover;
+
+                .tit-wrap{
+                    padding:10em 2.5em 0;//160px 40px 0;
+
+                    .sub-tit{
+                        font-family:'pretendard';
+                        font-size:1.38em; //22px;
+                        line-height:1;
+                        letter-spacing:0.12em; //3px;
+                        color:#aaaaaa;
+                    }
+                    .tit{
+                        padding:0.31em 0 0.25em; //25px 0 20px;
+                        font-family:'sbAgro';
+                        font-size:5em; //80px;
+                        font-weight:bold;
+                        letter-spacing:-1px;
+                        line-height:1.2;
+                    }
+                    .label > span{
+                        display:inline-block;
+                        padding:0.17em 0.67em 0;//10px 40px 0px;
+                        font-family:'sbAgro';
+                        font-size:3.75em; //60px;
+                        font-weight:bold;
+                        line-height:1;
+                        border-radius:1em; //60px;
+                        color:#fff;
+                        background:#2e57e9;
+                    }
+                }
+            }
+
+            .edu-item{
+                padding:4.38em 2.5em; //70px 40px;
+                text-align:center;
+
+                .tit-box{
+                    margin-bottom:3.13em; //50px;
+
+                    .label{
+                        display:inline-block;
+                        height:1.82em; //40px;
+                        margin-bottom:0.91em; //20px;
+                        padding:0.45em 0.68em; //10px 15px;
+                        font-family:'pretendard';
+                        font-size:1.38em; //22px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                        border-radius:0.45em; //10px;
+                        color:#fff;
+                        background:#020e1e;
+                    }
+                    p{
+                        font-family:'pretendard';
+                        font-size:2.75em; //44px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                    }
+                }
+
+                &.section1{
+                    position:relative;
+                    background:#020e1e;
+                    color:#fff;
+
+                    .q-list{
+                        padding-bottom:15.63em; //250px;
+                        background:url('../images/paid/017/img_question.png') no-repeat center bottom;
+                        background-size:6.88em; //110px;
+
+                        li{
+                            padding-bottom:1.25em; //20px;
+                            text-align:left;
+
+                            span{
+                                display:inline-block;
+                                padding:0.5em 1.25em; //10px 25px;
+                                font-family:'pretendard';
+                                font-size:1.25em; //20px;
+                                line-height:1;
+                                letter-spacing:-1px;
+                                border:solid 1px #fff;
+                                border-radius:3em; //60px;
+                            }
+                            
+                            &:nth-child(even){
+                                text-align:right;
+                            }
+
+                            &:last-child{
+                                padding-bottom:0;
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section1.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+
+                &.section2{
+                    position:relative;
+                    padding-top:6.88em; //110px;
+                    padding-bottom:20.63em; //330px;
+                    background:#07244a url('../images/paid/015/bg_graph.png') no-repeat center bottom;
+                    color:#fff;
+
+                    .tit{
+                        padding-bottom:1.33em; //40px;
+                        font-family:'pretendard';
+                        font-weight:bold;
+                        font-size:1.88em; //30px;
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+                    .txt{
+                        font-family:'pretendard';
+                        font-weight:normal;
+                        font-size:1.5em; //24px; 
+                        line-height:1.3;
+                        letter-spacing:-1px;
+                        word-break:keep-all;
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section2.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+
+                &.section3{
+                    position:relative;
+                    padding-top:6.88em; //110px;
+                    background:#020e1e;
+                    color:#fff;
+
+                    .tit-box{
+                        .label{
+                            color:#020e1e;
+                            background-color:#fff;
+                        }
+                    }
+
+                    .overview-item{
+                        margin-top:5em; //80px;
+                        .item{
+                            position:relative;
+                            text-align:left;
+                            padding:0 1.56em; //0 25px;
+                            opacity:.2;
+                            border-radius:0.63em; //10px;
+                            overflow:hidden;
+                            color:#222;
+                            background:#fff;
+                            box-shadow:0.19em 0.19em 1.25em rgba(10, 61, 127, .4);//3px 3px 20px rgba(10, 61, 127, .4);
+
+                            .tit{
+                                padding:0.63em 0; //15px 0;
+                                font-family:'pretendard';
+                                font-size:1.5em; //24px;
+                                font-weight:bold;
+                                line-height:1;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+
+                                span{
+                                    display:inline-block;
+                                    vertical-align:baseline;
+                                }
+
+                                .label{
+                                    margin-right:0.5em; //10px;
+                                    padding:0.25em 1em; //5px 20px;
+                                    font-size:0.83em; //20px;
+                                    font-weight:bold;
+                                    color:#fff;
+                                    border-radius:3em; //60px;
+                                    background:#2e57e9;
+                                }
+                            }
+
+                            .cont{
+                                display:none;
+                                padding:1.25em 0; //25px 0;
+                                font-family:'pretendard';
+                                font-size:1.25em; //20px;
+                                line-height:1.5;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                                border-top:solid 1px #ddd;
+                            }
+
+                            &.active{
+                                opacity:1;
+
+                                .cont{
+                                    display:block;
+                                }
+                            }
+                            &.overview{
+                                bottom:-0.56em; //-9px;
+                                z-index:1;
+                                transform:scale(90%);
+
+                                .tit{
+                                    .label{
+                                        background-color:#1dca8e;
+                                    }
+
+                                    .col-primary{
+                                        color:#1dca8e;
+                                    }
+                                }
+                            }
+                            &.basic{
+                                bottom:-0.31em; //-5px;
+                                z-index:2;
+                                transform:scale(95%);
+
+                                .tit{
+                                    .label{
+                                        background-color:#63cae6;
+                                    }
+
+                                    .col-primary{
+                                        color:#63cae6;
+                                    }
+                                }
+                            }
+                            &.advanced{
+                                z-index:3;
+                            }
+                        }
+                    }
+
+                    &::after{
+                        display:block;
+                        position:absolute;
+                        left:0;
+                        bottom:-4.25em; //-68px;
+                        right:0;
+                        width:100%;
+                        height:4.38em; //70px;
+                        background:url('../images/paid/015/bg_section1.png') no-repeat center;
+                        background-size:contain;
+                        content:'';
+                        z-index:1;
+                    }
+                }
+
+                &.effects{
+                    padding-top:6.88em; //110px;
+
+                    .effects-list{
+                        padding:2.5em 1.25em; //40px 20px;
+                        border:solid 1px #ddd;
+                        border-radius:0.63em; //10px;
+
+                        li{
+                            position:relative;
+                            padding:0 0 1.56em 1.25em;//0 0 25px 20px;
+                            text-align:left;
+                            span{
+                                display:inline-block;
+                                font-family:'pretendard';
+                                font-size:1.5em; //24px;
+                                line-height:1.5;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                            }
+                            &:last-child{
+                                padding-bottom:0;
+                            }
+                            &::after{
+                                position:absolute;
+                                left:0;
+                                top:0.88em; //14px;
+                                width:0.38em; //6px;
+                                height:0.38em; //6px;
+                                background:#5d5d5d;
+                                content:'';
+                            }
+                        }
+                    }
+                }
+
+                &.recomme{
+                    padding-top:6.88em; //110px;
+                    background:#e7ecff;
+
+                    .recomme-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        justify-content:center;
+                        
+                        li{
+                            width:33.333%;
+                            padding:12.81em 1.25em 0; //205px 20px 0;
+                            text-align:center;
+                            background:url('../images/paid/017/img_recomme1.png') no-repeat center top;
+                            background-size:11.25em; //180px;
+
+                            span{
+                                font-family:'pretendard';
+                                font-size:1.63em; //26px;
+                                line-height:1.3;
+                                word-break:keep-all;
+                                letter-spacing:-1px;
+                            }
+                            &:nth-child(2){
+                                background-image:url('../images/paid/017/img_recomme2.png');
+                            }
+                            &:nth-child(3){
+                                background-image:url('../images/paid/017/img_recomme3.png');
+                            }
+
+                            @include ed-mobile{
+                                width:100%;
+
+                                & + li{
+                                    margin-top:3.75em; //60px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    background:#e9eef2;
+                    .tutor-list{
+                        &__type3{
+                            .tutor{
+                                background-image:url('../images/paid/015/img_tutor.png');
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     @include ed-tablet{
@@ -5923,5 +6936,84 @@ body{
       }
     @include ed-mobile{
         font-size:12px;
+    }
+
+    /* 결제 안내 */
+    .edu-paid{
+        max-width:900px;
+        width:100%;
+        background:#f2f2f2;
+        padding:60px 40px;
+        margin:0;
+        border:solid 1px #ddd;
+        border-top:0;
+        box-sizing:border-box;
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        &__tit{
+            font-family:'pretendard';
+            font-size:35px;
+            font-weight:700;
+            margin:0;
+            word-break:keep-all;
+            letter-spacing:-1px;
+            line-height:1;
+        }
+
+        &__item{
+            margin-top:30px;
+            padding-bottom:30px;
+            border-bottom:solid 1px #ddd;
+
+            &:last-child{
+                padding-bottom:0;
+                border-bottom:0;
+            }
+            .tit{
+                margin:0;
+                font-family:'pretendard';
+                font-size:20px;
+                margin-bottom:20px;
+                font-weight:700;
+                line-height:1;
+                word-break:keep-all;
+                letter-spacing:-1px;
+            }
+
+            ul{
+                list-style:none;
+
+                li{
+                    position:relative;
+                    margin:0;
+                    padding-left:14px;
+                    font-family:'pretendard';
+                    font-size:18px;
+                    font-weight:400;
+                    line-height:1.3;
+                    word-break:keep-all;
+                    letter-spacing:-1px;
+
+                    & + li{
+                        margin-top:15px;
+                    }
+
+                    &::before{
+                        position:absolute;
+                        left:0;
+                        top:14px;
+                        width:8px;
+                        height:1px;
+                        background:#222;
+                        content:'';
+                    }
+                }
+            }
+        }
     }
 }
