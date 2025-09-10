@@ -256,7 +256,6 @@ body {
   box-sizing: border-box;
   /* 무료 교육 */
   /* 유료 교육 */
-  /* 결제 안내 */
 }
 .edu-detail * {
   margin: 0;
@@ -6354,7 +6353,9 @@ body {
     font-size: 12px;
   }
 }
-.edu-detail .edu-paid {
+
+/* 결제 안내 */
+.edu-paid {
   max-width: 900px;
   width: 100%;
   background: #f2f2f2;
@@ -6364,12 +6365,12 @@ body {
   border-top: 0;
   box-sizing: border-box;
 }
-.edu-detail .edu-paid * {
+.edu-paid * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.edu-detail .edu-paid__tit {
+.edu-paid__tit {
   font-family: "pretendard";
   font-size: 35px;
   font-weight: 700;
@@ -6378,16 +6379,16 @@ body {
   letter-spacing: -1px;
   line-height: 1;
 }
-.edu-detail .edu-paid__item {
+.edu-paid__item {
   margin-top: 30px;
   padding-bottom: 30px;
   border-bottom: solid 1px #ddd;
 }
-.edu-detail .edu-paid__item:last-child {
+.edu-paid__item:last-child {
   padding-bottom: 0;
   border-bottom: 0;
 }
-.edu-detail .edu-paid__item .tit {
+.edu-paid__item .tit {
   margin: 0;
   font-family: "pretendard";
   font-size: 20px;
@@ -6397,10 +6398,10 @@ body {
   word-break: keep-all;
   letter-spacing: -1px;
 }
-.edu-detail .edu-paid__item ul {
+.edu-paid__item ul {
   list-style: none;
 }
-.edu-detail .edu-paid__item ul li {
+.edu-paid__item ul li {
   position: relative;
   margin: 0;
   padding-left: 14px;
@@ -6411,10 +6412,10 @@ body {
   word-break: keep-all;
   letter-spacing: -1px;
 }
-.edu-detail .edu-paid__item ul li + li {
+.edu-paid__item ul li + li {
   margin-top: 15px;
 }
-.edu-detail .edu-paid__item ul li::before {
+.edu-paid__item ul li::before {
   position: absolute;
   left: 0;
   top: 14px;
