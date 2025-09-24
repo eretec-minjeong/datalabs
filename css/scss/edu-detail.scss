@@ -1,6 +1,6 @@
 /* =======================================================================================================================
  * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
- * date : 2025.09.08
+ * date : 2025.09.23
  * 교육 상세 페이지 CSS
  * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
  * ======================================================================================================================= */
@@ -682,6 +682,54 @@ body{
                                     margin-top:0.63em; //15px;
                                 }
                             }
+                        }
+                    }
+                }
+                &__type3{
+                    display:flex;
+                    flex-flow:wrap;
+                    border-right:solid 1px #ddd;
+                    border-bottom:solid 1px #ddd;
+                    border-radius:0.63em; //10px;
+                    overflow:hidden;
+
+                    &__item{
+                        width:50%;
+                        flex:auto;
+                        padding:1.88em; //30px;
+                        text-align:left;
+                        border-left:solid 1px #ddd;
+                        border-top:solid 1px #ddd;
+                        background:#fff;
+
+                        .num{
+                            display:inline-block;
+                            margin-bottom:0.68em; //15px;
+                            padding:0.18em 0.91em; //4px 20px;
+                            font-family:'pretendard';
+                            font-size:1.38em; //22px;
+                            font-weight:700;
+                            letter-spacing:-1px;
+                            line-height:1;
+                            border-radius:2.73em; //60px;
+                            color:#fff;
+                            background:#222;
+                        }
+                        .cont{
+                            li{
+                                font-family:'pretendard';
+                                font-size:1.38em; //22px;
+                                font-weight:400;
+                                letter-spacing:-1px;
+                                line-height:1.5;
+                                word-break:keep-all;
+                                & + li{
+                                    margin-top:0.45em; //10px;
+                                }
+                            }
+                        }
+                        @include ed-mobile{
+                            width:100%;
                         }
                     }
                 }
@@ -6928,6 +6976,320 @@ body{
                                 background-image:url('../images/paid/015/img_tutor.png');
                             }
                         }
+                    }
+                }
+            }
+        }
+        //edu018 : 품질혁신을 위한 고질적 품질문제 해결방법
+        &.edu018{
+            font-family:'pretendard';
+            font-weight:400;
+            text-align:left;
+
+            .col-primary{
+                color:#6e54c3;
+            }
+            .bg-primary{
+                background-color:#6e54c3 !important;
+            }
+
+            .edu-visual{
+                position:relative;
+                height:37.5em; //600px;
+                background:url(../images/paid/018/bg_visual.jpg) no-repeat center;
+                background-size:cover;
+
+                .tit-wrap{
+                    padding:4.38em 2.5em 0;//70px 40px 0;
+                    .label{
+                        display:inline-block;
+                        margin-bottom:0.71em; //25px;
+                        padding:0.34em 1.14em; //12px 40px;
+                        font-family:'sbAgro';
+                        font-weight:300;
+                        font-size:2.19em; //35px;
+                        line-height:1;
+                        border-radius:1.71em; //60px;
+                        color:#b596ef;
+                        background:#151515;
+                    }
+                    .tit{
+                        font-family:'sbAgro';
+                        font-size:4em; //64px;
+                        font-weight:bold;
+                        letter-spacing:-1px;
+                        line-height:1.2;
+                        color:#fff;
+                    }
+                }
+            }
+
+            .edu-item{
+                padding:4.38em 2.5em; //70px 40px;
+                text-align:center;
+
+                .tit-box{
+                    margin-bottom:3.13em; //50px;
+
+                    .label{
+                        display:inline-block;
+                        height:1.82em; //40px;
+                        margin-bottom:0.91em; //20px;
+                        padding:0.45em 0.68em; //10px 15px;
+                        font-family:'pretendard';
+                        font-size:1.38em; //22px;
+                        font-weight:bold;
+                        line-height:1;
+                        letter-spacing:-1px;
+                        border-radius:0.45em; //10px;
+                        color:#fff;
+                        background:#020e1e;
+                    }
+                    p{
+                        font-family:'pretendard';
+                        font-size:2.75em; //44px;
+                        font-weight:bold;
+                        line-height:1.2;
+                        letter-spacing:-1px;
+                    }
+                }
+
+                &.overview{
+                    .tit{
+                        margin-bottom:1.39em; //50px;
+                        font-family:'pretendard';
+                        font-size:2.25em; //36px;
+                        font-weight:bold;
+                        line-height:1.2;
+                    }
+                    .txt{
+                        font-family:'pretendard';
+                        font-size:1.63em; //26px;
+                        font-weight:normal;
+                        line-height:1.5;
+                        word-break:keep-all;
+                    }
+                    .book-wrap{
+                        margin-top:3.13em; //50px;
+                        padding:2.5em 0;//40px 0;
+                        border-top:solid 1px #222;
+                        border-bottom:solid 2px #ddd;
+                        text-align:left;
+
+                        .book{
+                            background:url(../images/paid/018/img_book.png) no-repeat left center;
+                            background-size:auto 100%;
+                            padding-left:12.5em; //200px;
+                            
+                            &-tit{
+                                margin-bottom:1em; //30px;
+                                font-family:'pretendard';
+                                font-size:1.88em; //30px;
+                                font-weight:bold;
+                                line-height:1.2;
+                                word-break:keep-all;
+                            }
+                            &-txt{
+                                font-family:'pretendard';
+                                font-size:1.5em; //24px;
+                                font-weight:normal;
+                                line-height:1.5;
+                                word-break:keep-all;
+                            }
+                        }
+
+                        @include ed-mobile{
+                            text-align:center;
+
+                            .book{
+                                padding-left:0;
+                                background-size:200px;
+                                background-position:center top;
+                                padding-top:300px;
+                            }
+                        }
+                    }
+                }
+                &.recomme{
+                    background:#edf1f5;
+
+                    .recomme-list{
+                        li{
+                            position:relative;
+                            border-radius:0.63em; //10px;
+                            background:#ffffff;
+
+                            span{
+                                display:inline-block;
+                                padding:1.08em 0.38em; //28px 10px;
+                                font-family:'pretendard';
+                                font-size:1.63em; //26px;
+                                font-weight:500;
+                                line-height:1.2;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                            }
+
+                            & + li{
+                                margin-top:2.81em; //45px;
+                            }
+
+                            &::before{
+                                position:absolute;
+                                left:-1.88em; //-30px;
+                                top:-1.88em; //-30px;
+                                width:4.38em; //70px;
+                                height:4.38em; //70px;
+                                background:url('../images/paid/018/img_recomme1.png') no-repeat center;
+                                background-size:contain;
+                                content:'';
+                            }
+
+                            &:nth-child(2)::before{
+                                background-image:url('../images/paid/018/img_recomme2.png');
+                            }
+                            &:nth-child(3)::before{
+                                background-image:url('../images/paid/018/img_recomme3.png');
+                            }
+                            &:nth-child(4)::before{
+                                background-image:url('../images/paid/018/img_recomme4.png');
+                            }
+                        }
+                    }
+                }
+                &.goal{
+                    .goal-list{
+                        text-align:left;
+                        li{
+                            padding:1.88em 0;//30px 0;
+                            border-top:solid 1px #ddd;
+
+                            &:last-child{
+                                border-bottom:solid 1px #ddd;
+                            }
+                        }
+                        &__tit{
+                            padding-left:1.6em; //48px;
+                            font-family:'pretendard';
+                            font-size:1.88em; //30px;
+                            font-weight:bold;
+                            line-height:1.2;
+                            letter-spacing:-1px;
+                            word-break:keep-all;
+                            background:url('../images/paid/018/ico_check.png') no-repeat left center;
+                            background-size:contain;
+                        }
+                        &__txt{
+                            padding-left:2.18em; //48px;
+                            font-family:'pretendard';
+                            font-size:1.38em; //22px;
+                            font-weight:normal;
+                            line-height:1.4;
+                            letter-spacing:-1px;
+                            word-break:keep-all;
+                        }
+                    }
+                }
+                &.curri{
+                    background:#edf1f5;
+                }
+                &.effects{
+                    background:#020e1e;
+
+                    .tit-box{
+                        .label{
+                            background-color:#6e54c3;
+                        }
+                        p{
+                            color:#fff;
+                        }
+                    }
+
+                    .effects-list{
+                        display:flex;
+                        flex-flow:wrap;
+                        
+                        li{
+                            flex:1 1 0;
+                            margin:0 0.94em; //0 15px;
+                            padding:2.19em 0.94em 2.5em; //35px 15px 40px;
+                            border-radius:0.63em; //10px;
+                            border:solid 2px #6e54c3;
+                            background:#fff;
+
+                            .effects-list__tit{
+                                padding-top:4.09em; //90px;
+                                font-family:'pretendard';
+                                font-size:1.38em; //22px;
+                                font-weight:bold;
+                                line-height:1.2;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                                background:url('../images/paid/018/img_effect1.png') no-repeat center top;
+                                background-size:auto 2.95em; //auto 65px;
+                            }
+                            .effects-list__txt{
+                                padding-top:0.56em; //10px;
+                                font-family:'pretendard';
+                                font-size:1.13em; //18px;
+                                font-weight:normal;
+                                line-height:1.4;
+                                letter-spacing:-1px;
+                                word-break:keep-all;
+                            }
+                            @include ed-mobile{
+                                flex:none;
+                                width:100%;
+                                margin:0;
+
+                                & + li{
+                                    margin-top:0.94em; //15px;
+                                }
+                            }
+
+                            &:nth-child(2) { 
+                                .effects-list__tit{
+                                    background-image:url('../images/paid/018/img_effect2.png');
+                                }   
+                            }
+                            &:nth-child(3) { 
+                                .effects-list__tit{
+                                    background-image:url('../images/paid/018/img_effect3.png');
+                                }   
+                            }
+                        }
+                    }
+                }
+                &.tutor{
+                    .tutor-list{
+                        &__type3{
+                            .tutor{
+                                background-image:url('../images/paid/018/img_tutor.png');
+                            }
+                        }
+                    }
+                }
+                &.last{
+                    padding:3.13em 2.5em; //50px 40px;
+                    background:url('../images/paid/018/bg_data.png') no-repeat center;
+                    background-size:cover;
+                    color:#fff;
+
+                    .tit{
+                        font-family:'pretendard';
+                        font-size:1.88em; //30px;
+                        font-weight:bold;
+                        line-height:1.2;
+                        letter-spacing:-1px;
+                    }
+
+                    .txt{
+                        padding-top:0.42em; //10px;
+                        font-family:'pretendard';
+                        font-size:1.5em; //24px;
+                        font-weight:normal;
+                        line-height:1.5;
+                        letter-spacing:-1px;
                     }
                 }
             }
