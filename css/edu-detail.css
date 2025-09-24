@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* =======================================================================================================================
  * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
- * date : 2025.09.08
+ * date : 2025.09.23
  * 교육 상세 페이지 CSS
  * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
  * ======================================================================================================================= */
@@ -843,6 +843,52 @@ body {
 }
 .edu-detail.paid .edu-item .curri-list__type2__item .cont-list li + li {
   margin-top: 0.63em;
+}
+.edu-detail.paid .edu-item .curri-list__type3 {
+  display: flex;
+  flex-flow: wrap;
+  border-right: solid 1px #ddd;
+  border-bottom: solid 1px #ddd;
+  border-radius: 0.63em;
+  overflow: hidden;
+}
+.edu-detail.paid .edu-item .curri-list__type3__item {
+  width: 50%;
+  flex: auto;
+  padding: 1.88em;
+  text-align: left;
+  border-left: solid 1px #ddd;
+  border-top: solid 1px #ddd;
+  background: #fff;
+}
+.edu-detail.paid .edu-item .curri-list__type3__item .num {
+  display: inline-block;
+  margin-bottom: 0.68em;
+  padding: 0.18em 0.91em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+  border-radius: 2.73em;
+  color: #fff;
+  background: #222;
+}
+.edu-detail.paid .edu-item .curri-list__type3__item .cont li {
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: 400;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+.edu-detail.paid .edu-item .curri-list__type3__item .cont li + li {
+  margin-top: 0.45em;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid .edu-item .curri-list__type3__item {
+    width: 100%;
+  }
 }
 .edu-detail.paid .edu-item .tutor-list {
   display: flex;
@@ -6342,6 +6388,280 @@ body {
 }
 .edu-detail.paid.edu017 .edu-item.tutor .tutor-list__type3 .tutor {
   background-image: url("../images/paid/015/img_tutor.png");
+}
+.edu-detail.paid.edu018 {
+  font-family: "pretendard";
+  font-weight: 400;
+  text-align: left;
+}
+.edu-detail.paid.edu018 .col-primary {
+  color: #6e54c3;
+}
+.edu-detail.paid.edu018 .bg-primary {
+  background-color: #6e54c3 !important;
+}
+.edu-detail.paid.edu018 .edu-visual {
+  position: relative;
+  height: 37.5em;
+  background: url(../images/paid/018/bg_visual.jpg) no-repeat center;
+  background-size: cover;
+}
+.edu-detail.paid.edu018 .edu-visual .tit-wrap {
+  padding: 4.38em 2.5em 0;
+}
+.edu-detail.paid.edu018 .edu-visual .tit-wrap .label {
+  display: inline-block;
+  margin-bottom: 0.71em;
+  padding: 0.34em 1.14em;
+  font-family: "sbAgro";
+  font-weight: 300;
+  font-size: 2.19em;
+  line-height: 1;
+  border-radius: 1.71em;
+  color: #b596ef;
+  background: #151515;
+}
+.edu-detail.paid.edu018 .edu-visual .tit-wrap .tit {
+  font-family: "sbAgro";
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  color: #fff;
+}
+.edu-detail.paid.edu018 .edu-item {
+  padding: 4.38em 2.5em;
+  text-align: center;
+}
+.edu-detail.paid.edu018 .edu-item .tit-box {
+  margin-bottom: 3.13em;
+}
+.edu-detail.paid.edu018 .edu-item .tit-box .label {
+  display: inline-block;
+  height: 1.82em;
+  margin-bottom: 0.91em;
+  padding: 0.45em 0.68em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: -1px;
+  border-radius: 0.45em;
+  color: #fff;
+  background: #020e1e;
+}
+.edu-detail.paid.edu018 .edu-item .tit-box p {
+  font-family: "pretendard";
+  font-size: 2.75em;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu018 .edu-item.overview .tit {
+  margin-bottom: 1.39em;
+  font-family: "pretendard";
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.edu-detail.paid.edu018 .edu-item.overview .txt {
+  font-family: "pretendard";
+  font-size: 1.63em;
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu018 .edu-item.overview .book-wrap {
+  margin-top: 3.13em;
+  padding: 2.5em 0;
+  border-top: solid 1px #222;
+  border-bottom: solid 2px #ddd;
+  text-align: left;
+}
+.edu-detail.paid.edu018 .edu-item.overview .book-wrap .book {
+  background: url(../images/paid/018/img_book.png) no-repeat left center;
+  background-size: auto 100%;
+  padding-left: 12.5em;
+}
+.edu-detail.paid.edu018 .edu-item.overview .book-wrap .book-tit {
+  margin-bottom: 1em;
+  font-family: "pretendard";
+  font-size: 1.88em;
+  font-weight: bold;
+  line-height: 1.2;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu018 .edu-item.overview .book-wrap .book-txt {
+  font-family: "pretendard";
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu018 .edu-item.overview .book-wrap {
+    text-align: center;
+  }
+  .edu-detail.paid.edu018 .edu-item.overview .book-wrap .book {
+    padding-left: 0;
+    background-size: 200px;
+    background-position: center top;
+    padding-top: 300px;
+  }
+}
+.edu-detail.paid.edu018 .edu-item.recomme {
+  background: #edf1f5;
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li {
+  position: relative;
+  border-radius: 0.63em;
+  background: #ffffff;
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li span {
+  display: inline-block;
+  padding: 1.08em 0.38em;
+  font-family: "pretendard";
+  font-size: 1.63em;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li + li {
+  margin-top: 2.81em;
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li::before {
+  position: absolute;
+  left: -1.88em;
+  top: -1.88em;
+  width: 4.38em;
+  height: 4.38em;
+  background: url("../images/paid/018/img_recomme1.png") no-repeat center;
+  background-size: contain;
+  content: "";
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li:nth-child(2)::before {
+  background-image: url("../images/paid/018/img_recomme2.png");
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li:nth-child(3)::before {
+  background-image: url("../images/paid/018/img_recomme3.png");
+}
+.edu-detail.paid.edu018 .edu-item.recomme .recomme-list li:nth-child(4)::before {
+  background-image: url("../images/paid/018/img_recomme4.png");
+}
+.edu-detail.paid.edu018 .edu-item.goal .goal-list {
+  text-align: left;
+}
+.edu-detail.paid.edu018 .edu-item.goal .goal-list li {
+  padding: 1.88em 0;
+  border-top: solid 1px #ddd;
+}
+.edu-detail.paid.edu018 .edu-item.goal .goal-list li:last-child {
+  border-bottom: solid 1px #ddd;
+}
+.edu-detail.paid.edu018 .edu-item.goal .goal-list__tit {
+  padding-left: 1.6em;
+  font-family: "pretendard";
+  font-size: 1.88em;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  background: url("../images/paid/018/ico_check.png") no-repeat left center;
+  background-size: contain;
+}
+.edu-detail.paid.edu018 .edu-item.goal .goal-list__txt {
+  padding-left: 2.18em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu018 .edu-item.curri {
+  background: #edf1f5;
+}
+.edu-detail.paid.edu018 .edu-item.effects {
+  background: #020e1e;
+}
+.edu-detail.paid.edu018 .edu-item.effects .tit-box .label {
+  background-color: #6e54c3;
+}
+.edu-detail.paid.edu018 .edu-item.effects .tit-box p {
+  color: #fff;
+}
+.edu-detail.paid.edu018 .edu-item.effects .effects-list {
+  display: flex;
+  flex-flow: wrap;
+}
+.edu-detail.paid.edu018 .edu-item.effects .effects-list li {
+  flex: 1 1 0;
+  margin: 0 0.94em;
+  padding: 2.19em 0.94em 2.5em;
+  border-radius: 0.63em;
+  border: solid 2px #6e54c3;
+  background: #fff;
+}
+.edu-detail.paid.edu018 .edu-item.effects .effects-list li .effects-list__tit {
+  padding-top: 4.09em;
+  font-family: "pretendard";
+  font-size: 1.38em;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  background: url("../images/paid/018/img_effect1.png") no-repeat center top;
+  background-size: auto 2.95em;
+}
+.edu-detail.paid.edu018 .edu-item.effects .effects-list li .effects-list__txt {
+  padding-top: 0.56em;
+  font-family: "pretendard";
+  font-size: 1.13em;
+  font-weight: normal;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  word-break: keep-all;
+}
+@media (max-width: 767px) {
+  .edu-detail.paid.edu018 .edu-item.effects .effects-list li {
+    flex: none;
+    width: 100%;
+    margin: 0;
+  }
+  .edu-detail.paid.edu018 .edu-item.effects .effects-list li + li {
+    margin-top: 0.94em;
+  }
+}
+.edu-detail.paid.edu018 .edu-item.effects .effects-list li:nth-child(2) .effects-list__tit {
+  background-image: url("../images/paid/018/img_effect2.png");
+}
+.edu-detail.paid.edu018 .edu-item.effects .effects-list li:nth-child(3) .effects-list__tit {
+  background-image: url("../images/paid/018/img_effect3.png");
+}
+.edu-detail.paid.edu018 .edu-item.tutor .tutor-list__type3 .tutor {
+  background-image: url("../images/paid/018/img_tutor.png");
+}
+.edu-detail.paid.edu018 .edu-item.last {
+  padding: 3.13em 2.5em;
+  background: url("../images/paid/018/bg_data.png") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.edu-detail.paid.edu018 .edu-item.last .tit {
+  font-family: "pretendard";
+  font-size: 1.88em;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+.edu-detail.paid.edu018 .edu-item.last .txt {
+  padding-top: 0.42em;
+  font-family: "pretendard";
+  font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: -1px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .edu-detail {
