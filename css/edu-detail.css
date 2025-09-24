@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* =======================================================================================================================
  * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
- * date : 2025.09.23
+ * date : 2025.09.24
  * 교육 상세 페이지 CSS
  * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
  * ======================================================================================================================= */
@@ -6481,7 +6481,7 @@ body {
 .edu-detail.paid.edu018 .edu-item.overview .book-wrap .book {
   background: url(../images/paid/018/img_book.png) no-repeat left center;
   background-size: auto 100%;
-  padding-left: 12.5em;
+  padding-left: 15em;
 }
 .edu-detail.paid.edu018 .edu-item.overview .book-wrap .book-tit {
   margin-bottom: 1em;
@@ -6494,6 +6494,14 @@ body {
 .edu-detail.paid.edu018 .edu-item.overview .book-wrap .book-txt {
   font-family: "pretendard";
   font-size: 1.5em;
+  font-weight: normal;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+.edu-detail.paid.edu018 .edu-item.overview .book-wrap .book-subTit {
+  padding-top: 0.63em;
+  font-family: "pretendard";
+  font-size: 1em;
   font-weight: normal;
   line-height: 1.5;
   word-break: keep-all;
