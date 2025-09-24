@@ -1,6 +1,6 @@
 /* =======================================================================================================================
  * 최초 생성 : 이정민 / xwjdalsz0227@gmail.com
- * date : 2025.09.23
+ * date : 2025.09.24
  * 교육 상세 페이지 CSS
  * font, padding, margin, width, height는 edu-detail에 종속되어야하기에 em 단위 사용.(최초 기준값 : 16px)
  * ======================================================================================================================= */
@@ -7079,7 +7079,7 @@ body{
                         .book{
                             background:url(../images/paid/018/img_book.png) no-repeat left center;
                             background-size:auto 100%;
-                            padding-left:12.5em; //200px;
+                            padding-left:15em; //240px;
                             
                             &-tit{
                                 margin-bottom:1em; //30px;
@@ -7092,6 +7092,14 @@ body{
                             &-txt{
                                 font-family:'pretendard';
                                 font-size:1.5em; //24px;
+                                font-weight:normal;
+                                line-height:1.5;
+                                word-break:keep-all;
+                            }
+                            &-subTit{
+                                padding-top:0.63em; //10px;
+                                font-family:'pretendard';
+                                font-size:1em; //16px;
                                 font-weight:normal;
                                 line-height:1.5;
                                 word-break:keep-all;
